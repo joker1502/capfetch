@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ToolPage } from "@/components/ToolPage";
 
 export const metadata: Metadata = {
-  title: "YouTube Shorts Transcript Extractor - Free Online Tool",
+  title: "YouTube Shorts Transcript Extractor",
   description:
     "Free YouTube Shorts transcript extractor — extract transcripts from YouTube Shorts videos online. Get Shorts text and captions instantly.",
 };

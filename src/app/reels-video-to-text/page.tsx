@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ToolPage } from "@/components/ToolPage";
 
 export const metadata: Metadata = {
-  title: "Reels Video to Text - Free Online Converter",
+  title: "Reels Video to Text",
   description:
     "Free Reels video to text converter — convert Instagram Reels to text and extract spoken content online.",
 };

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ToolPage } from "@/components/ToolPage";
 
 export const metadata: Metadata = {
-  title: "TikTok Caption Downloader - Free Online Tool",
+  title: "TikTok Caption Downloader",
   description:
     "Free TikTok caption downloader — download captions and transcripts from any TikTok video as a text file. Extract TikTok text online, no registration needed.",
 };

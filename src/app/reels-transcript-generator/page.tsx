@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ToolPage } from "@/components/ToolPage";
 
 export const metadata: Metadata = {
-  title: "Reels Transcript Generator - Free Online Tool",
+  title: "Reels Transcript Generator",
   description:
     "Free Reels transcript generator — generate transcripts from Instagram Reels videos online. Accurate Reels speech to text.",
 };

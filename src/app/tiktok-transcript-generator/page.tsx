@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ToolPage } from "@/components/ToolPage";
 
 export const metadata: Metadata = {
-  title: "TikTok Transcript Generator - Free Online Tool",
+  title: "TikTok Transcript Generator",
   description:
     "Free TikTok transcript generator — generate word-by-word transcripts from TikTok videos online. Accurate TikTok speech to text converter.",
 };

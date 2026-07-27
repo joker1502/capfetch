@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ToolPage } from "@/components/ToolPage";
 
 export const metadata: Metadata = {
-  title: "Reels Caption Extractor - Free Online Tool",
+  title: "Reels Caption Extractor",
   description:
     "Free Instagram Reels caption extractor — extract captions from Reels videos online. Get transcripts from any Instagram Reels link instantly.",
 };

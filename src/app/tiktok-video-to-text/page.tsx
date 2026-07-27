@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ToolPage } from "@/components/ToolPage";
 
 export const metadata: Metadata = {
-  title: "TikTok Video to Text - Free Online Converter",
+  title: "TikTok Video to Text",
   description:
     "Free TikTok video to text converter — convert TikTok videos to text and extract spoken content online. Accurate video transcription tool.",
 };

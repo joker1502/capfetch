@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ToolPage } from "@/components/ToolPage";
 
 export const metadata: Metadata = {
-  title: "YouTube Shorts Video to Text - Free Online Converter",
+  title: "YouTube Shorts Video to Text",
   description:
     "Free YouTube Shorts video to text converter — convert Shorts videos to text and extract captions online. Accurate Shorts transcription tool.",
 };

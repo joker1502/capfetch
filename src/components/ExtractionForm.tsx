@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -35,7 +36,11 @@ function validateUrl(url: string, platform: Platform): string | null {
   return null;
 }
 
+const toolPagePattern = /^\/(tiktok|reels|shorts)-(.+)/;
+
 export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform?: Platform }) {
+  const pathname = usePathname();
+  const router = useRouter();
   const [platform, setPlatform] = useState<Platform>(defaultPlatform);
   const [url, setUrl] = useState("");
   const [error, setError] = useState("");
@@ -114,7 +119,15 @@ export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform
   return (
     <div className="space-y-6">
       {/* Platform Tabs */}
-      <Tabs defaultValue={defaultPlatform} onValueChange={(v) => setPlatform(v as Platform)}>
+      <Tabs defaultValue={defaultPlatform} onValueChange={(v) => {
+        const match = pathname.match(toolPagePattern);
+        if (match) {
+          const toolType = match[2];
+          router.push(`/${v}-${toolType}`);
+        } else {
+          setPlatform(v as Platform);
+        }
+      }}>
         <TabsList className="w-full">
           {platforms.map((p) => {
             const Icon = p.icon;

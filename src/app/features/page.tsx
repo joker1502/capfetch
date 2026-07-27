@@ -13,7 +13,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Features",
-  description: "Free short video caption extractor — extract TikTok captions, Reels transcripts, and YouTube Shorts text. Analyze viral hooks, optimize scripts, and publish across platforms.",
+  description:
+    "Free short video caption extractor for TikTok, Instagram Reels, and YouTube Shorts. Extract transcripts, analyze viral hooks, and optimize your short form video content with ClipHub's all-in-one toolbox.",
 };
 
 const faqSchema = {

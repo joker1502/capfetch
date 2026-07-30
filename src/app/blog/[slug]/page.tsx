@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft } from "lucide-react";
+
 import { posts } from "@/lib/blog";
 
 interface Props {
@@ -42,6 +42,16 @@ export default async function BlogPostPage({ params }: Props) {
     .filter((p) => p.slug !== slug)
     .slice(0, 3);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://capfetch.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://capfetch.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://capfetch.com/blog/${post.slug}` },
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -55,12 +65,20 @@ export default async function BlogPostPage({ params }: Props) {
     <div className="mx-auto max-w-3xl px-4 py-16">
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
-      <Link href="/blog" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-8">
-        <ArrowLeft className="size-4" /> Back to Blog
-      </Link>
+      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
+        <Link href="/" className="hover:text-foreground">Home</Link>
+        <span>/</span>
+        <Link href="/blog" className="hover:text-foreground">Blog</Link>
+        <span>/</span>
+        <span className="text-foreground truncate max-w-[200px]">{post.title}</span>
+      </nav>
 
       <article>
         <header className="mb-10">
@@ -81,7 +99,7 @@ export default async function BlogPostPage({ params }: Props) {
 
         <div className="mt-10 flex flex-wrap gap-2">
           {post.tags.map((tag) => (
-            <Link key={tag} href={`/blog/tag/${encodeURIComponent(tag.toLowerCase().replace(/\s+/g, "-"))}`}>
+            <Link key={tag} href={`/blog/tags/${encodeURIComponent(tag.toLowerCase().replace(/\s+/g, "-"))}`}>
               <Badge variant="secondary" className="hover:bg-brand hover:text-white transition-colors cursor-pointer">
                 {tag}
               </Badge>

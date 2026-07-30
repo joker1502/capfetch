@@ -25,18 +25,13 @@ export default function BlogPage() {
         </p>
       </div>
 
-      {/* Posts */}
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {sorted.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/blog/${post.slug}`}
-            className="group rounded-xl border p-6 hover:bg-muted/50 transition-colors flex flex-col"
-          >
+          <div key={post.slug} className="rounded-xl border p-6 hover:bg-muted/50 transition-colors flex flex-col">
             <div className="flex-1">
-              <h2 className="font-semibold group-hover:text-brand transition-colors">
+              <Link href={`/blog/${post.slug}`} className="font-semibold hover:text-brand transition-colors no-underline">
                 {post.title}
-              </h2>
+              </Link>
               <p className="mt-2 text-sm text-muted-foreground line-clamp-3">
                 {post.description}
               </p>
@@ -47,15 +42,22 @@ export default function BlogPage() {
             </div>
             <div className="mt-2 flex flex-wrap gap-1.5">
               {post.tags.map((tag) => (
-                <Link key={tag} href={`/blog/tag/${encodeURIComponent(tag.toLowerCase().replace(/\s+/g, "-"))}`} className="text-xs text-muted-foreground hover:text-brand transition-colors">
+                <Link
+                  key={tag}
+                  href={`/blog/tags/${encodeURIComponent(tag.toLowerCase().replace(/\s+/g, "-"))}`}
+                  className="text-xs text-muted-foreground hover:text-brand transition-colors"
+                >
                   #{tag}
                 </Link>
               ))}
             </div>
-            <div className="mt-3 flex items-center gap-1 text-sm text-brand font-medium">
+            <Link
+              href={`/blog/${post.slug}`}
+              className="mt-3 flex items-center gap-1 text-sm text-brand font-medium"
+            >
               Read more <ArrowRight className="size-3.5" />
-            </div>
-          </Link>
+            </Link>
+          </div>
         ))}
       </div>
     </div>

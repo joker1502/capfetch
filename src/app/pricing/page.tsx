@@ -7,6 +7,7 @@ import { Check } from "lucide-react";
 export const metadata: Metadata = {
   title: "Pricing",
   description: "Free TikTok caption extractor with daily quota. Upgrade to Pro for unlimited video transcription and AI analysis. Business plan for teams.",
+  alternates: { canonical: "/pricing" },
 };
 
 const plans = [

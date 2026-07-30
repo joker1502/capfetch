@@ -13,6 +13,13 @@ export default function TagsPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16">
+      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+        <Link href="/" className="hover:text-foreground">Home</Link>
+        <span>/</span>
+        <Link href="/blog" className="hover:text-foreground">Blog</Link>
+        <span>/</span>
+        <span className="text-foreground">Topics</span>
+      </nav>
       <h1 className="text-3xl font-bold tracking-tight">Topics</h1>
       <p className="mt-2 text-muted-foreground">Browse articles by topic.</p>
 
@@ -22,7 +29,7 @@ export default function TagsPage() {
           return (
             <Link
               key={tag}
-              href={`/blog/tag/${encodeURIComponent(tag.toLowerCase().replace(/\s+/g, "-"))}`}
+              href={`/blog/tags/${encodeURIComponent(tag.toLowerCase().replace(/\s+/g, "-"))}`}
             >
               <Badge variant="secondary" className="text-sm py-1.5 px-3 hover:bg-brand hover:text-white transition-colors cursor-pointer">
                 {tag} ({count})

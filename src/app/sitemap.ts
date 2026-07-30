@@ -2,16 +2,15 @@ import type { MetadataRoute } from "next";
 import { posts } from "@/lib/blog";
 import { triggerPages } from "@/lib/trigger-pages";
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://cliphub.com";
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://capfetch.com";
 
 const toolPages = [
   "",
+  "/features",
   "/tiktok-caption-extractor",
   "/tiktok-caption-downloader",
-  "/tiktok-text-extractor",
   "/tiktok-transcript-generator",
   "/tiktok-video-to-text",
-  "/tiktok-subtitle-extractor",
   "/reels-caption-extractor",
   "/reels-caption-downloader",
   "/reels-transcript-generator",

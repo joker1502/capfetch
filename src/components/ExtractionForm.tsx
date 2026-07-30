@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { usePathname, useRouter } from "next/navigation";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -11,7 +10,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { submitExtraction } from "@/actions/submit";
 import { getTaskStatus } from "@/actions/status";
 import { createClient } from "@/lib/supabase/client";
-import { Copy, Download, Loader2, Search, Music2, Clapperboard, CirclePlay } from "lucide-react";
+import { Copy, Download, Loader2, Search, Music2, Clapperboard, CirclePlay, BarChart3 } from "lucide-react";
+import { AnalysisPanel } from "./AnalysisPanel";
+import { ScriptTools } from "./ScriptTools";
 
 const platforms = [
   { id: "tiktok", label: "TikTok", icon: Music2 },
@@ -36,17 +37,14 @@ function validateUrl(url: string, platform: Platform): string | null {
   return null;
 }
 
-const toolPagePattern = /^\/(tiktok|reels|shorts)-(.+)/;
-
 export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform?: Platform }) {
-  const pathname = usePathname();
-  const router = useRouter();
   const [platform, setPlatform] = useState<Platform>(defaultPlatform);
   const [url, setUrl] = useState("");
   const [error, setError] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "failed">("idle");
   const [transcript, setTranscript] = useState("");
   const [wordCount, setWordCount] = useState(0);
+  const [taskId, setTaskId] = useState<string | null>(null);
 
   const handleExtract = useCallback(async () => {
     setError("");
@@ -59,6 +57,7 @@ export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform
     }
 
     setStatus("loading");
+    setTaskId(null);
 
     const formData = new FormData();
     formData.set("url", url);
@@ -73,17 +72,18 @@ export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform
     }
 
     const supabase = createClient();
-    const taskId = res.taskId;
+    const tid = res.taskId;
+    setTaskId(tid);
 
     const channel = supabase
-      .channel(`task-${taskId}`)
+      .channel(`task-${tid}`)
       .on(
         "postgres_changes",
         {
           event: "UPDATE",
           schema: "public",
           table: "Task",
-          filter: `id=eq.${taskId}`,
+          filter: `id=eq.${tid}`,
         },
         (payload) => {
           const task = payload.new as {
@@ -103,7 +103,7 @@ export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform
       )
       .subscribe();
 
-    const check = await getTaskStatus(taskId);
+    const check = await getTaskStatus(tid);
     if (check.status === "done") {
       setTranscript(check.transcript ?? "");
       setWordCount(check.wordCount ?? 0);
@@ -119,15 +119,7 @@ export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform
   return (
     <div className="space-y-6">
       {/* Platform Tabs */}
-      <Tabs defaultValue={defaultPlatform} onValueChange={(v) => {
-        const match = pathname.match(toolPagePattern);
-        if (match) {
-          const toolType = match[2];
-          router.push(`/${v}-${toolType}`);
-        } else {
-          setPlatform(v as Platform);
-        }
-      }}>
+      <Tabs defaultValue={defaultPlatform} onValueChange={(v) => setPlatform(v as Platform)}>
         <TabsList className="w-full">
           {platforms.map((p) => {
             const Icon = p.icon;
@@ -213,7 +205,7 @@ export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform
               </Button>
             </div>
           </div>
-          <div className="p-4 sm:p-6">
+          <div className="p-4 sm:p-6 space-y-4">
             <textarea
               value={transcript}
               onChange={(e) => {
@@ -222,6 +214,14 @@ export function ExtractionForm({ defaultPlatform = "tiktok" }: { defaultPlatform
               }}
               className="w-full min-h-[200px] bg-transparent text-sm leading-relaxed resize-y focus:outline-none"
             />
+            {taskId && (
+              <>
+                <AnalysisPanel taskId={taskId} transcript={transcript} />
+                <div className="border-t pt-4">
+                  <ScriptTools transcript={transcript} />
+                </div>
+              </>
+            )}
           </div>
         </Card>
       )}

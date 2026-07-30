@@ -7,30 +7,31 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-3">
           <div>
             <Link href="/" className="font-bold text-lg">
-              <span className="text-brand">Clip</span>Hub
+              <span className="text-brand">Cap</span>Fetch
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
-              Extract captions, analyze content, and publish across platforms. Free for creators.
+              Free short video caption extractor for TikTok, Instagram Reels, and YouTube Shorts.
             </p>
           </div>
           <div>
-            <h4 className="mb-3 text-sm font-medium">Navigation</h4>
+            <h4 className="mb-3 text-sm font-medium">Tools</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/features" className="hover:text-foreground">Features</Link></li>
-              <li><Link href="/pricing" className="hover:text-foreground">Pricing</Link></li>
-              <li><Link href="/blog" className="hover:text-foreground">Blog</Link></li>
+              <li><Link href="/tiktok-caption-extractor" className="hover:text-foreground">TikTok</Link></li>
+              <li><Link href="/reels-caption-extractor" className="hover:text-foreground">Instagram Reels</Link></li>
+              <li><Link href="/shorts-transcript-extractor" className="hover:text-foreground">YouTube Shorts</Link></li>
             </ul>
           </div>
           <div>
-            <h4 className="mb-3 text-sm font-medium">About</h4>
+            <h4 className="mb-3 text-sm font-medium">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><span className="hover:text-foreground cursor-default">Privacy Policy</span></li>
-              <li><span className="hover:text-foreground cursor-default">Terms of Service</span></li>
+              <li><Link href="/about" className="hover:text-foreground">About</Link></li>
+              <li><Link href="/privacy" className="hover:text-foreground">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-foreground">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} ClipHub.</p>
+          <p>&copy; {new Date().getFullYear()} CapFetch.</p>
         </div>
       </div>
     </footer>

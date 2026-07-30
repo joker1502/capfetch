@@ -32,7 +32,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         <Link href="/" className="font-bold text-lg">
-          <span className="text-brand">Clip</span>Hub
+          <span className="text-brand">Cap</span>Fetch
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
@@ -65,7 +65,7 @@ export function Header() {
             <Link href="/login">
               <Button variant="ghost" size="sm">Sign In</Button>
             </Link>
-            <Link href="/#tool">
+            <Link href="/">
               <Button size="sm">Get Started</Button>
             </Link>
           </div>
@@ -102,7 +102,7 @@ export function Header() {
               <Link href="/login" onClick={() => setOpen(false)}>
                 <Button variant="outline" className="w-full">Sign In</Button>
               </Link>
-              <Link href="/#tool" onClick={() => setOpen(false)}>
+              <Link href="/" onClick={() => setOpen(false)}>
                 <Button className="w-full">Get Started</Button>
               </Link>
             </div>

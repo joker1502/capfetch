@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Free short video caption extractor for TikTok, Instagram Reels, and YouTube Shorts. Extract transcripts, analyze viral hooks, and optimize your short form video content with ClipHub's all-in-one toolbox.",
+    "Free short video caption extractor for TikTok, Instagram Reels, and YouTube Shorts. Extract transcripts, analyze viral hooks, and optimize your short form video content with CapFetch's all-in-one toolbox.",
 };
 
 const faqSchema = {
@@ -23,18 +23,18 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Is ClipHub free?",
+      name: "Is CapFetch free?",
       acceptedAnswer: { "@type": "Answer", text: "Yes. You get 20 free extracts per day without registration, and 50 per day when you sign in." },
     },
     {
       "@type": "Question",
-      name: "Which platforms does ClipHub support?",
-      acceptedAnswer: { "@type": "Answer", text: "ClipHub supports TikTok, Instagram Reels, and YouTube Shorts. More platforms coming soon." },
+      name: "Which platforms does CapFetch support?",
+      acceptedAnswer: { "@type": "Answer", text: "CapFetch supports TikTok, Instagram Reels, and YouTube Shorts. More platforms coming soon." },
     },
     {
       "@type": "Question",
       name: "Do I need an account?",
-      acceptedAnswer: { "@type": "Answer", text: "No. You can use ClipHub without an account. Signing in increases your daily limit to 50 extracts." },
+      acceptedAnswer: { "@type": "Answer", text: "No. You can use CapFetch without an account. Signing in increases your daily limit to 50 extracts." },
     },
     {
       "@type": "Question",
@@ -103,7 +103,7 @@ export default function FeaturesPage() {
           Free for creators.
         </p>
         <div className="mt-8 flex justify-center gap-3">
-          <Link href="/#tool" className={cn(buttonVariants({ size: "lg" }))}>
+          <Link href="/" className={cn(buttonVariants({ size: "lg" }))}>
             Try It Free
           </Link>
           <Link href="/pricing" className={cn(buttonVariants({ variant: "outline", size: "lg" }))}>
@@ -115,7 +115,7 @@ export default function FeaturesPage() {
       {/* Highlights */}
       <section className="border-t">
         <div className="mx-auto max-w-3xl px-4 py-20">
-          <h2 className="text-2xl font-bold text-center mb-12">Why ClipHub</h2>
+          <h2 className="text-2xl font-bold text-center mb-12">Why CapFetch</h2>
           <div className="grid gap-6 sm:gap-8 sm:grid-cols-2">
             {highlights.map((h) => {
               const Icon = h.icon;
@@ -210,7 +210,7 @@ export default function FeaturesPage() {
             <span>Trusted by <span className="text-brand">10,000+</span> content creators</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            From solo creators to professional content teams, ClipHub helps thousands extract and analyze short video content every day.
+            From solo creators to professional content teams, CapFetch helps thousands extract and analyze short video content every day.
           </p>
         </div>
       </section>
@@ -229,10 +229,10 @@ export default function FeaturesPage() {
             Ready to start creating better content?
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Join thousands of creators already using ClipHub.
+            Join thousands of creators already using CapFetch.
           </p>
           <div className="mt-6 flex justify-center gap-3">
-            <Link href="/#tool" className={cn(buttonVariants())}>
+            <Link href="/" className={cn(buttonVariants())}>
               Get Started Free <ArrowRight className="size-4" />
             </Link>
           </div>

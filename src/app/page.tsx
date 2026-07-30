@@ -3,7 +3,7 @@ import { ExtractionForm } from "@/components/ExtractionForm";
 import { Sparkles, Search, FileText, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "ClipHub - Free Caption & Transcript Extractor for Short Videos",
+  title: "CapFetch - Free Caption & Transcript Extractor for Short Videos",
   description:
     "Extract captions from TikTok, Instagram Reels, and YouTube Shorts for free. Get accurate transcripts, analyze viral hooks, and optimize your short form video content.",
 };

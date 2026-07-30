@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "ClipHub - Extract Captions from Short Videos",
-    template: "%s - ClipHub",
+    default: "CapFetch - Extract Captions from Short Videos",
+    template: "%s - CapFetch",
   },
   description:
     "Free short video caption extractor for TikTok, Instagram Reels, and YouTube Shorts. Extract transcripts, analyze viral content, and optimize your short form video strategy.",
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
     "video to text converter",
   ],
   openGraph: {
-    title: "ClipHub - Extract Captions from Short Videos",
+    title: "CapFetch - Extract Captions from Short Videos",
     description:
       "Free short video caption extractor for TikTok, Instagram Reels, and YouTube Shorts. Extract transcripts, analyze viral content, and optimize your short form video strategy.",
     type: "website",
     locale: "en_US",
-    siteName: "ClipHub",
+    siteName: "CapFetch",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClipHub - Extract Captions from Short Videos",
+    title: "CapFetch - Extract Captions from Short Videos",
     description:
       "Free short video caption extractor for TikTok, Instagram Reels, and YouTube Shorts. Extract transcripts, analyze viral content, and optimize your short form video strategy.",
   },

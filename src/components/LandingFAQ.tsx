@@ -7,18 +7,18 @@ import {
 
 const faqItems = [
   {
-    question: "Is ClipHub free?",
+    question: "Is CapFetch free?",
     answer: "Yes. You get 20 free extracts per day without registration, and 50 per day when you sign in.",
     value: "item-1",
   },
   {
     question: "Which platforms are supported?",
-    answer: "ClipHub supports TikTok, Instagram Reels, and YouTube Shorts.",
+    answer: "CapFetch supports TikTok, Instagram Reels, and YouTube Shorts.",
     value: "item-2",
   },
   {
     question: "Do I need to create an account?",
-    answer: "No. You can use ClipHub without an account. Signing in increases your daily limit to 50 extracts.",
+    answer: "No. You can use CapFetch without an account. Signing in increases your daily limit to 50 extracts.",
     value: "item-3",
   },
   {

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://cliphub.com";
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://capfetch.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {

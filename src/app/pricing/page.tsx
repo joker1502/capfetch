@@ -14,7 +14,7 @@ const plans = [
     name: "Free",
     price: "$0",
     period: "",
-    desc: "For casual use and trying out ClipHub.",
+    desc: "For casual use and trying out CapFetch.",
     features: [
       "20 extracts/day (anonymous)",
       "50 extracts/day (signed in)",
@@ -130,7 +130,7 @@ export default function PricingPage() {
               ))}
             </div>
             <div className="mt-10 text-center">
-              <a href="/#tool"><Button size="lg">Get Started Free</Button></a>
+              <a href="/"><Button size="lg">Get Started Free</Button></a>
             </div>
           </div>
         </section>

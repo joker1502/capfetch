@@ -35,7 +35,8 @@ export default async function TriggerPage({ params }: Props) {
     <ToolPage
       title={page.title}
       description={page.description}
-      platform={page.platform}
+      howToSteps={page.howToSteps}
+      benefits={page.benefits}
     />
   );
 }

@@ -1,4 +1,4 @@
-# ClipHub 关键词分配说明
+# CapFetch 关键词分配说明
 
 原则：**页面内容决定关键词，不是反过来。**
 
@@ -7,16 +7,16 @@
 ---
 
 ## 首页 `/`
-**标题：** `ClipHub - Free Caption & Transcript Extractor for Short Videos`（绝对标题，不用模板）
+**标题：** `CapFetch - Free Caption & Transcript Extractor for Short Videos`（绝对标题，不用模板）
 
 **关键词：** short video caption extractor, free caption extractor
 
-**理由：** 首页是品牌入口兼工具页。用户搜 "short video caption extractor" 这种泛词来，看到的就是提取工具，直接能用。title 带品牌名 ClipHub，不靠模板追加。
+**理由：** 首页是品牌入口兼工具页。用户搜 "short video caption extractor" 这种泛词来，看到的就是提取工具，直接能用。title 带品牌名 CapFetch，不靠模板追加。
 
 ---
 
 ## 落地页 `/features`
-**标题：** `Feautres` → 模板追加 → `Features - ClipHub`
+**标题：** `Feautres` → 模板追加 → `Features - CapFetch`
 
 **关键词：** 不独占某个具体词，description 覆盖全品类词
 
@@ -25,7 +25,7 @@
 ---
 
 ## 工具页（13 个）
-**格式：** `页面名` → 模板追加 → `页面名 - ClipHub`
+**格式：** `页面名` → 模板追加 → `页面名 - CapFetch`
 
 每条都是 **页面的 H1 = 页面标题 = 用户搜索词**，三者一致。
 
@@ -81,7 +81,7 @@
 ---
 
 ## 定价页 `/pricing`
-**标题：** `Pricing` → `Pricing - ClipHub`
+**标题：** `Pricing` → `Pricing - CapFetch`
 
 **关键词：** 不定位于搜索引擎主词，主要收转化流量
 
@@ -90,7 +90,7 @@
 ---
 
 ## 博客 `/blog` 和 `/blog/[slug]`
-**标题：** 博客页 `Blog - ClipHub`，文章页 `文章名 - ClipHub`
+**标题：** 博客页 `Blog - CapFetch`，文章页 `文章名 - CapFetch`
 
 **关键词：** 教程/策略/对比类长尾词
 

@@ -310,8 +310,6 @@ export const posts: BlogPost[] = [
       <p>Whether you're analyzing competitors, repurposing your own content, or building a library of winning scripts, a transcript generator saves hours per week. The best part? The good ones are free to start. CapFetch offers 20 daily extracts with no registration — enough to build a consistent analysis workflow without spending a cent. <a href="/">Start extracting now</a>.</p>
     `,
   },
-  {
-];
 ];
 
 export function getAllTags(): string[] {

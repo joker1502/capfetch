@@ -14,7 +14,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = triggerPages.find((p) => p.slug === slug);
-  if (!page) return {};
+  if (!page) return { title: "Page Not Found", robots: { index: false } };
 
   return {
     title: page.title,

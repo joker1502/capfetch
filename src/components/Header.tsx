@@ -32,8 +32,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <img src="/logo.svg" alt="CapFetch" className="size-7" />
-          <span className="text-brand">Cap</span>Fetch
+          <img src="/logo.svg" alt="CapFetch" className="size-10" />
+          <span><span className="text-brand">Cap</span>Fetch</span>
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">

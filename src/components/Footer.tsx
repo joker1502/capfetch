@@ -7,8 +7,8 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-3">
           <div>
             <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-              <img src="/logo.svg" alt="CapFetch" className="size-7" />
-              <span className="text-brand">Cap</span>Fetch
+              <img src="/logo.svg" alt="CapFetch" className="size-10" />
+              <span><span className="text-brand">Cap</span>Fetch</span>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
               Free short video caption extractor for TikTok, Instagram Reels, and YouTube Shorts.

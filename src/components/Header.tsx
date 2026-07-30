@@ -5,8 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { useTheme } from "@/components/theme-provider";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/components/theme-provider";
 
 const links = [
   { href: "/features", label: "Features" },

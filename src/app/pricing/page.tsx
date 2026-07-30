@@ -33,7 +33,7 @@ const plans = [
     desc: "For creators who need more power.",
     features: [
       "Unlimited extracts",
-      "AI viral analysis (Phase 2)",
+      "AI viral analysis (Coming soon)",
       "Batch export",
       "Priority processing",
       "No ads",
@@ -49,8 +49,8 @@ const plans = [
     desc: "For teams and agencies.",
     features: [
       "Everything in Pro",
-      "Competitor tracking (Phase 2)",
-      "API access (Phase 3)",
+      "Competitor tracking (Coming soon)",
+      "API access (Coming soon)",
       "Team collaboration",
       "Dedicated support",
     ],
@@ -61,7 +61,7 @@ const plans = [
 
 const faq = [
   { q: "Can I switch plans anytime?", a: "Yes. Upgrade or downgrade at any time. Your data transfers seamlessly between plans." },
-  { q: "Is there a free trial for Pro?", a: "You can try the free tier first. Pro features will be available when Phase 2 launches." },
+  { q: "Is there a free trial for Pro?", a: "You can try the free tier first. Pro features will be available soon." },
   { q: "What payment methods do you accept?", a: "All major credit cards via Creem, our secure payment processor." },
   { q: "Can I cancel anytime?", a: "Yes. Cancel anytime with no penalties. Your data remains accessible." },
 ];

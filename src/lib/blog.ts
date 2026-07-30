@@ -40,11 +40,11 @@ export const posts: BlogPost[] = [
       <p>Registered users get 50 extracts per day plus access to saved history. <a href="/sign-up">Create a free account</a> when you need more.</p>
 
       <h2>CapFetch vs Manual Transcription: The Real Cost</h2>
-      <table>
-        <tr><th>Method</th><th>Time per 60s video</th><th>Accuracy</th><th>Cost</th></tr>
-        <tr><td>Manual typing</td><td>10–15 minutes</td><td>Subjective</td><td>Free (your time)</td></tr>
-        <tr><td>Paid transcription service</td><td>1–2 minutes</td><td>High</td><td>$0.10–$1.00/video</td></tr>
-        <tr><td><strong>CapFetch (free)</strong></td><td><strong>5–10 seconds</strong></td><td><strong>High</strong></td><td><strong>Free (20/day)</strong></td></tr>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Accuracy</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Cost</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Subjective</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free (your time)</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Paid transcription service</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">High</td><td style="border:1px solid #d1d5db;padding:8px 12px">$0.10–$1.00/video</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>High</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Free (20/day)</strong></td></tr>
       </table>
       <p>If you analyze just 5 videos per day, manual transcription costs you 50–75 minutes daily. CapFetch does it in under a minute. Over a month, that's 25+ hours saved.</p>
 
@@ -84,10 +84,10 @@ export const posts: BlogPost[] = [
       <p>That's it. No browser extensions, no apps, no registration required. For a detailed comparison of transcription tools across all platforms, <a href="/blog/best-free-tiktok-caption-extractor-tools">see our caption extractor comparison guide</a>.</p>
 
       <h2>Manual vs Automated: Which Saves More Time?</h2>
-      <table>
-        <tr><th>Workflow</th><th>10 Reels</th><th>Weekly time cost</th></tr>
-        <tr><td>Manual transcription</td><td>~100 minutes</td><td>6.5+ hours</td></tr>
-        <tr><td>CapFetch extraction</td><td>~3 minutes</td><td>15 minutes</td></tr>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Workflow</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">10 Reels</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Weekly time cost</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual transcription</td><td style="border:1px solid #d1d5db;padding:8px 12px">~100 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">6.5+ hours</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">CapFetch extraction</td><td style="border:1px solid #d1d5db;padding:8px 12px">~3 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">15 minutes</td></tr>
       </table>
       <p>If you regularly analyze competitor or trending Reels, automation isn't a luxury — it's the difference between keeping up and falling behind.</p>
 
@@ -124,13 +124,13 @@ export const posts: BlogPost[] = [
       <p>Paste the URL, click Extract, and your transcript appears in seconds. Edit, copy, or download. You can also combine Shorts transcripts with <a href="/blog/how-to-repurpose-tiktok-content-for-blog">our repurposing workflow</a> to turn them into publishable articles.</p>
 
       <h2>CapFetch vs YouTube's Built-in Captions</h2>
-      <table>
-        <tr><th>Feature</th><th>YouTube Captions</th><th>CapFetch</th></tr>
-        <tr><td>Available for Shorts</td><td>❌ No</td><td>✅ Yes</td></tr>
-        <tr><td>Copy full transcript</td><td>Partial (auto-captions only)</td><td>✅ One click</td></tr>
-        <tr><td>Download as .txt</td><td>❌ No</td><td>✅ Yes</td></tr>
-        <tr><td>Multi-platform</td><td>YouTube only</td><td>TikTok + Reels + Shorts</td></tr>
-        <tr><td>Free tier</td><td>Free</td><td>✅ 20/day no registration</td></tr>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">YouTube Captions</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CapFetch</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Available for Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Copy full transcript</td><td style="border:1px solid #d1d5db;padding:8px 12px">Partial (auto-captions only)</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ One click</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Download as .txt</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Multi-platform</td><td style="border:1px solid #d1d5db;padding:8px 12px">YouTube only</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok + Reels + Shorts</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Free tier</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ 20/day no registration</td></tr>
       </table>
 
       <h2>Start Extracting Shorts Transcripts</h2>
@@ -157,13 +157,13 @@ export const posts: BlogPost[] = [
         <li><strong>YouTube Shorts:</strong> Skews toward 25–45 age group. Search-driven discovery means educational and how-to content performs best. Longer shelf life — a Short from last year can still drive traffic.</li>
       </ul>
       <h3>Content Format Preferences</h3>
-      <table>
-        <tr><th>Element</th><th>TikTok</th><th>Reels</th><th>Shorts</th></tr>
-        <tr><td>Best length</td><td>15–30s</td><td>15–60s</td><td>30–60s</td></tr>
-        <tr><td>Top content type</td><td>Trends, challenges</td><td>Tutorials, lifestyle</td><td>Educational, how-to</td></tr>
-        <tr><td>Audio trend importance</td><td>Critical</td><td>Important</td><td>Low</td></tr>
-        <tr><td>Search discoverability</td><td>Low</td><td>Medium</td><td>High</td></tr>
-        <tr><td>Content shelf life</td><td>Days</td><td>Weeks</td><td>Months+</td></tr>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Element</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TikTok</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Reels</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Shorts</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Best length</td><td style="border:1px solid #d1d5db;padding:8px 12px">15–30s</td><td style="border:1px solid #d1d5db;padding:8px 12px">15–60s</td><td style="border:1px solid #d1d5db;padding:8px 12px">30–60s</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Top content type</td><td style="border:1px solid #d1d5db;padding:8px 12px">Trends, challenges</td><td style="border:1px solid #d1d5db;padding:8px 12px">Tutorials, lifestyle</td><td style="border:1px solid #d1d5db;padding:8px 12px">Educational, how-to</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Audio trend importance</td><td style="border:1px solid #d1d5db;padding:8px 12px">Critical</td><td style="border:1px solid #d1d5db;padding:8px 12px">Important</td><td style="border:1px solid #d1d5db;padding:8px 12px">Low</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Search discoverability</td><td style="border:1px solid #d1d5db;padding:8px 12px">Low</td><td style="border:1px solid #d1d5db;padding:8px 12px">Medium</td><td style="border:1px solid #d1d5db;padding:8px 12px">High</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Content shelf life</td><td style="border:1px solid #d1d5db;padding:8px 12px">Days</td><td style="border:1px solid #d1d5db;padding:8px 12px">Weeks</td><td style="border:1px solid #d1d5db;padding:8px 12px">Months+</td></tr>
       </table>
 
       <h2>A Cross-Platform Workflow That Scales</h2>
@@ -202,15 +202,15 @@ export const posts: BlogPost[] = [
       </ul>
 
       <h2>Tool Comparison: Head to Head</h2>
-      <table>
-        <tr><th>Feature</th><th>CapFetch</th><th>TokScript</th><th>CaptionGrab</th></tr>
-        <tr><td>Free daily quota</td><td>20/day (no sign-up)</td><td>5/day (sign-up required)</td><td>Limited, unclear</td></tr>
-        <tr><td>Platforms</td><td>TikTok + Reels + Shorts</td><td>TikTok only</td><td>TikTok only</td></tr>
-        <tr><td>Transcript editing</td><td>✅ Inline editing</td><td>❌ No</td><td>❌ No</td></tr>
-        <tr><td>Download as .txt</td><td>✅ Yes</td><td>❌ No</td><td>❌ No</td></tr>
-        <tr><td>Copy to clipboard</td><td>✅ Yes</td><td>✅ Yes</td><td>✅ Yes</td></tr>
-        <tr><td>AI analysis</td><td>Coming (Phase 2)</td><td>Limited</td><td>❌ No</td></tr>
-        <tr><td>Registration required</td><td>❌ No (20/day free)</td><td>✅ Yes</td><td>✅ Yes</td></tr>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CapFetch</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TokScript</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CaptionGrab</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Free daily quota</td><td style="border:1px solid #d1d5db;padding:8px 12px">20/day (no sign-up)</td><td style="border:1px solid #d1d5db;padding:8px 12px">5/day (sign-up required)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Limited, unclear</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Platforms</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok + Reels + Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok only</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok only</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Transcript editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Inline editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Download as .txt</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Copy to clipboard</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">AI analysis</td><td style="border:1px solid #d1d5db;padding:8px 12px">Coming (Phase 2)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Limited</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Registration required</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No (20/day free)</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
       </table>
 
       <h2>Which Tool Should You Pick?</h2>
@@ -259,12 +259,12 @@ export const posts: BlogPost[] = [
       <p>Publish the blog post and add a link to it in your TikTok video description. This creates a virtuous cycle: the video drives traffic to the blog, and the blog improves the SEO discoverability of your video's topic.</p>
 
       <h2>Before vs After: What Repurposing Changes</h2>
-      <table>
-        <tr><th>Metric</th><th>TikTok only</th><th>TikTok + Blog</th></tr>
-        <tr><td>Content lifespan</td><td>24–72 hours</td><td>6+ months</td></tr>
-        <tr><td>Traffic sources</td><td>TikTok FYP</td><td>Google + TikTok + referrals</td></tr>
-        <tr><td>Content produced</td><td>1 video</td><td>1 video + 1 blog post</td></tr>
-        <tr><td>Time investment</td><td>30 min</td><td>60 min (30 video + 30 post)</td></tr>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Metric</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TikTok only</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TikTok + Blog</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Content lifespan</td><td style="border:1px solid #d1d5db;padding:8px 12px">24–72 hours</td><td style="border:1px solid #d1d5db;padding:8px 12px">6+ months</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Traffic sources</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok FYP</td><td style="border:1px solid #d1d5db;padding:8px 12px">Google + TikTok + referrals</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Content produced</td><td style="border:1px solid #d1d5db;padding:8px 12px">1 video</td><td style="border:1px solid #d1d5db;padding:8px 12px">1 video + 1 blog post</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Time investment</td><td style="border:1px solid #d1d5db;padding:8px 12px">30 min</td><td style="border:1px solid #d1d5db;padding:8px 12px">60 min (30 video + 30 post)</td></tr>
       </table>
 
       <h2>Start Repurposing Today</h2>
@@ -294,13 +294,13 @@ export const posts: BlogPost[] = [
 
       <h2>What to Look for in a Transcript Generator</h2>
       <p>Not all transcript generators are created equal. Here's what separates useful tools from frustrating ones:</p>
-      <table>
-        <tr><th>Feature</th><th>Why It Matters</th></tr>
-        <tr><td>No registration for basic use</td><td>You should be able to test the tool before committing. Registration walls slow you down.</td></tr>
-        <tr><td>Multi-platform support</td><td>If you create across TikTok, Reels, and Shorts, a tool that handles all three saves context-switching.</td></tr>
-        <tr><td>Transcript editing</td><td>No ASR model is 100% accurate. The ability to fix mistakes inline is essential.</td></tr>
-        <tr><td>Export flexibility</td><td>Copy to clipboard, download as .txt, or save to your account. Different workflows need different outputs.</td></tr>
-        <tr><td>Speed</td><td>A 60-second video should produce a transcript in under 10 seconds. Longer wait times defeat the purpose.</td></tr>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Why It Matters</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">No registration for basic use</td><td style="border:1px solid #d1d5db;padding:8px 12px">You should be able to test the tool before committing. Registration walls slow you down.</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Multi-platform support</td><td style="border:1px solid #d1d5db;padding:8px 12px">If you create across TikTok, Reels, and Shorts, a tool that handles all three saves context-switching.</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Transcript editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">No ASR model is 100% accurate. The ability to fix mistakes inline is essential.</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Export flexibility</td><td style="border:1px solid #d1d5db;padding:8px 12px">Copy to clipboard, download as .txt, or save to your account. Different workflows need different outputs.</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Speed</td><td style="border:1px solid #d1d5db;padding:8px 12px">A 60-second video should produce a transcript in under 10 seconds. Longer wait times defeat the purpose.</td></tr>
       </table>
 
       <h2>CapFetch vs Other Generators</h2>
@@ -311,56 +311,7 @@ export const posts: BlogPost[] = [
     `,
   },
   {
-    slug: "short-form-video-content-strategy-2026",
-    title: "Short Form Video Content Strategy for 2026",
-    description:
-      "A complete short-form video content framework for 2026. Covers research, creation, repurposing, and performance tracking across TikTok, Reels, and YouTube Shorts.",
-    date: "2026-07-30",
-    tags: ["Content Strategy", "Social Media", "Guide"],
-    contentHtml: `
-      <p>Short-form video isn't going anywhere. TikTok, Instagram Reels, and YouTube Shorts command billions of daily views, and the competition for attention gets fiercer every quarter. The creators who win in 2026 aren't the ones who post the most — they're the ones with a repeatable system for research, creation, and repurposing.</p>
-      <p>This framework gives you that system. Use it to build a content engine that produces better videos, reaches more people, and creates assets that keep working long after publication.</p>
-
-      <h2>The Three Pillars of Short-Form Video Success</h2>
-      <h3>1. Research: Study Before You Create</h3>
-      <p>Most creators skip research and jump straight to filming. The result is inconsistent content that may or may not resonate. Systematic research removes the guesswork:</p>
-      <ul>
-        <li><strong>Extract transcripts from viral videos</strong> in your niche using CapFetch. Read the scripts to understand hook structure, pacing, and CTA techniques.</li>
-        <li><strong>Identify patterns across 10+ successful videos.</strong> Do they all start with a question? A bold statement? A surprising statistic? Copy the pattern, not the content.</li>
-        <li><strong>Track trending topics with data.</strong> Use the transcripts to build a keyword list for SEO content. Topics that trend on video will also drive search traffic.</li>
-      </ul>
-      <h3>2. Creation: System Over Inspiration</h3>
-      <p>Waiting for inspiration is a losing strategy. A repeatable creation process is the only way to maintain quality at scale:</p>
-      <ul>
-        <li><strong>Write one script per week</strong> that works across all three platforms. Adjust tone and length for each platform but keep the core message.</li>
-        <li><strong>Batch record in a single session.</strong> Film 3–5 videos in one sitting. Consistent lighting, energy, and background save editing time.</li>
-        <li><strong>Repurpose everything.</strong> Every video becomes a blog post, newsletter item, and social update. <a href="/blog/how-to-repurpose-tiktok-content-for-blog">Use CapFetch to extract transcripts</a> as the foundation for your long-form content.</li>
-      </ul>
-      <h3>3. Tracking: Measure What Matters</h3>
-      <p>Don't get distracted by vanity metrics. Focus on the numbers that actually indicate sustainable growth:</p>
-      <table>
-        <tr><th>Metric</th><th>What It Tells You</th><th>Target</th></tr>
-        <tr><td>Completion rate</td><td>Are viewers watching to the end?</td><td>≥60% for videos under 30s</td></tr>
-        <tr><td>Engagement rate</td><td>Are viewers interacting?</td><td>≥5% (likes+comments/shares ÷ views)</td></tr>
-        <tr><td>Follow conversion</td><td>Is your content building an audience?</td><td>≥1% (new follows ÷ views)</td></tr>
-        <tr><td>Search impressions</td><td>Is your repurposed blog content ranking?</td><td>Growing month over month</td></tr>
-      </table>
-
-      <h2>Your Weekly Content Calendar</h2>
-      <table>
-        <tr><th>Day</th><th>Task</th><th>Tool</th></tr>
-        <tr><td>Monday</td><td>Research: extract transcripts from 5 viral videos</td><td>CapFetch</td></tr>
-        <tr><td>Tuesday</td><td>Plan: outline 3–5 content ideas from research</td><td>Notes / Docs</td></tr>
-        <tr><td>Wednesday</td><td>Create: batch record and edit</td><td>Camera + Editor</td></tr>
-        <tr><td>Thursday</td><td>Optimize: write captions, choose hashtags, schedule</td><td>Scheduling tool</td></tr>
-        <tr><td>Friday</td><td>Review: analyze performance data, adjust strategy</td><td>Analytics</td></tr>
-      </table>
-      <p>This calendar takes about 2 hours per week and produces 3–5 videos plus repurposed blog content.</p>
-
-      <h2>Build Your 2026 Content Engine</h2>
-      <p>The creators who win in 2026 aren't the ones with the most followers — they're the ones with the best systems. Research your niche, create consistently, and repurpose relentlessly. CapFetch fits into the research and repurposing phases, helping you extract and reuse your best content. <a href="/">Try it free</a> — 20 extracts per day, no registration required. For platform-specific guidance, read our <a href="/blog/tiktok-vs-reels-vs-shorts-content-strategy">TikTok vs Reels vs Shorts comparison</a>.</p>
-    `,
-  },
+];
 ];
 
 export function getAllTags(): string[] {

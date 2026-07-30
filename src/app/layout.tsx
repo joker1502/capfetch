@@ -31,6 +31,10 @@ export const metadata: Metadata = {
     "youtube shorts transcript",
     "video to text converter",
   ],
+  icons: {
+    icon: "/logo.svg",
+    apple: "/logo.svg",
+  },
   metadataBase: new URL("https://capfetch.com"),
   openGraph: {
     title: "CapFetch - Extract Captions from Short Videos",

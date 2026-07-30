@@ -310,6 +310,57 @@ export const posts: BlogPost[] = [
       <p>Whether you're analyzing competitors, repurposing your own content, or building a library of winning scripts, a transcript generator saves hours per week. The best part? The good ones are free to start. CapFetch offers 20 daily extracts with no registration — enough to build a consistent analysis workflow without spending a cent. <a href="/">Start extracting now</a>.</p>
     `,
   },
+  {
+    slug: "best-free-reels-caption-extractor-tools",
+    title: "Best Free Reels Caption Extractor Tools Compared 2026",
+    description:
+      "Compare the best free Instagram Reels caption extractors in 2026. CapFetch vs CaptionGrab vs alternatives — accuracy, free limits, and export features.",
+    date: "2026-07-31",
+    tags: ["Instagram Reels", "Caption Extractor", "Comparison"],
+    contentHtml: `
+      <p>You found an Instagram Reel with a script that perfectly explains your niche — but Instagram doesn't let you copy the captions. Every second you spend manually transcribing is time you could spend creating.</p>
+      <p>Reels caption extractors solve this problem, but not all tools are equal. Some hide their free quotas behind sign-up walls. Others only support TikTok and ignore Reels entirely. This guide compares the best free Reels caption extractors so you can pick the right one for your workflow.</p>
+
+      <h2>Why You Need a Dedicated Reels Caption Extractor</h2>
+      <p>Most short-form video tools focus on TikTok, leaving Instagram Reels as an afterthought. Here's why Reels deserve dedicated attention:</p>
+      <ul>
+        <li><strong>Different audio characteristics:</strong> Reels often layer music over voiceover, making standard ASR models less accurate. A Reels-optimized extractor handles this better.</li>
+        <li><strong>No native transcript feature:</strong> Unlike YouTube, Instagram doesn't offer auto-generated captions you can copy. The only way to get a Reels transcript is through a third-party tool.</li>
+        <li><strong>Competitive research at scale:</strong> If you're analyzing 10–20 competitor Reels per day, a fast extractor saves hours compared to manual transcription.</li>
+      </ul>
+      <p>Using a tool that's optimized for Reels means higher accuracy, faster extraction, and fewer failed attempts.</p>
+
+      <h2>What to Look for in a Reels Caption Extractor</h2>
+      <p>Before comparing tools, here are the criteria that matter:</p>
+      <ul>
+        <li><strong>Free quota without registration:</strong> You should be able to test the tool before committing. 10–20 free extracts per day covers most research workflows.</li>
+        <li><strong>Extraction speed:</strong> A 60-second Reel should produce a transcript in under 10 seconds. Anything slower defeats the purpose.</li>
+        <li><strong>Export options:</strong> Can you copy, edit, and download the transcript? Some tools lock editing behind a paywall.</li>
+        <li><strong>Platform support:</strong> If you also create for TikTok and Shorts, a multi-platform tool saves context-switching.</li>
+      </ul>
+
+      <h2>Reels Caption Extractor Comparison: Head to Head</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CapFetch</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CaptionGrab</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Manual</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Free daily quota</td><td style="border:1px solid #d1d5db;padding:8px 12px">20/day (no sign-up)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Limited, unclear</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Reels support</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Optimized</td><td style="border:1px solid #d1d5db;padding:8px 12px">⚠️ Basic</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Extraction speed</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">15–30 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">10+ minutes</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Transcript editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Inline editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Download as .txt</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Multi-platform</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok + Reels + Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok only</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Registration required</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No (20/day free)</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
+      </table>
+
+      <h2>Which Reels Caption Extractor Should You Use?</h2>
+      <p><strong>CapFetch</strong> is the clear winner for most creators. It's the only tool with dedicated Reels optimization, a generous free tier (20/day with no registration), and full editing and export capabilities. If you're serious about analyzing Reels content at scale, it's the practical choice.</p>
+      <p><strong>CaptionGrab</strong> works in a pinch but lacks Reels-specific optimization, has unclear free limits, and requires registration. It's a fallback, not a primary tool.</p>
+      <p><strong>Manual transcription</strong> is the most flexible but costs 10+ minutes per Reel. For occasional use it's fine, but if you analyze more than 2–3 Reels per week, an automated tool pays for itself in time saved.</p>
+
+      <h2>Start Extracting Reels Captions Free</h2>
+      <p>You don't need to spend money or register to start extracting Reels transcripts. CapFetch gives you 20 free extractions daily with no strings attached. For a full tutorial on using CapFetch with Instagram Reels, <a href="/blog/how-to-get-instagram-reels-transcript">read our complete Reels transcript guide</a>.</p>
+      <p>Ready to try it? <a href="/">Extract your first Reels caption now</a> — paste a Reels URL and see your transcript in seconds.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

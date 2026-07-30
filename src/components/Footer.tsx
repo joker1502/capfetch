@@ -6,7 +6,8 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid gap-8 sm:grid-cols-3">
           <div>
-            <Link href="/" className="font-bold text-lg">
+            <Link href="/" className="flex items-center gap-2 font-bold text-lg">
+              <img src="/logo.svg" alt="CapFetch" className="size-7" />
               <span className="text-brand">Cap</span>Fetch
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">

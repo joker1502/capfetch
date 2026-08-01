@@ -361,6 +361,53 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/">Extract your first Reels caption now</a> — paste a Reels URL and see your transcript in seconds.</p>
     `,
   },
+  {
+    slug: "tiktok-text-extractor-guide",
+    title: "TikTok Text Extractor: Extract Video Text in Seconds",
+    description:
+      "Need the text from a TikTok video? Learn how a TikTok text extractor works — captions, transcripts, and on-screen text — and get it for free in seconds.",
+    date: "2026-08-02",
+    tags: ["TikTok", "Text Extractor", "Tutorial"],
+    contentHtml: `
+      <p>You watched a TikTok video with a perfect quote or a step-by-step tip you want to save — but TikTok doesn't let you select, copy, or search the text inside a video. The words you need are trapped on screen and in the audio, and screenshotting every frame is not a workflow.</p>
+      <p>Extracting text from TikTok videos doesn't have to mean typing it out frame by frame. Here's how text extraction works, why TikTok makes it hard, and how to pull clean, usable text from any video in seconds.</p>
+
+      <h2>Why You Can't Just Copy Text from TikTok</h2>
+      <p>TikTok is a video-first platform. Unlike a web page or a blog post, a video has no selectable text layer that your browser can highlight and copy. The words in a TikTok live in three separate places, and none of them are directly copyable:</p>
+      <ul>
+        <li><strong>On-screen captions:</strong> text burned into the video frames by the creator's editing app — part of the image itself.</li>
+        <li><strong>Auto-generated captions:</strong> TikTok's built-in speech-to-text overlay, visible on screen but not selectable, searchable, or exportable.</li>
+        <li><strong>The audio track:</strong> the spoken script, which only exists as sound until something transcribes it.</li>
+      </ul>
+      <p>This is the core problem: the text is there, but the platform gives you no way to lift it out. Copy-paste works on websites; with video, you need a tool that reads the content for you.</p>
+
+      <h2>What a TikTok Text Extractor Actually Does</h2>
+      <p>A text extractor solves that problem by pulling the words out of the video automatically. It grabs the video's audio track, runs speech recognition to convert the spoken script into text, and returns a clean transcript you can copy, edit, and download. Some tools also capture on-screen caption text where the video metadata exposes it.</p>
+      <p>The result is the same text you hear — but now in a form you can actually use: quote it in a tweet, paste it into your notes, or expand it into a blog post. For a deeper look at the technology behind this, see <a href="/blog/what-is-a-transcript-generator">how transcript generators work</a>.</p>
+
+      <h2>How to Extract Text from Any TikTok Video</h2>
+      <h3>Step 1: Copy the video link</h3>
+      <p>Open the TikTok video, tap Share, and choose Copy Link. A text extractor only needs the URL — no downloads, no screen recording, no video editing skills.</p>
+      <h3>Step 2: Paste into CapFetch</h3>
+      <p>Go to the <a href="/tiktok-text-extractor">CapFetch TikTok text extractor</a>, paste the link into the input field, and click Extract.</p>
+      <h3>Step 3: Copy or download the text</h3>
+      <p>Within seconds you get the full transcript. Fix any mistakes inline, copy it to your clipboard, or download it as a .txt file. You get 20 extractions per day free with no registration — and if you also work with Reels or Shorts, the same workflow covers <a href="/blog/how-to-get-instagram-reels-transcript">Instagram Reels transcripts</a> too.</p>
+
+      <h2>Text Extraction Methods Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Subjective, error-prone</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screenshot + OCR</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">On-screen captions only, fragmented</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Basic extractor tools</td><td style="border:1px solid #d1d5db;padding:8px 12px">30–60 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">Transcript, often behind sign-up</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Full editable transcript + .txt download</strong></td></tr>
+      </table>
+      <p>If you extract text from even 3 videos a day, manual methods cost you 30–45 minutes. CapFetch does the same work in under a minute — that's over 10 hours saved every month.</p>
+
+      <h2>Extract TikTok Text Free Today</h2>
+      <p>You don't need to transcribe by hand, screenshot frame by frame, or pay for expensive transcription services. A TikTok text extractor turns any video into copyable, searchable text in seconds — perfect for quoting creators, building a swipe file of winning scripts, or repurposing video ideas into articles. For the full repurposing workflow, read <a href="/blog/how-to-repurpose-tiktok-content-for-blog">how to turn TikTok content into blog posts</a>.</p>
+      <p>Ready to try it? <a href="/tiktok-text-extractor">Extract text from your first TikTok video free</a> — paste a link and see the transcript in seconds, no registration required.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

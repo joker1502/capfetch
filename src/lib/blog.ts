@@ -463,6 +463,63 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/tiktok-transcript-generator">Generate your first TikTok transcript free</a> — paste a link and see the script in seconds. Before you commit to a tool, see <a href="/blog/best-free-tiktok-caption-extractor-tools">how CapFetch stacks up against other free extractors</a>.</p>
     `,
   },
+  {
+    slug: "how-to-analyze-viral-tiktok-videos",
+    title: "How to Analyze Viral TikTok Videos: Hook, Script & Pacing",
+    description:
+      "Stop guessing why TikTok videos blow up. Learn a 4-part framework to analyze viral hooks, scripts, and pacing from transcripts — and copy what works.",
+    date: "2026-08-04",
+    tags: ["TikTok", "Video Analysis", "Tutorial"],
+    contentHtml: `
+      <p>You scroll past a TikTok with 2 million views and think, "that hook was genius" — then ten minutes later you can't remember a single word of the script. You know the video worked, but you have no idea why. That's the difference between watching and analyzing.</p>
+      <p>Viral videos aren't accidents. Behind every breakout hit is a repeatable structure: a hook that stops the scroll, a script that holds attention, a pace that keeps rewatches coming, and a call-to-action that turns viewers into followers. This guide shows you how to pull those four parts out of any viral video — using the transcript, not your memory.</p>
+
+      <h2>Why Watching a Viral Video Isn't Analysis</h2>
+      <p>If you've watched 100 viral TikToks and still can't reliably make your own, the problem isn't talent — it's that watching hides the mechanics. Three things get in the way:</p>
+      <ul>
+        <li><strong>You remember feelings, not structure.</strong> A hook feels "catchy," but you can't name the technique: open loop, shocking claim, direct address, or pattern interrupt. Feelings fade; techniques repeat.</li>
+        <li><strong>Fast cuts hide the script.</strong> The average viral TikTok cuts every 1–2 seconds. By the time you register a sentence, the next shot is on screen. The words never get a chance to stick.</li>
+        <li><strong>Confirmation bias kicks in.</strong> Once you decide a video is good, you stop questioning it. You look for reasons it worked instead of the specific moments that made it work.</li>
+      </ul>
+      <p>The root cause is simple: while you're watching, the script is invisible. You can't study what you can't read. The fix is to take the video out of the video — extract the transcript and analyze the words on the page.</p>
+
+      <h2>The 4-Part Framework: Hook, Structure, Pacing, CTA</h2>
+      <p>Every viral TikTok can be scored on four dimensions. Once you know what to look for, a transcript reads like a blueprint:</p>
+      <h3>1. The Hook (first 2 seconds)</h3>
+      <p>Transcribe the opening line and classify it. Is it a shocking claim ("I quit my job after this"), a direct address ("If you're still doing this, stop"), a question, or a bold promise? The strongest hooks open a loop that can only close by watching the rest.</p>
+      <h3>2. The Script Structure</h3>
+      <p>Split the transcript into sections: problem, agitate, solution, proof, CTA. Count how many seconds each section gets. Most viral scripts spend 60–70% of the time on problem and proof, and only 10% on the pitch — the opposite of what amateur creators do.</p>
+      <h3>3. The Pacing</h3>
+      <p>Note where the transcript speeds up. Creators compress filler ("um", "like", repeated phrases) and slow down for the key sentence. If a transcript is dense with no wasted words, the pacing is doing its job.</p>
+      <h3>4. The Call-to-Action</h3>
+      <p>Every viral video asks for something — follow, comment, save, share. Find the exact CTA line and note where it lands. CTAs in the final 10 seconds outperform mid-video asks by a wide margin.</p>
+
+      <h2>How to Analyze a Viral TikTok with CapFetch in 5 Minutes</h2>
+      <p>You don't need a spreadsheet or a film degree. Here's the workflow, powered by free transcripts:</p>
+      <ol>
+        <li><strong>Copy the video link.</strong> Open the viral TikTok, tap Share, and choose Copy Link.</li>
+        <li><strong>Generate the transcript.</strong> Paste the link into the <a href="/tiktok-transcript-generator">CapFetch TikTok transcript generator</a>. The full script appears in seconds — 20 free extractions daily, no registration.</li>
+        <li><strong>Mark up the words.</strong> Read the transcript and highlight the hook line, the section breaks, and the CTA. This takes two minutes and forces you to see the structure.</li>
+        <li><strong>Score it against the framework.</strong> Rate hook, structure, pacing, and CTA from 1 to 5. Note one thing you'd steal.</li>
+        <li><strong>Log it.</strong> Add the transcript and your notes to a swipe file. After 10 videos, patterns you couldn't see by watching will be obvious in the text.</li>
+      </ol>
+      <p>Want the AI version of this process? The <a href="/tiktok-viral-analyzer">TikTok viral video analyzer</a> is built to automate hook detection, emotional curve mapping, and speech pattern analysis — extract a transcript first, then let the analyzer do the heavy lifting.</p>
+
+      <h2>Watching vs Transcript-Based Analysis</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Just watching</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Transcript-based analysis</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Memory of the script</td><td style="border:1px solid #d1d5db;padding:8px 12px">Fragments, gone in an hour</td><td style="border:1px solid #d1d5db;padding:8px 12px">Exact wording, forever</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Time per video</td><td style="border:1px solid #d1d5db;padding:8px 12px">30–60 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">3–5 minutes</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Pattern spotting across 10 videos</td><td style="border:1px solid #d1d5db;padding:8px 12px">Almost impossible</td><td style="border:1px solid #d1d5db;padding:8px 12px">Obvious in the text</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Replicating the structure</td><td style="border:1px solid #d1d5db;padding:8px 12px">Guesswork</td><td style="border:1px solid #d1d5db;padding:8px 12px">Step-by-step blueprint</td></tr>
+      </table>
+      <p>Analysis is a skill, and like any skill it improves with reps. One transcript-based review of a viral video teaches you more than a week of passive scrolling — and once you've cracked the pattern, you can turn it into your own content. See <a href="/blog/how-to-repurpose-tiktok-content-for-blog">how to repurpose TikTok content into blog posts</a> for the next step.</p>
+
+      <h2>Start Analyzing Viral TikToks Today</h2>
+      <p>You don't need to watch a video a hundred times to understand it. Extract the transcript, score it against the 4-part framework, and log what you learn. After a few videos, the mechanics behind viral content will be visible at a glance — and your own hooks will start writing themselves. For a deeper look at how the extraction works under the hood, read <a href="/blog/tiktok-transcript-generator-guide">how TikTok transcript generators work</a>.</p>
+      <p>Ready to try it? <a href="/">Extract your first transcript free on CapFetch</a> — paste any TikTok link and see the full script in seconds, no sign-up required.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

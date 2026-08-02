@@ -408,6 +408,61 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/tiktok-text-extractor">Extract text from your first TikTok video free</a> — paste a link and see the transcript in seconds, no registration required.</p>
     `,
   },
+  {
+    slug: "tiktok-transcript-generator-guide",
+    title: "TikTok Transcript Generator: Turn Any Video into Text",
+    description:
+      "Generate a TikTok transcript from any video in seconds. Learn how TikTok transcript generators work and get free word-by-word transcripts with CapFetch.",
+    date: "2026-08-03",
+    tags: ["TikTok", "Transcript Generator", "Tutorial"],
+    contentHtml: `
+      <p>You found a TikTok with a perfect script — the hook grabbed you, the structure flowed, and the call-to-action converted. Then you realized TikTok doesn't have a "copy transcript" button. The words are locked inside the video, and the only way to get them was typing them out by hand, pausing every few seconds.</p>
+      <p>A TikTok transcript generator removes that bottleneck completely. Paste a link, wait a few seconds, and the entire spoken script appears as clean, editable text. Here's how these tools work, why you need one, and how to generate transcripts for free with CapFetch.</p>
+
+      <h2>Why You Need a TikTok Transcript Generator</h2>
+      <p>If you only watch TikTok, you don't need transcripts. If you create, research, or repurpose short-form content, you do. Here's what a transcript unlocks:</p>
+      <ul>
+        <li><strong>Script research at scale:</strong> Read 10 viral scripts in the time it takes to watch one video. Compare hooks, pacing, and CTAs side by side in text.</li>
+        <li><strong>Content repurposing:</strong> A 60-second transcript is the skeleton of a blog post, newsletter, or Twitter thread. Expand it once, publish it everywhere. See the full workflow in <a href="/blog/how-to-repurpose-tiktok-content-for-blog">how to repurpose TikTok content into blog posts</a>.</li>
+        <li><strong>Swipe files that actually work:</strong> Save winning scripts by topic. When you're stuck on a hook, search your swipe file instead of scrolling aimlessly.</li>
+        <li><strong>Accessibility and accurate quotes:</strong> Text versions reach readers who prefer reading, and exact quotes let you cite creators without paraphrasing.</li>
+      </ul>
+
+      <h2>How a TikTok Transcript Generator Works</h2>
+      <p>Every transcript generator follows the same pipeline — and understanding it helps you judge accuracy and pick the right tool:</p>
+      <ol>
+        <li><strong>Audio extraction:</strong> The tool fetches the video's audio track from the URL. For TikTok this happens in seconds; no download or screen recording needed.</li>
+        <li><strong>Speech recognition (ASR):</strong> An automatic speech recognition model converts the audio into words. This is where quality is won or lost — the model must handle fast speech, slang, accents, and background music, all of which are common on TikTok.</li>
+        <li><strong>Formatting:</strong> Raw output becomes clean text with punctuation, capitalization, and paragraph breaks.</li>
+        <li><strong>Export:</strong> The transcript lands in an editable box you can copy, fix, or download.</li>
+      </ol>
+      <p>Accuracy varies with audio quality: clearly spoken English comes out near-perfect, while heavy accents, loud music, or overlapping voices may need a quick manual fix. That's why editable output matters. For a deeper look at the underlying technology, read <a href="/blog/what-is-a-transcript-generator">what a transcript generator is</a>.</p>
+
+      <h2>How to Generate a TikTok Transcript with CapFetch</h2>
+      <p>CapFetch is a free TikTok transcript generator that runs entirely in your browser. The workflow takes under 30 seconds:</p>
+      <ol>
+        <li><strong>Copy the video link.</strong> Open TikTok, tap Share, and choose Copy Link. The URL looks like <code>tiktok.com/@username/video/123456789</code>.</li>
+        <li><strong>Open the <a href="/tiktok-transcript-generator">TikTok transcript generator</a>.</strong> TikTok is selected by default in the platform selector.</li>
+        <li><strong>Paste and click Extract.</strong> Within seconds, the full spoken script appears as editable text.</li>
+        <li><strong>Edit and export.</strong> Fix any mistakes inline, copy to clipboard, or download as a .txt file.</li>
+      </ol>
+      <p>You get 20 free extractions every day with no registration and no credit card. Need more? <a href="/sign-up">Create a free account</a> for 50 daily extracts plus saved history. The same workflow covers <a href="/blog/how-to-get-instagram-reels-transcript">Instagram Reels transcripts</a> and YouTube Shorts.</p>
+
+      <h2>TikTok Transcript Generator vs the Alternatives</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Accuracy</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Cost</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Subjective, error-prone</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free (your time)</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Paid transcription service</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">High</td><td style="border:1px solid #d1d5db;padding:8px 12px">$0.10–$1.00 per video</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Basic free tools</td><td style="border:1px solid #d1d5db;padding:8px 12px">30–60 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">Medium, sign-up walls</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free but limited</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>High + editable</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Free (20/day)</strong></td></tr>
+      </table>
+      <p>If you analyze just 5 videos a day, manual transcription eats 50–75 minutes. CapFetch does the same work in under a minute — that's over 25 hours saved every month.</p>
+
+      <h2>Generate TikTok Transcripts Free Today</h2>
+      <p>A TikTok transcript generator turns any video into copyable, searchable text in seconds — perfect for researching viral scripts, building a swipe file, or repurposing video ideas into articles. You can start right now: no sign-up, no payment, no app download.</p>
+      <p>Ready to try it? <a href="/tiktok-transcript-generator">Generate your first TikTok transcript free</a> — paste a link and see the script in seconds. Before you commit to a tool, see <a href="/blog/best-free-tiktok-caption-extractor-tools">how CapFetch stacks up against other free extractors</a>.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

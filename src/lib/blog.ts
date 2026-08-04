@@ -575,6 +575,62 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/reels-transcript-generator">Generate your first Reels transcript free</a> — paste a link and see the script in seconds. Not sure which tool fits your workflow? See <a href="/blog/best-free-reels-caption-extractor-tools">how CapFetch compares to other free Reels caption extractors</a>.</p>
     `,
   },
+  {
+    slug: "youtube-shorts-transcript-generator-guide",
+    title: "How to Get YouTube Shorts Transcripts Free in 2026",
+    description:
+      "YouTube Shorts don't have a transcript button. Learn how to generate Shorts transcripts for free with CapFetch — copy, edit, and download in seconds.",
+    date: "2026-08-06",
+    tags: ["YouTube Shorts", "Transcript Generator", "Tutorial"],
+    contentHtml: `
+      <p>You watched a YouTube Short with a script worth saving — a hook that stopped your thumb, a structure you want to steal for your own videos — and then you hit the same wall as always: YouTube doesn't give Shorts a "copy transcript" button. The words are locked inside the video, and typing them out by hand means pausing every few seconds while the clip plays.</p>
+      <p>A YouTube Shorts transcript generator removes that wall completely. Paste a link, wait a few seconds, and the entire spoken script appears as clean, editable text. Here's how these generators work, why you need one, and how to generate Shorts transcripts for free with CapFetch.</p>
+
+      <h2>Why You Need a Shorts Transcript Generator</h2>
+      <p>If you only watch Shorts, you don't need transcripts. If you create, research, or repurpose short-form content, you do. Here's what a transcript unlocks:</p>
+      <ul>
+        <li><strong>Script research at scale:</strong> Read 10 Shorts scripts in the time it takes to watch one. Compare hooks, pacing, and CTAs side by side in text instead of relying on memory.</li>
+        <li><strong>Content repurposing:</strong> A 60-second transcript is the skeleton of a blog post, newsletter, or thread. Expand it once, publish it everywhere — see the full workflow in <a href="/blog/how-to-repurpose-tiktok-content-for-blog">how to repurpose short-form content into blog posts</a>.</li>
+        <li><strong>Swipe files that actually work:</strong> Save winning scripts by topic. When you're stuck on a hook, search your swipe file instead of scrolling aimlessly.</li>
+        <li><strong>Accurate quotes and accessibility:</strong> Text versions reach readers who prefer reading, and exact quotes let you cite creators without paraphrasing.</li>
+      </ul>
+      <p>Shorts also have a longer shelf life than most short-form content — YouTube is search-driven, so a transcript you capture today keeps feeding your blog posts and research for months. For a step-by-step look at pulling captions out of Shorts, see our <a href="/blog/youtube-shorts-transcript-extractor-guide">YouTube Shorts transcript extractor guide</a>.</p>
+
+      <h2>How a Shorts Transcript Generator Works</h2>
+      <p>Every transcript generator follows the same pipeline — and understanding it helps you judge accuracy and pick the right tool:</p>
+      <ol>
+        <li><strong>Audio extraction:</strong> The tool fetches the Short's audio track from the URL. For YouTube this happens in seconds; no download or screen recording needed.</li>
+        <li><strong>Speech recognition (ASR):</strong> An automatic speech recognition model converts the audio into words. This is where quality is won or lost — the model must handle fast speech, slang, and accents, all of which are common on Shorts.</li>
+        <li><strong>Formatting:</strong> Raw output becomes clean text with punctuation, capitalization, and paragraph breaks.</li>
+        <li><strong>Export:</strong> The transcript lands in an editable box you can copy, fix, or download.</li>
+      </ol>
+      <p>Accuracy varies with audio quality: clearly spoken English comes out near-perfect, while heavy accents or overlapping voices may need a quick manual fix. That's why editable output matters. For a deeper look at the underlying technology, read <a href="/blog/what-is-a-transcript-generator">what a transcript generator is</a>.</p>
+
+      <h2>How to Generate a Shorts Transcript with CapFetch</h2>
+      <p>CapFetch is a free Shorts transcript generator that runs entirely in your browser. The workflow takes under 30 seconds:</p>
+      <ol>
+        <li><strong>Copy the Shorts link.</strong> Open the Short on YouTube, tap Share, and choose Copy Link. Shorts URLs use the format <code>youtube.com/shorts/abc123</code>.</li>
+        <li><strong>Open the <a href="/shorts-transcript-extractor">Shorts transcript extractor</a>.</strong> Select Shorts in the platform selector.</li>
+        <li><strong>Paste and click Extract.</strong> Within seconds, the full spoken script appears as editable text.</li>
+        <li><strong>Edit and export.</strong> Fix any mistakes inline, copy to clipboard, or download as a .txt file with the <a href="/shorts-transcript-downloader">Shorts transcript downloader</a>.</li>
+      </ol>
+      <p>You get 20 free extractions every day with no registration and no credit card. Need more? <a href="/sign-up">Create a free account</a> for 50 daily extracts plus saved history. The same workflow covers <a href="/blog/tiktok-transcript-generator-guide">TikTok transcripts</a> and <a href="/blog/reels-transcript-generator-guide">Instagram Reels transcripts</a>.</p>
+
+      <h2>Shorts Transcript Generator vs the Alternatives</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s Short</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Accuracy</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Cost</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Subjective, error-prone</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free (your time)</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">YouTube auto-captions</td><td style="border:1px solid #d1d5db;padding:8px 12px">Visible, not copyable</td><td style="border:1px solid #d1d5db;padding:8px 12px">Partial</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Paid transcription service</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">High</td><td style="border:1px solid #d1d5db;padding:8px 12px">$0.10–$1.00 per Short</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>High + editable</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Free (20/day)</strong></td></tr>
+      </table>
+      <p>If you generate transcripts for just 5 Shorts a day, manual transcription eats 50–75 minutes. CapFetch does the same work in under a minute — that's over 25 hours saved every month.</p>
+
+      <h2>Generate Shorts Transcripts Free Today</h2>
+      <p>A Shorts transcript generator turns any Short into copyable, searchable text in seconds — perfect for researching viral scripts, building a swipe file, or repurposing video ideas into articles. You can start right now: no sign-up, no payment, no app download.</p>
+      <p>Ready to try it? <a href="/shorts-transcript-extractor">Generate your first Shorts transcript free</a> — paste a link and see the script in seconds. Not sure which tool fits your workflow? See <a href="/blog/best-free-tiktok-caption-extractor-tools">how CapFetch compares to other free caption extractors</a>.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

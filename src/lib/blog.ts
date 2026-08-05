@@ -631,6 +631,59 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/shorts-transcript-extractor">Generate your first Shorts transcript free</a> — paste a link and see the script in seconds. Not sure which tool fits your workflow? See <a href="/blog/best-free-tiktok-caption-extractor-tools">how CapFetch compares to other free caption extractors</a>.</p>
     `,
   },
+  {
+    slug: "tiktok-caption-downloader-guide",
+    title: "How to Download TikTok Captions: Save as TXT or SRT",
+    description:
+      "TikTok won't let you save captions to a file. Learn how to download TikTok captions and transcripts as TXT or SRT with CapFetch — free, no sign-up, in seconds.",
+    date: "2026-08-07",
+    tags: ["TikTok", "Caption Downloader", "Tutorial"],
+    contentHtml: `
+      <p>You found a TikTok with a script worth keeping — and you want the actual file: a clean, shareable transcript you can open in any text editor, drop into a video editor, or repurpose into a blog post. But TikTok doesn't have a "download captions" button. The words are locked inside the video, and saving the video itself only gives you the moving image — not the text.</p>
+      <p>Downloading TikTok captions isn't hard once you know which tool does the job. Here's why TikTok blocks the obvious routes, how to download captions as a real file in seconds, and which format you should actually save.</p>
+
+      <h2>Why TikTok Doesn't Let You Download Captions</h2>
+      <p>Before you can download TikTok captions, it helps to understand why the platform makes it so difficult. Three things stand in your way:</p>
+      <ul>
+        <li><strong>Captions are an overlay, not a file.</strong> TikTok generates captions on the fly from the audio track and renders them over the video. They exist as pixels on screen — not as a downloadable text file attached to the video.</li>
+        <li><strong>No export button.</strong> The Share menu offers links, saves, and QR codes, but there is no "export captions" or "download transcript" option. The text simply has no official exit.</li>
+        <li><strong>On-screen text is burned in.</strong> Many creators add their own captions and subtitles directly into the video frames. Those are part of the image itself, which is exactly why a video downloader can't hand you the text either.</li>
+      </ul>
+      <p>The result: the only "official" way to get a TikTok transcript is to type it out by hand. That's where a caption downloader comes in.</p>
+
+      <h2>How to Download TikTok Captions with CapFetch</h2>
+      <p>CapFetch's TikTok caption downloader turns any video URL into a downloadable text file in under 30 seconds. No registration, no app install, no credit card:</p>
+      <ol>
+        <li><strong>Copy the video link.</strong> Open the TikTok video, tap Share, and choose "Copy Link." The URL looks like <code>tiktok.com/@username/video/123456789</code>.</li>
+        <li><strong>Open the <a href="/tiktok-caption-downloader">TikTok caption downloader</a>.</strong> Paste the link into the input field.</li>
+        <li><strong>Click Extract.</strong> Within seconds, CapFetch generates the full spoken script as clean, editable text.</li>
+        <li><strong>Download the file.</strong> Save the transcript as a .txt file, or copy it to your clipboard. The text is yours — ready for notes, editing, or repurposing.</li>
+      </ol>
+      <p>You get 20 free downloads every day with no account. Need more? <a href="/sign-up">Create a free account</a> for 50 daily extracts plus saved history. The same workflow works for <a href="/blog/how-to-get-instagram-reels-transcript">Instagram Reels transcripts</a> and YouTube Shorts.</p>
+
+      <h2>TXT vs SRT: Which Caption File Should You Choose?</h2>
+      <p>Once you have the text, the next question is what to do with it. Two file formats cover almost every use case:</p>
+      <ul>
+        <li><strong>TXT</strong> — a plain text file with no timestamps. Perfect for reading, note-taking, editing scripts, and repurposing content into blog posts or newsletters.</li>
+        <li><strong>SRT</strong> — a subtitle file with timestamps for each caption line. This is the format video editors and subtitle tools understand. If you're re-uploading the video with burned-in subtitles or translating it, you want SRT.</li>
+      </ul>
+      <p>For most creators, TXT is the right default: it's universal, opens anywhere, and feeds straight into a writing workflow. If your goal is subtitling, ask whether your editor accepts SRT — most do, which makes it the format for video-first projects.</p>
+
+      <h2>Caption Downloading Methods Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Typed notes, error-prone</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screenshot + OCR</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">On-screen captions only, fragmented</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Video downloader</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Video file — no text</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch caption downloader</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Clean, editable .txt transcript</strong></td></tr>
+      </table>
+      <p>If you save captions from 5 videos a day, manual methods cost you 50–75 minutes. CapFetch does the same work in under a minute — that's over 25 hours saved every month.</p>
+
+      <h2>Download Your First TikTok Caption File</h2>
+      <p>A caption downloader is the difference between losing a good script and owning it. Extract the transcript, save it as a file, and you can quote it, repurpose it, or turn it into a blog post weeks later. For the full extraction workflow, see <a href="/blog/how-to-extract-tiktok-captions">how to extract TikTok captions</a>, or compare tools in our <a href="/blog/best-free-tiktok-caption-extractor-tools">caption extractor comparison guide</a>.</p>
+      <p>Ready to try it? <a href="/tiktok-caption-downloader">Download your first TikTok caption free</a> — paste a link and save the transcript in seconds, no sign-up required.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

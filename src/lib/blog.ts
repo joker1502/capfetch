@@ -684,6 +684,59 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/tiktok-caption-downloader">Download your first TikTok caption free</a> — paste a link and save the transcript in seconds, no sign-up required.</p>
     `,
   },
+  {
+    slug: "how-to-download-instagram-reels-captions",
+    title: "How to Download Instagram Reels Captions: Save as TXT or SRT",
+    description:
+      "Instagram Reels has no caption download button. Learn how to download Reels captions and transcripts as TXT or SRT with CapFetch — free, no sign-up required.",
+    date: "2026-08-08",
+    tags: ["Instagram Reels", "Caption Downloader", "Tutorial"],
+    contentHtml: `
+      <p>You found a Reel with a script worth keeping — a hook you want to study, a story structure you want to steal — and you want the actual file: a clean, shareable transcript you can open in any text editor, drop into a video editor, or repurpose into a blog post. But Instagram Reels has no "download captions" button. The words are locked inside the video, and saving the Reel itself only gives you the moving image — not the text.</p>
+      <p>Downloading Reels captions isn't hard once you know which tool does the job. Here's why Instagram blocks the obvious routes, how to download Reels captions as a real file in seconds, and which format you should actually save.</p>
+
+      <h2>Why Instagram Doesn't Let You Download Reels Captions</h2>
+      <p>Before you can download Reels captions, it helps to understand why Instagram makes it so difficult. Three things stand in your way:</p>
+      <ul>
+        <li><strong>Reels have no native caption system.</strong> Unlike TikTok and YouTube, Instagram doesn't auto-generate captions from the audio at all. The only text on a Reel is what the creator burned into the video with an editing app — and that text is part of the image itself, not a separate file.</li>
+        <li><strong>No export option exists.</strong> The Share menu offers links, saves, and messages, but there is no "export captions" or "download transcript" button. The spoken script has no official exit.</li>
+        <li><strong>Music is layered over the voiceover.</strong> Most Reels play trending audio underneath the speaker, which makes the words harder to isolate — exactly why a plain video downloader can't hand you the text either.</li>
+      </ul>
+      <p>The result: the only "official" way to get a Reels transcript is to type it out by hand while pausing the video every few seconds. That's where a caption downloader comes in.</p>
+
+      <h2>How to Download Reels Captions with CapFetch</h2>
+      <p>CapFetch's <a href="/reels-caption-downloader">Reels caption downloader</a> turns any Reel URL into a downloadable text file in under 30 seconds. No registration, no app install, no credit card:</p>
+      <ol>
+        <li><strong>Copy the Reels link.</strong> Open the Reel on Instagram, tap the three dots, and choose "Copy Link."</li>
+        <li><strong>Open the Reels caption downloader.</strong> Paste the link into the input field.</li>
+        <li><strong>Click Extract.</strong> Within seconds, CapFetch generates the full spoken script as clean, editable text — even when music plays underneath the voiceover.</li>
+        <li><strong>Download the file.</strong> Save the transcript as a .txt file, or copy it to your clipboard. The text is yours — ready for notes, editing, or repurposing.</li>
+      </ol>
+      <p>You get 20 free downloads every day with no account. Need more? <a href="/sign-up">Create a free account</a> for 50 daily extracts plus saved history. The same workflow covers <a href="/blog/how-to-get-instagram-reels-transcript">Instagram Reels transcripts step by step</a> and works for TikTok and YouTube Shorts too.</p>
+
+      <h2>TXT vs SRT: Which Reels Caption File Should You Choose?</h2>
+      <p>Once you have the text, the next question is what to do with it. Two file formats cover almost every use case:</p>
+      <ul>
+        <li><strong>TXT</strong> — a plain text file with no timestamps. Perfect for reading, note-taking, editing scripts, and repurposing Reels content into blog posts or newsletters.</li>
+        <li><strong>SRT</strong> — a subtitle file with timestamps for each caption line. This is the format video editors and subtitle tools understand. If you're re-uploading a Reel with burned-in subtitles, adding captions to your own videos, or translating content, you want SRT.</li>
+      </ul>
+      <p>For most creators, TXT is the right default: it's universal, opens anywhere, and feeds straight into a writing workflow. If your goal is subtitling, ask whether your editor accepts SRT — most do, which makes it the format for video-first projects.</p>
+
+      <h2>Caption Downloading Methods Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per Reel</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Typed notes, error-prone</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screenshot + OCR</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">On-screen text only, fragmented</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Video downloader</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Video file — no text</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch caption downloader</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Clean, editable .txt transcript</strong></td></tr>
+      </table>
+      <p>If you save captions from 5 Reels a day, manual methods cost you 50–75 minutes. CapFetch does the same work in under a minute — that's over 25 hours saved every month.</p>
+
+      <h2>Download Your First Reels Caption File</h2>
+      <p>A caption downloader is the difference between losing a good script and owning it. Extract the transcript, save it as a file, and you can quote it, repurpose it, or turn it into a blog post weeks later. For the full extraction workflow, see <a href="/blog/how-to-get-instagram-reels-transcript">how to get Instagram Reels transcripts</a>, or compare tools in our <a href="/blog/best-free-reels-caption-extractor-tools">Reels caption extractor comparison guide</a>.</p>
+      <p>Ready to try it? <a href="/reels-caption-downloader">Download your first Reels caption free</a> — paste a link and save the transcript in seconds, no sign-up required.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

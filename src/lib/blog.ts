@@ -737,6 +737,59 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/reels-caption-downloader">Download your first Reels caption free</a> — paste a link and save the transcript in seconds, no sign-up required.</p>
     `,
   },
+  {
+    slug: "how-to-download-youtube-shorts-captions",
+    title: "Download YouTube Shorts Captions: TXT or SRT Guide",
+    description:
+      "YouTube Shorts has no caption download button. Learn how to download Shorts captions as TXT or SRT with CapFetch — free and fast, no sign-up.",
+    date: "2026-08-09",
+    tags: ["YouTube Shorts", "Caption Downloader", "Tutorial"],
+    contentHtml: `
+      <p>You found a YouTube Short with a script worth keeping — a hook you want to study, a trend you want to replicate — and you want the actual file: a clean, shareable transcript you can open in any text editor, drop into a video editor, or repurpose into a blog post. But YouTube Shorts has no "download captions" button. The words are locked inside the video, and saving the Short itself only gives you the moving image — not the text.</p>
+      <p>Downloading Shorts captions isn't hard once you know which tool does the job. Here's why YouTube blocks the obvious routes, how to download Shorts captions as a real file in seconds, and which format you should actually save.</p>
+
+      <h2>Why YouTube Shorts Doesn't Let You Download Captions</h2>
+      <p>Before you can download Shorts captions, it helps to understand why YouTube makes it so difficult. Three things stand in your way:</p>
+      <ul>
+        <li><strong>Shorts have no transcript panel.</strong> Regular YouTube videos offer a "Show transcript" option in the description, which lets you copy the auto-generated captions. Shorts don't expose that panel at all — the spoken script exists, but there is no official way to view or copy it.</li>
+        <li><strong>Captions are generated at playback, not stored as a file.</strong> YouTube builds Shorts captions from the audio track on the fly. They appear as pixels on screen, not as a downloadable text attachment attached to the video.</li>
+        <li><strong>Much of the on-screen text is burned in.</strong> Most Shorts are reposted from TikTok or Reels with captions already baked into the frames. That text is part of the image itself, which is exactly why a video downloader can't hand you the words either.</li>
+      </ul>
+      <p>The result: the only "official" way to get a Shorts transcript is to type it out by hand. That's where a caption downloader comes in.</p>
+
+      <h2>How to Download YouTube Shorts Captions with CapFetch</h2>
+      <p>CapFetch's <a href="/shorts-transcript-downloader">Shorts caption downloader</a> turns any Short URL into a downloadable text file in under 30 seconds. No registration, no app install, no credit card:</p>
+      <ol>
+        <li><strong>Copy the Short link.</strong> Open the Short on YouTube, tap Share, and choose "Copy Link." The URL looks like <code>youtube.com/shorts/abcdef12345</code>.</li>
+        <li><strong>Open the Shorts caption downloader.</strong> Paste the link into the input field.</li>
+        <li><strong>Click Extract.</strong> Within seconds, CapFetch generates the full spoken script as clean, editable text.</li>
+        <li><strong>Download the file.</strong> Save the transcript as a .txt file, or copy it to your clipboard. The text is yours — ready for notes, editing, or repurposing.</li>
+      </ol>
+      <p>You get 20 free downloads every day with no account. Need more? <a href="/sign-up">Create a free account</a> for 50 daily extracts plus saved history. The same workflow covers <a href="/blog/youtube-shorts-transcript-generator-guide">generating YouTube Shorts transcripts step by step</a> and works for TikTok and Instagram Reels too.</p>
+
+      <h2>TXT vs SRT: Which Shorts Caption File Should You Choose?</h2>
+      <p>Once you have the text, the next question is what to do with it. Two file formats cover almost every use case:</p>
+      <ul>
+        <li><strong>TXT</strong> — a plain text file with no timestamps. Perfect for reading, note-taking, editing scripts, and repurposing Shorts content into blog posts or newsletters.</li>
+        <li><strong>SRT</strong> — a subtitle file with timestamps for each caption line. This is the format video editors and subtitle tools understand. If you're re-uploading a Short with burned-in subtitles or translating it, you want SRT.</li>
+      </ul>
+      <p>For most creators, TXT is the right default: it's universal, opens anywhere, and feeds straight into a writing workflow. If your goal is subtitling, ask whether your editor accepts SRT — most do, which makes it the format for video-first projects.</p>
+
+      <h2>Caption Downloading Methods Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per Short</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Typed notes, error-prone</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screenshot + OCR</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">On-screen text only, fragmented</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Video downloader</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Video file — no text</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch caption downloader</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Clean, editable .txt transcript</strong></td></tr>
+      </table>
+      <p>If you save captions from 5 Shorts a day, manual methods cost you 50–75 minutes. CapFetch does the same work in under a minute — that's over 25 hours saved every month.</p>
+
+      <h2>Download Your First Shorts Caption File</h2>
+      <p>A caption downloader is the difference between losing a good script and owning it. Extract the transcript, save it as a file, and you can quote it, repurpose it, or turn it into a blog post weeks later. For the full extraction workflow, see <a href="/blog/youtube-shorts-transcript-extractor-guide">how to extract YouTube Shorts transcripts</a>, or compare tools in our <a href="/blog/best-free-tiktok-caption-extractor-tools">caption extractor comparison guide</a>.</p>
+      <p>Ready to try it? <a href="/shorts-transcript-downloader">Download your first Shorts caption free</a> — paste a link and save the transcript in seconds, no sign-up required.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

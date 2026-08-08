@@ -790,6 +790,61 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/shorts-transcript-downloader">Download your first Shorts caption free</a> — paste a link and save the transcript in seconds, no sign-up required.</p>
     `,
   },
+  {
+    slug: "tiktok-video-to-text-converter",
+    title: "TikTok Video to Text: How to Convert Any Video into Text",
+    description:
+      "Turn any TikTok video into clean, editable text in seconds. Learn how a TikTok video to text converter works and try it free with CapFetch — no sign-up needed.",
+    date: "2026-08-10",
+    tags: ["TikTok", "Video to Text", "Tutorial"],
+    contentHtml: `
+      <p>You just watched a TikTok with a script you want to keep — a hook that stopped your thumb, a story structure worth studying, a quote you'd love to reuse. But TikTok doesn't let you select or copy anything inside a video. The words are trapped in the audio and on the frames, and the only "official" way to get them is to type along, pausing every few seconds.</p>
+      <p>Converting a TikTok video to text doesn't have to mean manual transcription. A video to text converter pulls the spoken script out of any video automatically — paste a link, wait a few seconds, and the entire script appears as clean, editable text. Here's why TikTok makes this hard, how video to text conversion actually works, and how to convert any TikTok to text for free with CapFetch.</p>
+
+      <h2>Why You Can't Just Copy Text from a TikTok Video</h2>
+      <p>TikTok is a video-first platform, which means the text inside a video doesn't exist as a selectable layer the way it does on a web page. The words live in three separate places, and none of them are copyable:</p>
+      <ul>
+        <li><strong>The audio track:</strong> the spoken script, which only exists as sound until something transcribes it.</li>
+        <li><strong>Auto-generated captions:</strong> TikTok's built-in speech-to-text overlay, visible on screen but not selectable, searchable, or exportable.</li>
+        <li><strong>On-screen text:</strong> words burned into the frames by the creator's editing app — part of the image itself.</li>
+      </ul>
+      <p>This is the core problem: the text is there, but the platform gives you no way to lift it out. That's exactly the gap a video to text converter fills — it reads the audio for you and returns the words in a form you can actually use. For a closer look at the technology behind this, see <a href="/blog/what-is-a-transcript-generator">how transcript generators work</a>.</p>
+
+      <h2>What a TikTok Video to Text Converter Actually Does</h2>
+      <p>A video to text converter follows a simple pipeline, and understanding it helps you judge accuracy and pick the right tool:</p>
+      <ol>
+        <li><strong>Audio extraction:</strong> The tool fetches the video's audio track from the URL. For TikTok this happens in seconds — no download or screen recording needed.</li>
+        <li><strong>Speech recognition (ASR):</strong> An automatic speech recognition model converts the audio into words. This is where quality is won or lost — the model must handle fast speech, slang, accents, and background music, all of which are common on TikTok.</li>
+        <li><strong>Formatting:</strong> Raw output becomes clean text with punctuation, capitalization, and paragraph breaks.</li>
+        <li><strong>Export:</strong> The transcript lands in an editable box you can copy, fix, or download.</li>
+      </ol>
+      <p>Accuracy varies with audio quality: clearly spoken English comes out near-perfect, while heavy accents or loud music may need a quick manual fix — which is why editable output matters. Some tools only return a read-only preview; a good converter lets you edit the text before you save it.</p>
+
+      <h2>How to Convert a TikTok Video to Text with CapFetch</h2>
+      <p>CapFetch's <a href="/tiktok-video-to-text">TikTok video to text converter</a> runs entirely in your browser. The workflow takes under 30 seconds:</p>
+      <ol>
+        <li><strong>Copy the video link.</strong> Open TikTok, tap Share, and choose Copy Link. The URL looks like <code>tiktok.com/@username/video/123456789</code>.</li>
+        <li><strong>Open the video to text converter.</strong> TikTok is selected by default in the platform selector.</li>
+        <li><strong>Paste and click Convert.</strong> Within seconds, the full spoken script appears as editable text — even when background music plays underneath the voiceover.</li>
+        <li><strong>Edit and export.</strong> Fix any mistakes inline, copy to clipboard, or download as a .txt file.</li>
+      </ol>
+      <p>You get 20 free conversions every day with no registration and no credit card. Need more? <a href="/sign-up">Create a free account</a> for 50 daily conversions plus saved history. The same workflow covers <a href="/blog/how-to-get-instagram-reels-transcript">Instagram Reels</a> and YouTube Shorts, and you can feed the results straight into <a href="/blog/how-to-repurpose-tiktok-content-for-blog">our TikTok-to-blog repurposing workflow</a>.</p>
+
+      <h2>Video to Text Methods Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Accuracy</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Cost</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Subjective, error-prone</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free (your time)</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screenshot + OCR</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">On-screen text only</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Paid transcription service</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">High</td><td style="border:1px solid #d1d5db;padding:8px 12px">$0.10–$1.00 per video</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>High + editable</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Free (20/day)</strong></td></tr>
+      </table>
+      <p>If you convert just 5 videos a day, manual transcription eats 50–75 minutes. CapFetch does the same work in under a minute — that's over 25 hours saved every month. For a broader look at how CapFetch compares to other tools, see our <a href="/blog/best-free-tiktok-caption-extractor-tools">caption extractor comparison guide</a>.</p>
+
+      <h2>Start Converting TikTok to Text Today</h2>
+      <p>A TikTok video to text converter turns any video into copyable, searchable text in seconds — perfect for saving quotes, building a swipe file of winning scripts, repurposing video ideas into articles, or making your content accessible to readers who prefer text. You can start right now: no sign-up, no payment, no app download. And if your goal is the written captions themselves rather than the spoken script, the <a href="/blog/tiktok-text-extractor-guide">TikTok text extractor guide</a> covers that workflow too.</p>
+      <p>Ready to try it? <a href="/tiktok-video-to-text">Convert your first TikTok video to text free</a> — paste a link and see the script in seconds.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

@@ -845,6 +845,61 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/tiktok-video-to-text">Convert your first TikTok video to text free</a> — paste a link and see the script in seconds.</p>
     `,
   },
+  {
+    slug: "tiktok-subtitle-extractor-guide",
+    title: "TikTok Subtitle Extractor: How to Extract Subtitles Free",
+    description:
+      "TikTok doesn't let you download subtitles. Learn how to extract subtitles from any TikTok video free with CapFetch — copy, edit, or translate in seconds.",
+    date: "2026-08-11",
+    tags: ["TikTok", "Subtitles", "Tutorial"],
+    contentHtml: `
+      <p>You just watched a TikTok where the subtitles carried the whole video — a punchy one-liner, a step-by-step recipe, a quote you want to reuse. You tap the screen, long-press the text… nothing. TikTok's subtitles are burned into the video as a visual overlay, and there is no "download subtitle" button anywhere in the app. The text you need is right there on screen, and completely out of reach.</p>
+      <p>You could type it out while pausing every few seconds, or you could use a subtitle extractor that pulls the text out of any TikTok video in seconds. This guide explains the difference between captions and subtitles, why creators and marketers extract them, and how to get clean, editable subtitles from any TikTok video for free.</p>
+
+      <h2>Captions vs. Subtitles: Know What You're Actually Extracting</h2>
+      <p>People use "captions" and "subtitles" interchangeably, but they are not the same thing:</p>
+      <ul>
+        <li><strong>Captions</strong> describe the full audio experience — spoken dialogue plus sound effects and speaker cues — in the same language as the video. They exist primarily for viewers who are deaf or hard of hearing.</li>
+        <li><strong>Subtitles</strong> are text overlaid on the video, typically a translation of the dialogue into another language.</li>
+      </ul>
+      <p>On TikTok, both appear as burned-in visuals: either the creator's hand-added text or TikTok's auto-caption overlay. Neither exists as a separate, downloadable track the way an SRT file works on YouTube. That's the core problem — the text is visible, but the platform gives you no way to lift it out. For a closer look at the technology that solves this, see <a href="/blog/tiktok-text-extractor-guide">how TikTok text extraction works</a>.</p>
+
+      <h2>Why Extract Subtitles at All</h2>
+      <p>Once you can pull subtitle text out of any video, a surprising number of workflows open up:</p>
+      <h3>1. Translation and Localization</h3>
+      <p>Extract the subtitle text, run it through a translator, and you have the raw material for a re-subtitled version — or just a translated script you can study. This is how many international creators adapt winning content from other markets.</p>
+      <h3>2. Language Learning</h3>
+      <p>Subtitles from creators in the language you're learning are free, authentic study material. Extract them, read along, and save the phrases you want to practice.</p>
+      <h3>3. Content Repurposing</h3>
+      <p>A subtitle track is already most of a quote, tweet, or blog section. One extracted video becomes social proof for your next post. The full workflow is covered in <a href="/blog/how-to-repurpose-tiktok-content-for-blog">how to turn TikTok content into blog posts</a>.</p>
+      <h3>4. Accessibility and Accuracy</h3>
+      <p>Text versions of a video help hearing-impaired audiences and readers who prefer text — and when you need the exact wording of a viral claim or quote, a transcript beats your memory every time.</p>
+
+      <h2>How to Extract TikTok Subtitles with CapFetch</h2>
+      <p>The <a href="/tiktok-subtitle-extractor">CapFetch TikTok subtitle extractor</a> runs entirely in your browser. The workflow takes under 30 seconds:</p>
+      <ol>
+        <li><strong>Copy the video link.</strong> Open the TikTok video, tap Share, and choose Copy Link. The URL looks like <code>tiktok.com/@username/video/123456789</code>.</li>
+        <li><strong>Open the subtitle extractor.</strong> TikTok is selected by default in the platform selector.</li>
+        <li><strong>Paste and click Extract.</strong> Within seconds, the full spoken text appears — including dialogue spoken over background music.</li>
+        <li><strong>Edit, copy, or download.</strong> Fix any mistakes inline, copy the text to your clipboard, or download it as a .txt file for translation or repurposing.</li>
+      </ol>
+      <p>You get 20 free extractions every day with no registration and no credit card. Need more? <a href="/sign-up">Create a free account</a> for 50 daily extracts plus saved history. The same workflow covers <a href="/blog/how-to-get-instagram-reels-transcript">Instagram Reels</a> and YouTube Shorts.</p>
+
+      <h2>Subtitle Extraction Methods Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Cost</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Subjective, error-prone</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free (your time)</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screenshot + OCR</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Fragmented frame text only</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">SRT downloader sites</td><td style="border:1px solid #d1d5db;padding:8px 12px">30–60 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">Often broken or behind sign-up</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free–paid</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Full editable subtitle text + .txt download</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Free (20/day)</strong></td></tr>
+      </table>
+      <p>If you extract subtitles from just 3 videos a day, manual transcription costs you 30–45 minutes daily. CapFetch does the same work in under a minute — over 10 hours saved every month. For a broader look at the tool landscape, see our <a href="/blog/best-free-tiktok-caption-extractor-tools">caption extractor comparison guide</a>.</p>
+
+      <h2>Start Extracting TikTok Subtitles Today</h2>
+      <p>TikTok's subtitles are locked inside the video, but they don't have to stay there. With CapFetch you can turn any TikTok into clean, editable text in seconds — for translation, language learning, repurposing, or simply saving a quote you don't want to lose. No sign-up, no payment, no app download. And if what you actually need is the written caption text or a full transcript, <a href="/blog/how-to-extract-tiktok-captions">our TikTok caption extraction guide</a> covers that workflow too.</p>
+      <p>Ready to try it? <a href="/tiktok-subtitle-extractor">Extract subtitles from your first TikTok video free</a> — paste a link and see the text in seconds.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

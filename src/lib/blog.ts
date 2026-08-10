@@ -796,7 +796,7 @@ export const posts: BlogPost[] = [
     description:
       "Turn any TikTok video into clean, editable text in seconds. Learn how a TikTok video to text converter works and try it free with CapFetch — no sign-up needed.",
     date: "2026-08-10",
-    tags: ["TikTok", "Video to Text", "Tutorial"],
+    tags: ["tiktok", "video-to-text", "tutorial"],
     contentHtml: `
       <p>You just watched a TikTok with a script you want to keep — a hook that stopped your thumb, a story structure worth studying, a quote you'd love to reuse. But TikTok doesn't let you select or copy anything inside a video. The words are trapped in the audio and on the frames, and the only "official" way to get them is to type along, pausing every few seconds.</p>
       <p>Converting a TikTok video to text doesn't have to mean manual transcription. A video to text converter pulls the spoken script out of any video automatically — paste a link, wait a few seconds, and the entire script appears as clean, editable text. Here's why TikTok makes this hard, how video to text conversion actually works, and how to convert any TikTok to text for free with CapFetch.</p>
@@ -851,7 +851,7 @@ export const posts: BlogPost[] = [
     description:
       "TikTok doesn't let you download subtitles. Learn how to extract subtitles from any TikTok video free with CapFetch — copy, edit, or translate in seconds.",
     date: "2026-08-11",
-    tags: ["TikTok", "Subtitles", "Tutorial"],
+    tags: ["tiktok", "subtitles", "tutorial"],
     contentHtml: `
       <p>You just watched a TikTok where the subtitles carried the whole video — a punchy one-liner, a step-by-step recipe, a quote you want to reuse. You tap the screen, long-press the text… nothing. TikTok's subtitles are burned into the video as a visual overlay, and there is no "download subtitle" button anywhere in the app. The text you need is right there on screen, and completely out of reach.</p>
       <p>You could type it out while pausing every few seconds, or you could use a subtitle extractor that pulls the text out of any TikTok video in seconds. This guide explains the difference between captions and subtitles, why creators and marketers extract them, and how to get clean, editable subtitles from any TikTok video for free.</p>
@@ -906,7 +906,7 @@ export const posts: BlogPost[] = [
     description:
       "YouTube Shorts has no transcript button. We tested the top free Shorts caption extractors head to head — accuracy, free quotas, and export features.",
     date: "2026-08-12",
-    tags: ["YouTube Shorts", "Caption Extractor", "Comparison"],
+    tags: ["youtube-shorts", "caption-extractor", "comparison"],
     contentHtml: `
       <p>You found a YouTube Short with a script worth stealing — a hook that stopped your thumb, a structure you want to replicate — and then you hit the same wall as always: YouTube doesn't give Shorts a "copy transcript" button. The words are locked inside the video, and typing them out by hand means pausing every few seconds while the clip loops.</p>
       <p>Search "free YouTube Shorts caption extractor" and you get dozens of results. Most claim to be free. Most hide a registration wall or a tiny daily quota. After testing the top tools, the differences become clear — and most creators are using the wrong one for their workflow. This guide compares the leading free Shorts caption extractors on the metrics that matter: cost, speed, accuracy, and platform support.</p>

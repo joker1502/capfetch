@@ -900,6 +900,58 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href="/tiktok-subtitle-extractor">Extract subtitles from your first TikTok video free</a> — paste a link and see the text in seconds.</p>
     `,
   },
+  {
+    slug: "best-free-youtube-shorts-caption-extractor-tools",
+    title: "Best Free YouTube Shorts Caption Extractor Tools 2026",
+    description:
+      "YouTube Shorts has no transcript button. We tested the top free Shorts caption extractors head to head — accuracy, free quotas, and export features.",
+    date: "2026-08-12",
+    tags: ["YouTube Shorts", "Caption Extractor", "Comparison"],
+    contentHtml: `
+      <p>You found a YouTube Short with a script worth stealing — a hook that stopped your thumb, a structure you want to replicate — and then you hit the same wall as always: YouTube doesn't give Shorts a "copy transcript" button. The words are locked inside the video, and typing them out by hand means pausing every few seconds while the clip loops.</p>
+      <p>Search "free YouTube Shorts caption extractor" and you get dozens of results. Most claim to be free. Most hide a registration wall or a tiny daily quota. After testing the top tools, the differences become clear — and most creators are using the wrong one for their workflow. This guide compares the leading free Shorts caption extractors on the metrics that matter: cost, speed, accuracy, and platform support.</p>
+
+      <h2>Why You Need a YouTube Shorts Caption Extractor</h2>
+      <p>If you only watch Shorts, you don't need transcripts. If you create, research, or repurpose short-form content, you do. Here's what a caption extractor unlocks:</p>
+      <ul>
+        <li><strong>Script research at scale:</strong> Read 10 Shorts scripts in the time it takes to watch one. Compare hooks, pacing, and CTAs side by side in text instead of relying on memory.</li>
+        <li><strong>Content repurposing:</strong> A 60-second transcript is the skeleton of a blog post, newsletter, or thread. Expand it once, publish it everywhere — see the full workflow in <a href=\"/blog/how-to-repurpose-tiktok-content-for-blog\">how to repurpose short-form content into blog posts</a>.</li>
+        <li><strong>Swipe files that actually work:</strong> Save winning scripts by topic. When you're stuck on a hook, search your swipe file instead of scrolling aimlessly.</li>
+        <li><strong>Search-driven shelf life:</strong> Unlike TikTok and Reels, Shorts are indexed by YouTube search. A transcript you capture today keeps feeding your research and blog posts for months.</li>
+      </ul>
+      <p>Shorts are a special case: regular YouTube videos have a "Show transcript" panel in the description, but Shorts don't expose it at all — so an extractor isn't a convenience, it's the only way to get the words out. For a step-by-step walkthrough, see our <a href=\"/blog/youtube-shorts-transcript-extractor-guide\">YouTube Shorts transcript extractor guide</a>.</p>
+
+      <h2>What to Look for in a Shorts Caption Extractor</h2>
+      <p>Before the comparison, here are the criteria that separate useful tools from time-wasters:</p>
+      <ul>
+        <li><strong>Free quota without registration:</strong> You should be able to test the tool before committing. Most creators need 5–10 extracts per day for research, and a tool that demands sign-up before the first use is a barrier.</li>
+        <li><strong>Platform coverage:</strong> Does it handle Shorts only, or also TikTok and Reels? If you create across platforms, a single tool saves context-switching.</li>
+        <li><strong>Export options:</strong> Can you copy, edit, and download the transcript? Some tools lock editing behind a paywall.</li>
+        <li><strong>Extraction speed:</strong> If it takes longer than 10 seconds per Short, you'll waste more time than you save.</li>
+      </ul>
+
+      <h2>Shorts Caption Extractor Comparison: Head to Head</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CapFetch</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TokScript</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CaptionGrab</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Free daily quota</td><td style="border:1px solid #d1d5db;padding:8px 12px">20/day (no sign-up)</td><td style="border:1px solid #d1d5db;padding:8px 12px">5/day (sign-up required)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Limited, unclear</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Shorts support</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Optimized</td><td style="border:1px solid #d1d5db;padding:8px 12px">⚠️ Basic</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ TikTok only</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Extraction speed</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">15–30 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">30–60 seconds</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Transcript editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Inline editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Download as .txt</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Multi-platform</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok + Reels + Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok only</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok only</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Registration required</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No (20/day free)</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
+      </table>
+
+      <h2>Which Shorts Caption Extractor Should You Use?</h2>
+      <p><strong>Choose CapFetch if:</strong> You want a free tool with no registration, support for all three major platforms, and the ability to edit and download transcripts. The 20/day free quota covers most research workflows, and Shorts support is built in — the same tool handles <a href=\"/blog/tiktok-text-extractor-guide\">TikTok text extraction</a> and Instagram Reels.</p>
+      <p><strong>Choose TokScript if:</strong> You only need TikTok transcripts and you're willing to register for a smaller daily quota. But with no Shorts-specific optimization, it's a weak fit if YouTube is your primary platform.</p>
+      <p><strong>Choose CaptionGrab if:</strong> You need basic caption extraction and don't mind the registration. With unclear free limits and no Shorts support, it's hard to recommend over the alternatives.</p>
+
+      <h2>Start Extracting Shorts Captions Free</h2>
+      <p>For most creators, CapFetch offers the best combination of free access, multi-platform support, and usable features. No registration means you can start extracting Shorts transcripts immediately — and with the <a href=\"/shorts-transcript-downloader\">Shorts transcript downloader</a>, you can save each one as a file for your swipe library. For the full step-by-step workflow, read our <a href=\"/blog/youtube-shorts-transcript-generator-guide\">Shorts transcript generator guide</a>.</p>
+      <p>Ready to try it? <a href=\"/shorts-transcript-extractor\">Extract your first Shorts caption free on CapFetch</a> — paste a link and see the transcript in seconds, no sign-up required.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

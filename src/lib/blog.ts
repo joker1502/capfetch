@@ -14,7 +14,7 @@ export const posts: BlogPost[] = [
     description:
       "Stop manually typing TikTok transcripts. Learn how to extract TikTok captions for free with CapFetch — copy, edit, and download in seconds without registration.",
     date: "2026-07-24",
-    tags: ["TikTok", "Caption Extractor", "Tutorial"],
+    tags: ["tiktok", "caption-extractor", "tutorial"],
     contentHtml: `
       <p>You just watched a TikTok video with a brilliant script — the hook was perfect, the pacing was tight, and the call-to-action drove thousands of clicks. But how do you capture that script before it disappears into your feed?</p>
       <p>Manually transcribing TikTok videos is painfully slow. A 60-second video takes 10+ minutes to type out by hand. Worse, you'll miss the nuances — the exact wording, the timing of each line, the structure that made it work. This guide shows you a faster way.</p>
@@ -59,7 +59,7 @@ export const posts: BlogPost[] = [
     description:
       "Instagram Reels doesn't offer a built-in transcript button. Here's how to get Reels transcripts for free using CapFetch — no app install or registration needed.",
     date: "2026-07-25",
-    tags: ["Instagram Reels", "Transcript", "Tutorial"],
+    tags: ["instagram-reels", "transcript", "tutorial"],
     contentHtml: `
       <p>You found a Reel with a perfect hook, a clever storytelling structure, and a call-to-action that converted. But Instagram doesn't give you a "copy transcript" button. The text is trapped inside the video.</p>
       <p>You could play the Reel on repeat, pausing every few seconds to type what you hear. Or you could use a tool that extracts the transcript in one click. This guide shows you the second option.</p>
@@ -101,7 +101,7 @@ export const posts: BlogPost[] = [
     description:
       "YouTube Shorts don't come with downloadable transcripts. Learn how to extract Shorts captions with CapFetch and turn them into SEO-optimized blog content.",
     date: "2026-07-26",
-    tags: ["YouTube Shorts", "Transcript", "Tutorial"],
+    tags: ["youtube-shorts", "transcript", "tutorial"],
     contentHtml: `
       <p>YouTube Shorts is exploding — billions of daily views, and every single video contains a script that could be your next blog post, Twitter thread, or newsletter. But YouTube doesn't offer a "download transcript" button for Shorts. The text lives inside the video, and unless you transcribe it manually, it's lost after you scroll past.</p>
       <p>This creates a problem: the Shorts you watch for "research" are actually goldmines of structured scripts — hooks, storytelling arcs, CTAs — but capturing that structure takes too long if you're typing by hand. Here's the solution.</p>
@@ -143,7 +143,7 @@ export const posts: BlogPost[] = [
     description:
       "Creating for all three platforms? Here's how TikTok, Instagram Reels, and YouTube Shorts differ in audience, algorithm, and content strategy — with a workflow that covers all three.",
     date: "2026-07-24",
-    tags: ["Content Strategy", "Comparison", "Social Media"],
+    tags: ["content-strategy", "comparison", "social-media"],
     contentHtml: `
       <p>You're creating short-form video content. Should you focus on TikTok, Instagram Reels, or YouTube Shorts? The honest answer is all three — but each requires a different playbook. Posting the same video everywhere without adaptation is a recipe for mediocre results on every platform.</p>
       <p>This guide breaks down what actually differs between the platforms and gives you a cross-platform workflow that works without tripling your workload.</p>
@@ -187,7 +187,7 @@ export const posts: BlogPost[] = [
     description:
       "TokScript, CaptionGrab, or CapFetch? We tested the top free TikTok caption extractors side by side. Compare features, free quotas, and accuracy to find the right tool.",
     date: "2026-07-27",
-    tags: ["TikTok", "Caption Extractor", "Comparison"],
+    tags: ["tiktok", "caption-extractor", "comparison"],
     contentHtml: `
       <p>Search "free TikTok caption extractor" and you get dozens of results. Most claim to be free. Most hide a registration wall or a vanishingly small daily quota. After testing the top tools, the differences become clear — and most creators are using the wrong one for their workflow.</p>
       <p>This guide compares the leading free TikTok caption extractors on the metrics that matter: cost, speed, accuracy, and platform support.</p>
@@ -228,7 +228,7 @@ export const posts: BlogPost[] = [
     description:
       "Turn one TikTok video into a 1000-word SEO blog post in 30 minutes. A step-by-step workflow using CapFetch transcript extraction with proven content structure.",
     date: "2026-07-28",
-    tags: ["TikTok", "Content Strategy", "Repurposing"],
+    tags: ["tiktok", "content-strategy", "repurposing"],
     contentHtml: `
       <p>You posted a TikTok that got 50K views. The script was tight, the hook worked, and the engagement was solid. But 24 hours later, that video is buried. All that effort — the research, the scripting, the filming — gone into the feed abyss.</p>
       <p>The solution isn't posting more. It's repurposing. One TikTok video contains a complete script structure that can become a blog post ranking in Google for months or years. Here's exactly how to do it.</p>
@@ -277,7 +277,7 @@ export const posts: BlogPost[] = [
     description:
       "Transcript generators convert video audio to text automatically. Learn how they work, what to look for, and how CapFetch handles TikTok, Reels, and Shorts in seconds.",
     date: "2026-07-29",
-    tags: ["Transcript", "Guide", "Tutorial"],
+    tags: ["transcript", "guide", "tutorial"],
     contentHtml: `
       <p>You've probably seen the term "transcript generator" and assumed it's a niche tool for journalists or academics. But if you create short-form video content, a transcript generator is one of the most practical tools you can add to your workflow — and most creators don't know what they're missing.</p>
       <p>Here's what a transcript generator actually does, how the technology works, and why it's becoming essential for content creators.</p>
@@ -316,7 +316,7 @@ export const posts: BlogPost[] = [
     description:
       "Compare the best free Instagram Reels caption extractors in 2026. CapFetch vs CaptionGrab vs alternatives — accuracy, free limits, and export features.",
     date: "2026-07-31",
-    tags: ["Instagram Reels", "Caption Extractor", "Comparison"],
+    tags: ["instagram-reels", "caption-extractor", "comparison"],
     contentHtml: `
       <p>You found an Instagram Reel with a script that perfectly explains your niche — but Instagram doesn't let you copy the captions. Every second you spend manually transcribing is time you could spend creating.</p>
       <p>Reels caption extractors solve this problem, but not all tools are equal. Some hide their free quotas behind sign-up walls. Others only support TikTok and ignore Reels entirely. This guide compares the best free Reels caption extractors so you can pick the right one for your workflow.</p>
@@ -367,7 +367,7 @@ export const posts: BlogPost[] = [
     description:
       "Need the text from a TikTok video? Learn how a TikTok text extractor works — captions, transcripts, and on-screen text — and get it for free in seconds.",
     date: "2026-08-02",
-    tags: ["TikTok", "Text Extractor", "Tutorial"],
+    tags: ["tiktok", "text-extractor", "tutorial"],
     contentHtml: `
       <p>You watched a TikTok video with a perfect quote or a step-by-step tip you want to save — but TikTok doesn't let you select, copy, or search the text inside a video. The words you need are trapped on screen and in the audio, and screenshotting every frame is not a workflow.</p>
       <p>Extracting text from TikTok videos doesn't have to mean typing it out frame by frame. Here's how text extraction works, why TikTok makes it hard, and how to pull clean, usable text from any video in seconds.</p>
@@ -414,7 +414,7 @@ export const posts: BlogPost[] = [
     description:
       "Generate a TikTok transcript from any video in seconds. Learn how TikTok transcript generators work and get free word-by-word transcripts with CapFetch.",
     date: "2026-08-03",
-    tags: ["TikTok", "Transcript Generator", "Tutorial"],
+    tags: ["tiktok", "transcript-generator", "tutorial"],
     contentHtml: `
       <p>You found a TikTok with a perfect script — the hook grabbed you, the structure flowed, and the call-to-action converted. Then you realized TikTok doesn't have a "copy transcript" button. The words are locked inside the video, and the only way to get them was typing them out by hand, pausing every few seconds.</p>
       <p>A TikTok transcript generator removes that bottleneck completely. Paste a link, wait a few seconds, and the entire spoken script appears as clean, editable text. Here's how these tools work, why you need one, and how to generate transcripts for free with CapFetch.</p>
@@ -469,7 +469,7 @@ export const posts: BlogPost[] = [
     description:
       "Stop guessing why TikTok videos blow up. Learn a 4-part framework to analyze viral hooks, scripts, and pacing from transcripts — and copy what works.",
     date: "2026-08-04",
-    tags: ["TikTok", "Video Analysis", "Tutorial"],
+    tags: ["tiktok", "video-analysis", "tutorial"],
     contentHtml: `
       <p>You scroll past a TikTok with 2 million views and think, "that hook was genius" — then ten minutes later you can't remember a single word of the script. You know the video worked, but you have no idea why. That's the difference between watching and analyzing.</p>
       <p>Viral videos aren't accidents. Behind every breakout hit is a repeatable structure: a hook that stops the scroll, a script that holds attention, a pace that keeps rewatches coming, and a call-to-action that turns viewers into followers. This guide shows you how to pull those four parts out of any viral video — using the transcript, not your memory.</p>
@@ -526,7 +526,7 @@ export const posts: BlogPost[] = [
     description:
       "Generate Instagram Reels transcripts for free with CapFetch. Learn how a Reels transcript generator works and turn any Reel into editable text in seconds.",
     date: "2026-08-05",
-    tags: ["Instagram Reels", "Transcript Generator", "Tutorial"],
+    tags: ["instagram-reels", "transcript-generator", "tutorial"],
     contentHtml: `
       <p>You found a Reel with a flawless script — the hook stopped your thumb, the story built perfectly, and the call-to-action made you follow. Then you tried to save the words and hit a wall: Instagram Reels has no "copy transcript" button. The script is locked inside the video, and typing it out by hand means pausing every few seconds while a music bed plays underneath.</p>
       <p>A Reels transcript generator removes that wall completely. Paste a link, wait a few seconds, and the entire spoken script appears as clean, editable text — even when the Reel layers music over the voiceover. Here's how these generators work, why you need one, and how to generate Reels transcripts for free with CapFetch.</p>
@@ -581,7 +581,7 @@ export const posts: BlogPost[] = [
     description:
       "YouTube Shorts don't have a transcript button. Learn how to generate Shorts transcripts for free with CapFetch — copy, edit, and download in seconds.",
     date: "2026-08-06",
-    tags: ["YouTube Shorts", "Transcript Generator", "Tutorial"],
+    tags: ["youtube-shorts", "transcript-generator", "tutorial"],
     contentHtml: `
       <p>You watched a YouTube Short with a script worth saving — a hook that stopped your thumb, a structure you want to steal for your own videos — and then you hit the same wall as always: YouTube doesn't give Shorts a "copy transcript" button. The words are locked inside the video, and typing them out by hand means pausing every few seconds while the clip plays.</p>
       <p>A YouTube Shorts transcript generator removes that wall completely. Paste a link, wait a few seconds, and the entire spoken script appears as clean, editable text. Here's how these generators work, why you need one, and how to generate Shorts transcripts for free with CapFetch.</p>
@@ -637,7 +637,7 @@ export const posts: BlogPost[] = [
     description:
       "TikTok won't let you save captions to a file. Learn how to download TikTok captions and transcripts as TXT or SRT with CapFetch — free, no sign-up, in seconds.",
     date: "2026-08-07",
-    tags: ["TikTok", "Caption Downloader", "Tutorial"],
+    tags: ["tiktok", "caption-downloader", "tutorial"],
     contentHtml: `
       <p>You found a TikTok with a script worth keeping — and you want the actual file: a clean, shareable transcript you can open in any text editor, drop into a video editor, or repurpose into a blog post. But TikTok doesn't have a "download captions" button. The words are locked inside the video, and saving the video itself only gives you the moving image — not the text.</p>
       <p>Downloading TikTok captions isn't hard once you know which tool does the job. Here's why TikTok blocks the obvious routes, how to download captions as a real file in seconds, and which format you should actually save.</p>
@@ -690,7 +690,7 @@ export const posts: BlogPost[] = [
     description:
       "Instagram Reels has no caption download button. Learn how to download Reels captions and transcripts as TXT or SRT with CapFetch — free, no sign-up required.",
     date: "2026-08-08",
-    tags: ["Instagram Reels", "Caption Downloader", "Tutorial"],
+    tags: ["instagram-reels", "caption-downloader", "tutorial"],
     contentHtml: `
       <p>You found a Reel with a script worth keeping — a hook you want to study, a story structure you want to steal — and you want the actual file: a clean, shareable transcript you can open in any text editor, drop into a video editor, or repurpose into a blog post. But Instagram Reels has no "download captions" button. The words are locked inside the video, and saving the Reel itself only gives you the moving image — not the text.</p>
       <p>Downloading Reels captions isn't hard once you know which tool does the job. Here's why Instagram blocks the obvious routes, how to download Reels captions as a real file in seconds, and which format you should actually save.</p>
@@ -743,7 +743,7 @@ export const posts: BlogPost[] = [
     description:
       "YouTube Shorts has no caption download button. Learn how to download Shorts captions as TXT or SRT with CapFetch — free and fast, no sign-up.",
     date: "2026-08-09",
-    tags: ["YouTube Shorts", "Caption Downloader", "Tutorial"],
+    tags: ["youtube-shorts", "caption-downloader", "tutorial"],
     contentHtml: `
       <p>You found a YouTube Short with a script worth keeping — a hook you want to study, a trend you want to replicate — and you want the actual file: a clean, shareable transcript you can open in any text editor, drop into a video editor, or repurpose into a blog post. But YouTube Shorts has no "download captions" button. The words are locked inside the video, and saving the Short itself only gives you the moving image — not the text.</p>
       <p>Downloading Shorts captions isn't hard once you know which tool does the job. Here's why YouTube blocks the obvious routes, how to download Shorts captions as a real file in seconds, and which format you should actually save.</p>

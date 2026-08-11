@@ -952,6 +952,61 @@ export const posts: BlogPost[] = [
       <p>Ready to try it? <a href=\"/shorts-transcript-extractor\">Extract your first Shorts caption free on CapFetch</a> — paste a link and see the transcript in seconds, no sign-up required.</p>
     `,
   },
+  {
+    slug: "how-to-download-tiktok-captions",
+    title: "How to Download TikTok Captions (3 Easy Ways) in 2026",
+    description:
+      "TikTok won't let you save captions as a file. Compare 3 ways to download them — screen recording, web tools, apps — and get real text files free in seconds.",
+    date: "2026-08-13",
+    tags: ["tiktok", "caption-downloader", "tutorial"],
+    contentHtml: `
+      <p>You want the actual caption file from a TikTok video — something you can open, edit, quote, and repurpose. TikTok hands you exactly one option: nothing. There's no "download captions" button, no "copy transcript" menu, and the Share sheet only offers links, saves, and QR codes. The text stays locked inside the video.</p>
+      <p>Typing it out by hand isn't the only path. Three methods actually get TikTok captions out as real text, and they differ wildly in time, output quality, and what you end up with. This guide walks through all three — including the one most people try first and why it quietly fails — so you can pick the method that matches what you need.</p>
+
+      <h2>Why TikTok Won't Give You a Download Button</h2>
+      <p>TikTok generates captions on the fly from the audio track and renders them over the video. They exist as pixels on screen, not as a text file attached to the video. That single design decision blocks every obvious route:</p>
+      <ul>
+        <li><strong>No export option.</strong> The Share menu offers links, saves, and QR codes — no "export captions," no "download transcript." The text has no official exit.</li>
+        <li><strong>Auto-captions aren't selectable.</strong> You can tap the screen to show or hide TikTok's captions, but long-pressing the text does nothing. There's no copy target.</li>
+        <li><strong>Creator text is burned in.</strong> Many videos have captions baked into the frames by an editing app. That text is part of the image itself, which is why saving the video never hands you the words either.</li>
+      </ul>
+      <p>People notice this the hard way: they save the video, open it in an editor, and hunt for a text layer that doesn't exist. The video file carries audio and frames — no caption track. So the real question isn't "where's the download button," it's "which method extracts the text for me."</p>
+
+      <h2>Way 1: Screen-Record the Captions — Free, But You Get Pixels</h2>
+      <p>This is the method everyone tries first. Turn on TikTok's captions, screen-record the video, and you've captured the text on screen. The catch shows up the moment you try to use it: you now own a video clip, not text. To turn those frames into words you still need OCR or manual typing, which eats the exact time you were trying to save.</p>
+      <p>Screen recording makes sense for one specific case: you need a single quote or a short line for a caption, and typing 20 words is faster than opening a tool. It collapses at scale. Transcribing a 60-second video from a recording runs 10–15 minutes of pause-and-type, and background music often garbles the parts you can't see clearly.</p>
+
+      <h2>Way 2: Use a Web Caption Downloader — The Fast Route</h2>
+      <p>A web-based caption downloader grabs the audio from the video URL and returns the spoken script as a text file. CapFetch's <a href="/tiktok-caption-downloader">TikTok caption downloader</a> does this in four steps:</p>
+      <ol>
+        <li><strong>Copy the link.</strong> Open the TikTok video, tap Share, and choose Copy Link. The URL looks like <code>tiktok.com/@username/video/123456789</code>.</li>
+        <li><strong>Paste it into CapFetch.</strong> The input field accepts the link as-is — no login, no app install.</li>
+        <li><strong>Click Extract.</strong> The spoken script appears as clean, editable text in roughly 5–10 seconds, even when music plays under the voiceover.</li>
+        <li><strong>Download the file.</strong> Hit the download button and the transcript saves as a .txt file, with timestamps included when available.</li>
+      </ol>
+      <p>Free users get 20 downloads per day with no account. A free registration raises that to 50 daily extracts and adds saved history — plenty for months of research without hitting the wall. This is the method we recommend for anything beyond a single quote.</p>
+
+      <h2>Way 3: Browser Extensions and Downloader Apps — Read the Fine Print</h2>
+      <p>The third route is installing a Chrome extension or a standalone "TikTok caption downloader" app. Some work fine. Most we've tried either demand an account before showing anything, return a read-only preview you can't save, or quietly serve ads around a video player with no export at all. A few ask for broad permissions that have no business being in a caption tool.</p>
+      <p>If you go this route, test the free tier before trusting it with real work: run one video, check that you can actually download the output as a file, and read the permission prompt. A tool that can't hand you a .txt after a successful extract isn't a downloader — it's a teaser.</p>
+
+      <h2>The 3 Ways Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Cost</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screen recording</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes (record + transcribe)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Video clip — text still needs OCR or typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Web downloader (CapFetch)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Clean, editable .txt transcript with timestamps</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Free (20/day)</strong></td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Extensions &amp; apps</td><td style="border:1px solid #d1d5db;padding:8px 12px">2–5 minutes + setup</td><td style="border:1px solid #d1d5db;padding:8px 12px">Varies; often read-only preview</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free, with sign-up walls</td></tr>
+      </table>
+      <p>If you download captions from even three videos a day, screen recording costs you 30–45 minutes. A web downloader does the same work in under a minute — roughly ten hours saved every month.</p>
+
+      <h2>Which Way Should You Pick?</h2>
+      <p>Match the method to the job. One short quote for a post? Screen record it and type the line — it's faster than opening anything. Regular research, swipe files, or repurposing? Use the web downloader; the .txt output feeds straight into notes and drafts. Extensions only earn a spot if they actually export files and you've vetted the permissions — otherwise they're a detour.</p>
+      <p>For the deeper question of file formats, our <a href="/blog/tiktok-caption-downloader-guide">TikTok caption downloader guide</a> breaks down when you want TXT versus SRT. And if you're collecting scripts for research, the <a href="/blog/tiktok-text-extractor-guide">TikTok text extractor guide</a> covers turning any video into copyable text.</p>
+
+      <h2>Download Your First TikTok Caption File</h2>
+      <p>The download button you're looking for isn't in TikTok — it's one paste away in a browser. Grab the link, drop it into <a href="/tiktok-caption-downloader">CapFetch's TikTok caption downloader</a>, and save your first .txt in seconds. No sign-up, no app install, no credit card. When you outgrow the 20 free daily downloads, a <a href="/sign-up">free account</a> bumps you to 50 and keeps your history. Start with one video and see how fast a script stops being trapped.</p>
+    `,
+  },
 ];
 
 export function getAllTags(): string[] {

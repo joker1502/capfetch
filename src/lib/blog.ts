@@ -1007,6 +1007,65 @@ export const posts: BlogPost[] = [
       <p>The download button you're looking for isn't in TikTok — it's one paste away in a browser. Grab the link, drop it into <a href="/tiktok-caption-downloader">CapFetch's TikTok caption downloader</a>, and save your first .txt in seconds. No sign-up, no app install, no credit card. When you outgrow the 20 free daily downloads, a <a href="/sign-up">free account</a> bumps you to 50 and keeps your history. Start with one video and see how fast a script stops being trapped.</p>
     `,
   },
+  {
+    slug: "instagram-reels-caption-extractor-guide",
+    title: "Instagram Reels Caption Extractor: Get Any Reel's Text",
+    description:
+      "Instagram has no Reels transcript button and most extractors choke on its links. Learn the 4 pitfalls that break Reels extraction and get any Reel's text free.",
+    date: "2026-08-14",
+    tags: ["instagram-reels", "caption-extractor", "tutorial"],
+    contentHtml: `
+      <p>The only way to get a Reel's text is an extractor that transcribes the voiceover — and most extractors fail on Instagram links. You found a Reel with a hook worth stealing, a script you want to study, and the Share sheet hands you a link and nothing else. The words sit inside the video.</p>
+      <p>Reels extraction trips up more people than TikTok or Shorts extraction, and not for the reason most assume. Speech recognition is the easy part. The failures come from four specific things: link formats tools refuse to parse, music-only Reels with no speech at all, Instagram's login wall, and auto-captions that are pixels rather than text. This guide walks through each one — then shows the workflow that gets any Reel's text out.</p>
+
+      <h2>What a Reels Caption Extractor Actually Returns</h2>
+      <p>A Reels caption extractor grabs the audio track from the video URL, runs speech recognition, and returns the spoken script as editable text. It can't read text burned into the frames. Creator-added captions and Instagram's auto-caption overlay are pixels, not text layers. So when a tool says "extract captions," it really means "transcribe the voiceover."</p>
+      <ul>
+        <li><strong>You get the spoken script</strong> — the exact words a creator said, including dialogue layered over background music.</li>
+        <li><strong>You don't get burned-in text.</strong> Stylized on-screen captions from an editing app stay part of the image, unreachable.</li>
+        <li><strong>Editable output matters.</strong> Music-heavy Reels slip the occasional wrong word, and a transcript you can fix beats a read-only preview.</li>
+      </ul>
+      <p>That distinction explains most "it didn't work" reports. No voiceover, no transcript — no tool can extract speech that doesn't exist.</p>
+
+      <h2>The 4 Pitfalls That Break Reels Extraction</h2>
+      <p>When we built CapFetch's Reels support, the first version failed on a large share of the links people pasted. The failures had nothing to do with speech recognition — the links themselves were the problem. Four pitfalls now cover almost every extraction failure we see reported.</p>
+      <h3>Pitfall 1: Instagram Hands Out Several Link Formats</h3>
+      <p>Instagram links come in more than one shape: <code>instagram.com/reel/ID</code>, older <code>instagram.com/p/ID</code> links, shortened <code>d.instagram.com</code> links from the share sheet, and app links cluttered with <code>?igsh=</code> tracking parameters. Tools that parse only the <code>/reel/</code> shape fail on everything else — the same Reel works in one tool and dies in another. A robust extractor normalizes every format before fetching.</p>
+      <h3>Pitfall 2: Music-Only Reels Have No Speech to Extract</h3>
+      <p>A large share of Reels run on licensed audio with no voiceover — dance clips, meme edits, aesthetic montages. No speech means no captions, and the extractor returns an empty result. That's the correct answer, not a bug. Look for a person talking before you blame the tool.</p>
+      <h3>Pitfall 3: TikTok Tools Break on Instagram's Login Wall</h3>
+      <p>TikTok's player exposes caption data to anyone holding a URL. Instagram's web version demands a login. Tools built for TikTok often list "Reels support" and then quietly fail on Instagram links — they hit a login redirect instead of a video. When a tool claims multi-platform coverage, test Reels first.</p>
+      <h3>Pitfall 4: Auto-Captions Are Rendered, Not Stored</h3>
+      <p>Instagram's auto-caption toggle draws text over the video while you watch. It looks copyable. It isn't — the words are part of the rendered frames, with no text layer underneath. Same trap as TikTok, and it catches everyone once.</p>
+
+      <h2>How to Extract Any Reel's Text with CapFetch</h2>
+      <p>The <a href=\"/reels-caption-extractor\">CapFetch Reels caption extractor</a> normalizes all four link formats, so you paste whatever the app gives you. Four steps:</p>
+      <ol>
+        <li><strong>Copy the link.</strong> Open the Reel, tap the share icon, and choose Copy Link — any format works.</li>
+        <li><strong>Paste it into CapFetch.</strong> Select the Instagram Reels tab and drop the URL into the input field.</li>
+        <li><strong>Click Extract.</strong> The spoken script appears in 5–10 seconds, even with music underneath the voiceover.</li>
+        <li><strong>Edit and export.</strong> Fix mistakes inline, copy to clipboard, or download as a .txt file.</li>
+      </ol>
+      <p>Free users get 20 extractions a day with no registration. A free account raises that to 50 and adds saved history. The workflow matches our <a href=\"/blog/how-to-get-instagram-reels-transcript\">Reels transcript guide</a>, and the files slot straight into the <a href=\"/blog/how-to-repurpose-tiktok-content-for-blog\">short-form-to-blog repurposing workflow</a>.</p>
+
+      <h2>Extraction Paths Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s Reel</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Best for</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Subjective, error-prone</td><td style="border:1px solid #d1d5db;padding:8px 12px">A single quote, now</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screenshot + OCR</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Burned-in captions only</td><td style="border:1px solid #d1d5db;padding:8px 12px">Text on screen, no voiceover</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Browser extension</td><td style="border:1px solid #d1d5db;padding:8px 12px">2–5 minutes + setup</td><td style="border:1px solid #d1d5db;padding:8px 12px">Varies; often read-only preview</td><td style="border:1px solid #d1d5db;padding:8px 12px">Tinkerers with time</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Editable transcript + .txt download</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Daily research and repurposing</strong></td></tr>
+      </table>
+      <p>Reels now run up to three minutes — long enough for a full monologue. Typing that out eats half an hour. Extraction takes seconds. And if a Reel has no voiceover, every method returns nothing: there's no text to find.</p>
+
+      <h2>When Extraction Comes Back Empty</h2>
+      <p>An empty result usually means one of three things. The Reel has no voiceover — check for a person talking before extracting. The account is private, and extraction needs public access. The link points to a Story or saved post instead of a Reel — <code>instagram.com/stories/</code> links aren't supported. Run those three checks before you blame the tool.</p>
+
+      <h2>Get Any Reel's Text Free</h2>
+      <p>Every Reel with a voiceover has a transcript waiting to be pulled, and Instagram will never hand it to you. Paste the link into the <a href=\"/reels-caption-extractor\">Reels caption extractor</a> and the text shows up in seconds — no sign-up, no app install. Picking between tools? Our <a href=\"/blog/best-free-reels-caption-extractor-tools\">Reels extractor comparison</a> covers the landscape. Need file-format details? The <a href=\"/blog/how-to-download-instagram-reels-captions\">Reels caption download guide</a> fills those in.</p>
+      <p>Try it on a Reel you watched this week. Paste the link and read the script you missed on the first watch.</p>
+    `,
+  }
 ];
 
 export function getAllTags(): string[] {

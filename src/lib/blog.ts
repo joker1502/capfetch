@@ -1065,6 +1065,55 @@ export const posts: BlogPost[] = [
       <p>Every Reel with a voiceover has a transcript waiting to be pulled, and Instagram will never hand it to you. Paste the link into the <a href=\"/reels-caption-extractor\">Reels caption extractor</a> and the text shows up in seconds — no sign-up, no app install. Picking between tools? Our <a href=\"/blog/best-free-reels-caption-extractor-tools\">Reels extractor comparison</a> covers the landscape. Need file-format details? The <a href=\"/blog/how-to-download-instagram-reels-captions\">Reels caption download guide</a> fills those in.</p>
       <p>Try it on a Reel you watched this week. Paste the link and read the script you missed on the first watch.</p>
     `,
+  },
+  {
+    slug: "youtube-shorts-transcript-downloader",
+    title: "YouTube Shorts Transcript Downloader: Save Any Short's Text",
+    description:
+      "YouTube Shorts have no transcript button — not even the panel regular videos get. Save any Short's text as a .txt file with CapFetch's free downloader.",
+    date: "2026-08-15",
+    tags: ["youtube-shorts", "transcript-downloader", "tutorial"],
+    contentHtml: `
+      <p>YouTube gives regular videos a "Show transcript" panel. Shorts get nothing — no panel, no copy option, no download button, and the transcript feature that works on every other video quietly disappears on a Shorts page. A Shorts transcript downloader closes that gap: paste the link and the spoken script comes back as a text file you can edit, quote, and repurpose.</p>
+      <p>Downloading Shorts transcripts trips up more people than it should. In our testing, most failures have nothing to do with speech recognition. They come from three specific things: URL formats that break naive parsers, a missing manual caption track, and the way YouTube renders Shorts captions at playback instead of storing them as text. This guide walks through each one, then shows the workflow that saves any Short's text.</p>
+
+      <h2>Why Shorts Are the Hard Case for Transcript Downloads</h2>
+      <p>Shorts are the only YouTube format with no transcript access at all. Regular videos expose a "Show transcript" button under the description — click it and you can copy the auto-generated captions. Shorts pages don't render that panel, and the mobile app hides it too. The words exist, because YouTube generates them for every video, but the platform gives you no way to view or copy them.</p>
+      <p>Here's the part that surprises people: under the hood, a Short is a normal vertical video. Same audio track, same speech-recognition pipeline, same underlying metadata. Nothing about the file makes transcription harder. The blocker is purely access — the URL is a <code>youtube.com/shorts/ID</code> link, and most tools treat that as a different species. Normalize the URL and the exact same extraction path that handles a 20-minute video handles a 45-second Short.</p>
+      <p>Real talk: when we pointed our first Shorts downloader at a Shorts URL, it failed on link parsing, not on audio. That failure mode is the entire story of why "Shorts transcript downloader" is a distinct tool category instead of a checkbox on a YouTube tool.</p>
+
+      <h2>The 3 Reasons Shorts Transcript Downloads Fail</h2>
+      <p>Every failed download we've seen traces back to one of these three problems. Know them and you can diagnose any tool in under a minute.</p>
+      <h3>1. Shorts Links Come in Several Shapes</h3>
+      <p>The share sheet hands out <code>youtube.com/shorts/abc123</code>, but that's not the only format. Desktop embeds and some apps produce <code>youtube.com/watch?v=abc123</code> links that point at the same Short. The copy-link menu sometimes returns a shortened <code>youtu.be/abc123</code>, and nearly every variant arrives cluttered with <code>?si=</code> tracking parameters. Tools that only parse the <code>/shorts/</code> pattern fail on everything else — the same Short downloads fine in one tool and dies in another. A downloader that normalizes all four formats before fetching is the difference between a tool that works and one that frustrates.</p>
+      <h3>2. Most Shorts Have No Manual Caption Track</h3>
+      <p>Creators who post Shorts almost always burn their captions into the frames with an editing app. Those pixels are unreachable — no tool reads text out of video frames. What a downloader returns is the voiceover: the words the creator actually spoke. That's the extractable text, and it's usually what you want anyway. The flip side: a music-only Short with no speech returns an empty transcript. That's the correct answer, not a bug.</p>
+      <h3>3. Auto-Captions Are Rendered, Not Stored</h3>
+      <p>YouTube generates captions at playback time and draws them over the frames. On a regular video you can still grab the text through the transcript panel. On Shorts, that panel is gone, so the rendered captions stay pixels. If a tool claims it "downloads Shorts captions" and hands you a video file instead of text, walk away — the words never existed as a file on YouTube's side.</p>
+
+      <h2>How to Download Any Short's Text with CapFetch</h2>
+      <p>The <a href="/shorts-transcript-downloader">CapFetch Shorts transcript downloader</a> normalizes all four link formats before it fetches anything, so you paste whatever the app gave you. Four steps:</p>
+      <ol>
+        <li><strong>Copy the link.</strong> Open the Short, tap Share, choose Copy Link. Any format works — <code>/shorts/</code>, <code>watch?v=</code>, or <code>youtu.be</code>.</li>
+        <li><strong>Paste it into CapFetch.</strong> Select the Shorts tab and drop the URL into the input field. Tracking parameters get stripped automatically.</li>
+        <li><strong>Click Extract.</strong> The spoken script appears in 5–10 seconds as clean, editable text.</li>
+        <li><strong>Download the file.</strong> Save it as a .txt with timestamps when available, or copy it to your clipboard.</li>
+      </ol>
+      <p>Free users get 20 downloads a day with no registration. A free account raises that to 50 and adds saved history. The workflow matches our <a href="/blog/youtube-shorts-transcript-extractor-guide">Shorts transcript extractor guide</a>, and the output slots straight into the <a href="/blog/how-to-repurpose-tiktok-content-for-blog">short-form-to-blog repurposing workflow</a>.</p>
+
+      <h2>Download Methods Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s Short</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Best for</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Typed notes, error-prone</td><td style="border:1px solid #d1d5db;padding:8px 12px">A single quote, now</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Screen recording</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes (record + transcribe)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Video clip — text still needs OCR or typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">Captions burned into the frames</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Show transcript panel</td><td style="border:1px solid #d1d5db;padding:8px 12px">Seconds — but only on regular videos</td><td style="border:1px solid #d1d5db;padding:8px 12px">Copyable auto-captions</td><td style="border:1px solid #d1d5db;padding:8px 12px">Long-form YouTube, not Shorts</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Editable .txt transcript with timestamps</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Daily research and repurposing</strong></td></tr>
+      </table>
+      <p>The "Show transcript" row is the trap most people fall into: it works beautifully on regular videos, so they assume Shorts have it too. They don't. If you extract from Shorts weekly, manual methods cost you hours while a downloader costs seconds. Need the SRT format instead of TXT? Our <a href="/blog/how-to-download-youtube-shorts-captions">Shorts caption download guide</a> covers when each file type wins.</p>
+
+      <h2>Save Your First Short's Text</h2>
+      <p>Every Short with a voiceover has a transcript waiting to be pulled, and YouTube won't hand it to you. Paste the link into the <a href="/shorts-transcript-downloader">Shorts transcript downloader</a> and the text shows up in seconds — no sign-up, no app install. Comparing tools? Our <a href="/blog/best-free-youtube-shorts-caption-extractor-tools">Shorts extractor comparison</a> covers the landscape. Start with one Short you watched this week and read the script you missed on the first pass.</p>
+    `,
   }
 ];
 

@@ -141,7 +141,7 @@ export const posts: BlogPost[] = [
     slug: "tiktok-vs-reels-vs-shorts-content-strategy",
     title: "TikTok vs Reels vs Shorts — Which Platform Works Best?",
     description:
-      "Creating for all three platforms? Here's how TikTok, Instagram Reels, and YouTube Shorts differ in audience, algorithm, and content strategy — with a workflow that covers all three.",
+      "Creating for all three? Here's how TikTok, Instagram Reels, and YouTube Shorts differ in audience, algorithm, and strategy — plus a cross-platform workflow.",
     date: "2026-07-24",
     tags: ["content-strategy", "comparison", "social-media"],
     contentHtml: `
@@ -185,7 +185,7 @@ export const posts: BlogPost[] = [
     slug: "best-free-tiktok-caption-extractor-tools",
     title: "Best Free TikTok Caption Extractor Tools Compared 2026",
     description:
-      "TokScript, CaptionGrab, or CapFetch? We tested the top free TikTok caption extractors side by side. Compare features, free quotas, and accuracy to find the right tool.",
+      "TokScript, CaptionGrab, or CapFetch? We tested the top free TikTok caption extractors head-to-head. Compare features, free quotas, and accuracy.",
     date: "2026-07-27",
     tags: ["tiktok", "caption-extractor", "comparison"],
     contentHtml: `
@@ -275,7 +275,7 @@ export const posts: BlogPost[] = [
     slug: "what-is-a-transcript-generator",
     title: "What Is a Transcript Generator? Guide for Creators",
     description:
-      "Transcript generators convert video audio to text automatically. Learn how they work, what to look for, and how CapFetch handles TikTok, Reels, and Shorts in seconds.",
+      "Transcript generators convert video audio to text automatically. Learn how they work and how CapFetch handles TikTok, Reels, and Shorts in seconds.",
     date: "2026-07-29",
     tags: ["transcript", "guide", "tutorial"],
     contentHtml: `
@@ -1117,7 +1117,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "tiktok-transcript-api-guide",
-    title: "TikTok Transcript API: Build Caption Extraction into Your App",
+    title: "TikTok Transcript API: Build Caption Extraction in Your App",
     description:
       "TikTok has no official transcript API. We compared yt-dlp, page JSON, Apify actors, and Whisper pipelines — here's what actually survives in production.",
     date: "2026-08-16",

@@ -1114,6 +1114,58 @@ export const posts: BlogPost[] = [
       <h2>Save Your First Short's Text</h2>
       <p>Every Short with a voiceover has a transcript waiting to be pulled, and YouTube won't hand it to you. Paste the link into the <a href="/shorts-transcript-downloader">Shorts transcript downloader</a> and the text shows up in seconds — no sign-up, no app install. Comparing tools? Our <a href="/blog/best-free-youtube-shorts-caption-extractor-tools">Shorts extractor comparison</a> covers the landscape. Start with one Short you watched this week and read the script you missed on the first pass.</p>
     `,
+  },
+  {
+    slug: "tiktok-transcript-api-guide",
+    title: "TikTok Transcript API: Build Caption Extraction into Your App",
+    description:
+      "TikTok has no official transcript API. We compared yt-dlp, page JSON, Apify actors, and Whisper pipelines — here's what actually survives in production.",
+    date: "2026-08-16",
+    tags: ["tiktok", "transcript-api", "tutorial"],
+    contentHtml: `
+      <p>There is no official TikTok Transcript API — the developer portal never shipped one, and no buried endpoint hands you the spoken text of an arbitrary video. If you're building an app that needs TikTok captions — a repurposing tool, an AI training pipeline, a competitor monitor — you assemble the pipeline yourself from pieces that actually exist.</p>
+      <p>We run a production transcript service at CapFetch, so this isn't theory. We've hit the 403s, watched empty datasets come back, and patched our way to a pipeline that returns a 60-second video's script in about 5–10 seconds. Below are the four routes that work, the three pitfalls that break naive builds, and the exact shape of the pipeline we run.</p>
+
+      <h2>The Official API You Keep Hearing About Doesn't Exist</h2>
+      <p>TikTok ships three developer products: the Content Posting API for uploads, the Business API for ads and analytics, and the Research API for approved academic projects. Read through all three and you'll find no transcript endpoint. Caption data isn't exposed as a read API — not per-video, not per-account.</p>
+      <p>So "TikTok transcript API" in practice means a pipeline. You either read TikTok's own caption data where it exists, transcribe the audio yourself, or rent a maintained pipeline from someone who already solved the access problem.</p>
+
+      <h2>The 4 Routes That Actually Work</h2>
+      <p><strong>Route 1: yt-dlp plus the page's caption JSON.</strong> TikTok embeds caption metadata in the video page's rehydration JSON. <a href="https://github.com/yt-dlp/yt-dlp" rel="nofollow noopener">yt-dlp</a> knows where to look and keeps the signing parameters current, so <code>yt-dlp --write-auto-subs</code> returns the track when the creator enabled TikTok's auto-captions. The catch: many short-form creators burn captions into the frames with an editing app, and those pixels never become a track. For those videos the command comes back empty.</p>
+      <p><strong>Route 2: pull the audio, transcribe the speech.</strong> yt-dlp grabs the audio stream, ffmpeg splits it out, and a speech model — Whisper or a hosted API — returns the script. Works on every video with a voiceover, captions on or off. The tradeoffs are compute cost per minute of audio and accuracy that dips when music rides under the voice.</p>
+      <p><strong>The managed route: pre-built actor APIs.</strong> Platforms like Apify host extractors you call with a URL. CapFetch's own pipeline runs on one. The platform handles TikTok's access dance, and you collect the transcript from a result dataset. You pay per run or burn free monthly credits, and you never touch a signing scheme.</p>
+      <p><strong>Last, and least reliable: hand-rolled scraping.</strong> Hitting TikTok's internal endpoints with your own requests works until the platform rotates its signature scheme — which it does on its own schedule. Budget for a patch cycle that never ends.</p>
+
+      <h2>3 Pitfalls That Break Naive Builds</h2>
+      <p><strong>Unsigned requests die fast.</strong> TikTok's internal endpoints demand signed parameters — msToken, X-Bogus, the rotating set. A plain fetch from a server IP lands on a 403 or a login wall. That's the real reason scraper repos go quiet: the code worked on commit day and not long after.</p>
+      <p><strong>Auto-captions aren't a text layer.</strong> The caption JSON only exists when the creator switched on TikTok's auto-captions. Burned-in captions from an editing app are pixels. Music-only videos carry no speech at all. An extractor that reads only the caption JSON returns empty on a large share of the catalog — correctly, but uselessly.</p>
+      <p><strong>3. The job is async, and the first response lies.</strong> Managed APIs don't answer with the transcript in one round trip. You start a run, poll it until it succeeds, then pull the result dataset. Our first integration read the run response as the transcript and got an empty string back — the dataset wasn't ready yet. Poll, then read.</p>
+
+      <h2>The Pipeline Shape That Survives: How CapFetch Runs</h2>
+      <p>CapFetch's TikTok extraction calls a managed actor, <code>clockworks/free-tiktok-transcript-downloader</code>, through the <a href="https://docs.apify.com/platform/actors" rel="nofollow noopener">Apify actor API</a>. The flow is four steps:</p>
+      <ol>
+        <li><strong>Start the run.</strong> POST the video URL to <code>api.apify.com/v2/acts/{actorId}/runs</code> with your API key. The response carries a <code>defaultDatasetId</code>.</li>
+        <li><strong>Poll the run</strong> until its status reads SUCCEEDED.</li>
+        <li><strong>Fetch the dataset.</strong> GET <code>/v2/datasets/{id}/items</code> returns JSON records.</li>
+        <li><strong>Join the text fields</strong> into one transcript string.</li>
+      </ol>
+      <p>That's the whole service — around 30 lines in our codebase, and the same shape covers Instagram Reels with a different actor. Real talk: we chose this shape after a scraper attempt died on a signature rotation mid-testing. Handing the access problem to someone who maintains it daily is the difference between a feature and a hobby.</p>
+      <p>One boundary we can't cross, and neither can you: burned-in captions. If the words are pixels, no API returns them. CapFetch returns the spoken script, which is what exists as data.</p>
+
+      <h2>Transcript Routes Compared</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Route</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Setup time</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Quality</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">You maintain</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Best when</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">yt-dlp + caption JSON</td><td style="border:1px solid #d1d5db;padding:8px 12px">~10 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Only where auto-captions exist</td><td style="border:1px solid #d1d5db;padding:8px 12px">Signatures handled by yt-dlp</td><td style="border:1px solid #d1d5db;padding:8px 12px">Prototypes and quick tests</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Audio + speech model</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 hours</td><td style="border:1px solid #d1d5db;padding:8px 12px">Best on clear voiceover</td><td style="border:1px solid #d1d5db;padding:8px 12px">Model and compute budget</td><td style="border:1px solid #d1d5db;padding:8px 12px">High volume, quality is the product</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Managed actor API</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>~30 minutes</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Good</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Nothing</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Production with no ops team</strong></td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">DIY signed scraping</td><td style="border:1px solid #d1d5db;padding:8px 12px">Days</td><td style="border:1px solid #d1d5db;padding:8px 12px">Same as first row</td><td style="border:1px solid #d1d5db;padding:8px 12px">A forever patch cycle</td><td style="border:1px solid #d1d5db;padding:8px 12px">Never as your only path</td></tr>
+      </table>
+      <p>We route CapFetch through the managed row. If you're not a developer at all, the web app is that same pipeline without the HTTP calls — 20 free extractions a day, no account required.</p>
+
+      <h2>Build It or Skip It</h2>
+      <p>Match the route to your scale. Prototyping or one-off research? yt-dlp plus the caption JSON. Production volume with no ops team? Managed actor, poll the dataset, move on. Heavy volume where transcript accuracy is the product? Whisper-grade pipelines earn their cost. Hand-rolled signed scraping as your only path? Plan the rewrite now.</p>
+      <p>And if the transcript is the feature you want, not the API — skip the build. Paste a link into CapFetch's <a href="/tiktok-transcript-generator">TikTok transcript generator</a> and the script comes back in seconds. Our <a href="/blog/tiktok-transcript-generator-guide">transcript generator guide</a> covers the output formats, and the <a href="/blog/how-to-download-tiktok-captions">caption download walkthrough</a> handles file export. <a href="/sign-up">A free account</a> raises the daily limit to 50 and keeps your history.</p>
+    `,
   }
 ];
 

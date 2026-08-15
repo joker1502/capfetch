@@ -1166,6 +1166,58 @@ export const posts: BlogPost[] = [
       <p>Match the route to your scale. Prototyping or one-off research? yt-dlp plus the caption JSON. Production volume with no ops team? Managed actor, poll the dataset, move on. Heavy volume where transcript accuracy is the product? Whisper-grade pipelines earn their cost. Hand-rolled signed scraping as your only path? Plan the rewrite now.</p>
       <p>And if the transcript is the feature you want, not the API — skip the build. Paste a link into CapFetch's <a href="/tiktok-transcript-generator">TikTok transcript generator</a> and the script comes back in seconds. Our <a href="/blog/tiktok-transcript-generator-guide">transcript generator guide</a> covers the output formats, and the <a href="/blog/how-to-download-tiktok-captions">caption download walkthrough</a> handles file export. <a href="/sign-up">A free account</a> raises the daily limit to 50 and keeps your history.</p>
     `,
+  },
+  {
+    slug: "reels-vs-tiktok-vs-shorts-captions",
+    title: "Reels vs TikTok vs Shorts: Caption & Transcript Differences",
+    description:
+      "Same script, three platforms, three fates: TikTok stores captions as data, Shorts hides them, Reels never has them. We tested all three extraction paths.",
+    date: "2026-08-17",
+    tags: ["tiktok", "instagram-reels", "youtube-shorts"],
+    contentHtml: `
+      <p>The same video lives on TikTok, Instagram, and YouTube Shorts — three copies of one script. Extract all three and you get three very different answers. TikTok hands over clean text when auto-captions are on; Shorts hides its transcript behind an interface that never opens; Reels gives you nothing but pixels. That's not a tooling problem — the captions exist in different physical forms on each platform. We run extraction pipelines for all three at CapFetch, and the differences drive every tool decision we make.</p>
+      <p>This guide maps where each platform's caption data actually lives, what an extractor can realistically return, and what that means for your swipe file or repurposing workflow. If you came for platform strategy, <a href="/blog/tiktok-vs-reels-vs-shorts-content-strategy">our strategy comparison</a> covers algorithms and audiences — this one is about the text.</p>
+
+      <h2>The Core Difference: Text Tracks or Pixels</h2>
+      <p>Every caption on every platform started as one of two things: a text track stored beside the video, or pixels painted over the frames. Nothing else exists. Once you know which form a platform uses, you can predict what any extractor will return — and which failures are fixable.</p>
+      <h3>TikTok: a JSON track, when the creator switches it on</h3>
+      <p>Auto-captions on TikTok generate a caption track and store it as JSON inside the video page's data. Creators who enable the feature get a timestamped text layer that tools can read directly. Creators who burn captions in with CapCut get pixels. Our TikTok pipeline reads the JSON track when it exists and falls back to speech recognition when it doesn't — and the fallback runs a lot.</p>
+      <h3>YouTube Shorts: the words exist, the interface hides them</h3>
+      <p>YouTube's speech pipeline generates captions for nearly every video, Shorts included, so the words sit in the platform's data. But Shorts pages never render the "Show transcript" panel that regular videos get, and the mobile app hides it too. Extractors reach the text through the same timedtext route that serves long-form videos — after normalizing the URL, because Shorts links arrive in four different shapes.</p>
+      <h3>Instagram Reels: no caption data, ever</h3>
+      <p>Instagram renders captions as an overlay on the video and exposes no caption data anywhere — no transcript endpoint, no caption track, no hidden file. When a tool "extracts captions" from a Reel, it runs speech recognition on the audio. That's not a limitation of the tool; it's the only source of text the platform offers. If the Reel has no voiceover, there is nothing to extract, and that's the correct answer.</p>
+
+      <h2>What Each Extraction Path Returns in Practice</h2>
+      <p>We pointed our pipelines at the same script uploaded to all three platforms and compared the output. Three differences keep showing up.</p>
+      <p>Real talk: when we first wired up Reels extraction, we went looking for a captions file and found none. The pipeline transcribes audio, full stop. That discovery changed how we label the feature and what we promise users — and it explains why Reels transcripts sometimes look different from TikTok ones for the same script.</p>
+      <h3>TikTok: timestamped text, when the track exists</h3>
+      <p>A video with auto-captions enabled returns clean text with timestamps in seconds. A video with burned-in captions falls back to speech recognition, which misses words that appear on screen but are never spoken — brand names, hashtags, and punch-in text all disappear. <a href="/blog/tiktok-transcript-api-guide">Our TikTok transcript API guide</a> walks through the technical routes.</p>
+      <h3>Shorts: timestamped text, after URL normalization</h3>
+      <p>The transcript comes back with timestamps, matching what the timedtext endpoint serves. The failure modes sit before extraction: <code>/shorts/</code>, <code>watch?v=</code>, and <code>youtu.be</code> links all point at the same Short, and tools that only parse one format fail on the other two. Music-only Shorts return empty transcripts — no speech, no text. The <a href="/blog/youtube-shorts-transcript-downloader">Shorts transcript downloader guide</a> covers each failure in detail.</p>
+      <h3>Reels: spoken words only</h3>
+      <p>Because the source is speech recognition, you get exactly what was said. On-screen text, styled captions, and text overlays never appear in the output. A Reel with music under the voice still transcribes fine; a Reel with no voiceover at all returns an empty result. Our <a href="/blog/instagram-reels-caption-extractor-guide">Reels extractor guide</a> lists the checks we run before blaming the tool.</p>
+
+      <h2>Side by Side: Caption Extraction on All Three Platforms</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Platform</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Caption data exists?</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Extraction path</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What you get back</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok</td><td style="border:1px solid #d1d5db;padding:8px 12px">Only with auto-captions on (JSON track)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Read track, ASR fallback</td><td style="border:1px solid #d1d5db;padding:8px 12px">Timestamped text; on-screen words lost on ASR</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">YouTube Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">Yes — but the UI never shows it</td><td style="border:1px solid #d1d5db;padding:8px 12px">Timedtext route after URL normalization</td><td style="border:1px solid #d1d5db;padding:8px 12px">Timestamped text; empty on music-only Shorts</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Instagram Reels</td><td style="border:1px solid #d1d5db;padding:8px 12px">Never</td><td style="border:1px solid #d1d5db;padding:8px 12px">ASR only — no captions file exists</td><td style="border:1px solid #d1d5db;padding:8px 12px">Spoken words only; styled overlays always lost</td></tr>
+      </table>
+      <p>Read the middle column before you pick a tool. A "TikTok caption extractor" and a "Reels caption extractor" are not the same kind of software — one reads existing data, the other generates text from audio. Knowing which one you're using explains most of the surprises people report.</p>
+
+      <h2>What This Means for Your Workflow</h2>
+      <p>Three practical consequences, straight from running these pipelines daily:</p>
+      <ul>
+        <li><strong>Plan for different output quality per platform.</strong> TikTok and Shorts transcripts usually carry timestamps; Reels text depends on the speech model. Don't promise yourself a uniform swipe file — expect per-platform quirks.</li>
+        <li><strong>On-screen text is never extractable anywhere.</strong> Burned-in captions, punch-in words, and styled overlays are pixels on all three platforms. What you extract is the voiceover, so judge a video's extractability by whether someone speaks in it.</li>
+        <li><strong>Empty results are usually correct.</strong> Music-only Shorts, voiceover-free Reels, and TikTok videos with burned-in captions can all legitimately return nothing. Run the platform-specific checks before you blame the tool.</li>
+      </ul>
+
+      <h2>Extract All Three in One Place</h2>
+      <p>CapFetch runs all three extraction paths — TikTok's track reader, Shorts' timedtext route, and Reels' speech recognition — behind one input field. Paste a link, get the script, and download it as a .txt file. Twenty extractions a day are free with no registration; <a href="/sign-up">a free account</a> raises that to 50 and adds saved history.</p>
+      <p>Try it with the same video on all three platforms and watch the differences appear in real time. Start with a <a href="/tiktok-transcript-generator">TikTok link</a>, then run the same script through the <a href="/shorts-transcript-downloader">Shorts downloader</a> and the <a href="/reels-caption-downloader">Reels downloader</a>.</p>
+    `,
   }
 ];
 

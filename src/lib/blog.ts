@@ -15,43 +15,38 @@ export const posts: BlogPost[] = [
       "Stop manually typing TikTok transcripts. Learn how to extract TikTok captions for free with CapFetch — copy, edit, and download in seconds without registration.",
     date: "2026-07-24",
     tags: ["tiktok", "caption-extractor", "tutorial"],
-    contentHtml: `
-      <p>You just watched a TikTok video with a brilliant script — the hook was perfect, the pacing was tight, and the call-to-action drove thousands of clicks. But how do you capture that script before it disappears into your feed?</p>
-      <p>Manually transcribing TikTok videos is painfully slow. A 60-second video takes 10+ minutes to type out by hand. Worse, you'll miss the nuances — the exact wording, the timing of each line, the structure that made it work. This guide shows you a faster way.</p>
+    contentHtml: `<p>A 60-second TikTok with a brilliant script takes 10+ minutes to type by hand — and you'll miss the exact phrasing doing it. The captions are extractable in seconds, but most creators never try because TikTok doesn't offer an export button. Here's how to extract TikTok captions without registrations, apps, or typing.</p>
 
-      <h2>Why You Need a TikTok Caption Extractor</h2>
-      <p>Most creators only watch TikTok videos for entertainment. Smart creators extract the transcripts and put them to work:</p>
+      <h2>Where TikTok's Caption Text Actually Lives</h2>
+      <p>Two different realities exist depending on how the creator made the video:</p>
       <ul>
-        <li><strong>Analyze viral scripts:</strong> Study the hook, body, and CTA structure of videos that blew up. Identify patterns you can replicate.</li>
-        <li><strong>Repurpose content:</strong> One transcript becomes a blog post, Twitter thread, newsletter item, or Instagram caption. Turn one video into five assets.</li>
-        <li><strong>Build a swipe file:</strong> Collect winning scripts from your niche. When you hit writer's block, your swipe file has the answer.</li>
-        <li><strong>Improve accessibility:</strong> Text versions of your content reach hearing-impaired audiences and people who prefer reading.</li>
+        <li><strong>Auto-captions enabled:</strong> TikTok generates a caption track and stores it as JSON inside the video page's data. A tool that reads this returns the creator's exact, timestamped text.</li>
+        <li><strong>Captions burned in (CapCut, editing apps):</strong> The words are pixels drawn on the frames. No text exists anywhere — extraction requires running speech recognition on the audio.</li>
       </ul>
-      <p>The difference between guessing what a creator said and having the exact transcript is the difference between good content and great content.</p>
+      <p>That distinction decides what you get: verbatim script or close transcription. For analyzing hooks and wording, the track version is gold; the transcript version is still highly usable.</p>
 
-      <h2>How CapFetch Makes TikTok Caption Extraction Instant</h2>
-      <p>CapFetch is built specifically for short-form video platforms. Here's the complete workflow:</p>
-      <h3>Step 1: Grab the Video URL</h3>
-      <p>Open TikTok, tap the Share button on any video, and select "Copy Link." The URL looks like <code>tiktok.com/@username/video/123456789</code>.</p>
-      <h3>Step 2: Paste Into CapFetch</h3>
-      <p>Go to the CapFetch homepage. The TikTok tab is selected by default. Paste your URL into the input field and click Extract.</p>
-      <h3>Step 3: Review and Export</h3>
-      <p>In seconds, CapFetch returns a clean transcript. Edit any mistakes inline, copy to clipboard, or download as a .txt file. You get 20 free extracts daily — no registration, no credit card.</p>
-      <p>Registered users get 50 extracts per day plus access to saved history. <a href="/sign-up">Create a free account</a> when you need more.</p>
+      <h2>How to Extract Captions in One Step</h2>
+      <ol>
+        <li>Copy the TikTok video link from the share sheet (or the address bar).</li>
+        <li>Paste it into the <a href="/tiktok-caption-downloader">TikTok caption downloader</a>.</li>
+        <li>Copy or download the text — captions, timestamps, and structure included.</li>
+      </ol>
+      <p>No login, no watermark, no upload. The tool reads the link you already have, and the free tier covers daily research volume.</p>
 
-      <h2>CapFetch vs Manual Transcription: The Real Cost</h2>
-      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
-        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Method</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Time per 60s video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Accuracy</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Cost</th></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual typing</td><td style="border:1px solid #d1d5db;padding:8px 12px">10–15 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">Subjective</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free (your time)</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Paid transcription service</td><td style="border:1px solid #d1d5db;padding:8px 12px">1–2 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">High</td><td style="border:1px solid #d1d5db;padding:8px 12px">$0.10–$1.00/video</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>CapFetch (free)</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>5–10 seconds</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>High</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px"><strong>Free (20/day)</strong></td></tr>
-      </table>
-      <p>If you analyze just 5 videos per day, manual transcription costs you 50–75 minutes daily. CapFetch does it in under a minute. Over a month, that's 25+ hours saved.</p>
+      <h2>What Creators Do With the Text</h2>
+      <h3>Reverse-engineer viral scripts</h3>
+      <p>Pull transcripts from the 10 most-watched videos in your niche. Read them side by side and the shared skeleton appears: a curiosity hook, a tension setup, a payoff, a CTA. Replicating that structure deliberately is how trends get made instead of chased.</p>
+      <h3>Repurpose into owned content</h3>
+      <p>A transcript is a draft. Expand it into a <a href="/blog/how-to-repurpose-tiktok-content-for-blog">blog post</a>, cut it into a newsletter, or quote it accurately in a roundup — all without rewatching the video.</p>
+      <h3>Keep a swipe file</h3>
+      <p>Build a personal library of hooks, transitions, and CTAs with exact wording. When you're stuck, it's the fastest creative reference you own.</p>
 
-      <h2>Start Extracting TikTok Captions Today</h2>
-      <p>You don't need expensive tools or complicated software. CapFetch is free, works in your browser, and produces clean, editable transcripts from any TikTok video.</p>
-      <p>Try it now — paste a TikTok URL on the <a href="/">CapFetch homepage</a> and see your first transcript in seconds. No sign-up, no commitment. When you're ready to level up, compare CapFetch against <a href="/blog/best-free-tiktok-caption-extractor-tools">other free caption extractors</a> to see why creators choose this tool.</p>
-    `,
+      <h2>Accuracy Expectations</h2>
+      <p>When auto-captions are on, the track returns the creator's own text — including their deliberate tense choices. When the fallback path runs, expect the usual ASR caveats: music under the voice lowers accuracy, and rapid-cut dialogue can mis-segment. Spot-check any passage you plan to quote.</p>
+      <p>If you're comparing extractors, our <a href="/blog/best-free-tiktok-caption-extractor-tools">TikTok extractor comparison</a> covers the criteria that separate useful tools from registration-funnel ones.</p>
+
+      <h2>Try It Now</h2>
+      <p>Paste any TikTok link into the <a href="/tiktok-caption-downloader">free caption downloader</a> — thirty seconds from paste to script, no account required.</p>`,
   },
   {
     slug: "how-to-get-instagram-reels-transcript",
@@ -60,40 +55,37 @@ export const posts: BlogPost[] = [
       "Instagram Reels doesn't offer a built-in transcript button. Here's how to get Reels transcripts for free using CapFetch — no app install or registration needed.",
     date: "2026-07-25",
     tags: ["instagram-reels", "transcript", "tutorial"],
-    contentHtml: `
-      <p>You found a Reel with a perfect hook, a clever storytelling structure, and a call-to-action that converted. But Instagram doesn't give you a "copy transcript" button. The text is trapped inside the video.</p>
-      <p>You could play the Reel on repeat, pausing every few seconds to type what you hear. Or you could use a tool that extracts the transcript in one click. This guide shows you the second option.</p>
+    contentHtml: `<p>Instagram Reels has no transcript button, no caption export, and no hidden text file — the captions are rendered as pixels on top of the video, and the platform exposes nothing underneath. So how do you actually get a Reels transcript? You run speech recognition on the audio. Here's the honest version of that workflow, why the pixels matter, and what you can expect from the result.</p>
 
-      <h2>Three Reasons to Transcribe Instagram Reels</h2>
-      <p>Reels transcripts aren't just for copying scripts. Here's what they unlock:</p>
-      <h3>1. Competitive Analysis at Scale</h3>
-      <p>Study 10 competitor Reels in 2 minutes instead of 30. Read the transcripts side by side and spot patterns in hooks, pacing, and persuasion techniques that you'd miss by watching alone.</p>
-      <h3>2. Content Repurposing</h3>
-      <p>A Reels transcript is a blog post draft waiting to be expanded. Add context, examples, and data to turn a 60-second script into a 1000-word article for your website or newsletter.</p>
-      <h3>3. Trend Spotting</h3>
-      <p>Transcribe 20 Reels in your niche and run a quick word frequency analysis. The phrases that appear most often are your audience's hot buttons — build your next content around them.</p>
+      <h2>Why Reels Is the Hardest of the Three</h2>
+      <p>TikTok stores auto-captions as a JSON text track when the creator enables them; Shorts keeps a server-side speech track even though the UI hides it. Reels has neither. The video carries an audio layer, and the captions you see are burned onto the frames. There is no endpoint to read, no track to request — extraction means transcribing the audio from scratch.</p>
+      <p>That's not a failure of the tools; it's a platform constraint. Any tool that claims to "pull the captions" from a Reel is really running speech recognition under the hood. Knowing that changes your expectations: the result is a transcript of what's said, not a copy of what's displayed.</p>
 
-      <h2>How to Extract Reels Transcripts with CapFetch</h2>
-      <p>The process takes under 30 seconds:</p>
+      <h2>When the Audio Is Clean, the Transcript Is Clean</h2>
+      <p>Speech recognition on voiceover-only Reels produces accurate, usable text. The trouble cases are structural, and they're worth recognizing before you start:</p>
+      <ul>
+        <li><strong>Music layered over voice.</strong> Reels frequently mix a song under the speaker. Recognition accuracy drops as the music-to-voice ratio rises, and reverb on the voice makes it worse.</li>
+        <li><strong>Text-only Reels.</strong> If a Reel communicates entirely through on-screen text with no speech, there is nothing for an extractor to hear. You'd need OCR, which no mainstream speech pipeline offers.</li>
+        <li><strong>Rapid cuts.</strong> Short sentences clipped mid-word confuse segmentation. Accuracy recovers if the tool timestamps each segment so you can spot-check.</li>
+      </ul>
+      <p>None of these are dealbreakers — they're the difference between 98% accuracy and 90% accuracy, not between working and not working. The text stays usable for analysis, references, and repurposing.</p>
+
+      <h2>How to Get a Reels Transcript in Practice</h2>
       <ol>
-        <li><strong>Copy the Reels link.</strong> Open Instagram, tap the three dots on any Reel, and select "Copy Link."</li>
-        <li><strong>Open CapFetch.</strong> Navigate to the CapFetch tool and select the "Instagram Reels" tab.</li>
-        <li><strong>Paste and extract.</strong> Drop the URL into the input field and click Extract. Your transcript appears in seconds.</li>
-        <li><strong>Edit and save.</strong> Review the transcript, make corrections, and download as .txt or copy to clipboard.</li>
+        <li>Open the Reel, copy its link from the share sheet.</li>
+        <li>Paste it into the <a href="/reels-transcript-generator">Reels Transcript Generator</a>. It runs the speech pipeline, timestamps each line, and returns copyable text.</li>
+        <li>Spot-check the flagged segments — music-heavy passages render with slightly lower confidence and are worth a listen.</li>
       </ol>
-      <p>That's it. No browser extensions, no apps, no registration required. For a detailed comparison of transcription tools across all platforms, <a href="/blog/best-free-tiktok-caption-extractor-tools">see our caption extractor comparison guide</a>.</p>
+      <p>No app install, no login, no upload — the tool processes the link directly.</p>
 
-      <h2>Manual vs Automated: Which Saves More Time?</h2>
-      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
-        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Workflow</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">10 Reels</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Weekly time cost</th></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Manual transcription</td><td style="border:1px solid #d1d5db;padding:8px 12px">~100 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">6.5+ hours</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">CapFetch extraction</td><td style="border:1px solid #d1d5db;padding:8px 12px">~3 minutes</td><td style="border:1px solid #d1d5db;padding:8px 12px">15 minutes</td></tr>
-      </table>
-      <p>If you regularly analyze competitor or trending Reels, automation isn't a luxury — it's the difference between keeping up and falling behind.</p>
-
-      <h2>Try It Free</h2>
-      <p>CapFetch gives you 20 free Reels transcriptions every day with no strings attached. <a href="/">Extract your first Reels transcript now</a> — no account, no payment, no time limit on your free tier. When you need more daily capacity, <a href="/sign-up">register for 50 daily extracts</a>.</p>
-    `,
+      <h2>Three Things a Reels Transcript Unlocks</h2>
+      <ul>
+        <li><strong>Competitor teardowns in minutes.</strong> Read 10 Reels from your niche side by side and the hook patterns become obvious — watching them one by one buries the pattern.</li>
+        <li><strong>Repurposing into long-form.</strong> A 60-second Reel script expands into a blog post or newsletter section. Start from the transcript instead of rewatching the video repeatedly.</li>
+        <li><strong>Quote-accurate references.</strong> When you cite another creator's claim, you need their exact words. A transcript gives you that without pausing and replaying.</li>
+      </ul>
+      <p>For the caption-format differences across all three platforms, our <a href="/blog/reels-vs-tiktok-vs-shorts-captions">Reels vs TikTok vs Shorts caption guide</a> covers the details. If Reels is the only format you work with, the <a href="/reels-caption-downloader">Reels caption downloader</a> is the direct route to the same text.</p>
+      <p>Grab a Reel link and run it through the <a href="/reels-transcript-generator">free Reels transcript generator</a> — see what the audio actually says.</p>`,
   },
   {
     slug: "youtube-shorts-transcript-extractor-guide",
@@ -102,40 +94,47 @@ export const posts: BlogPost[] = [
       "YouTube Shorts don't come with downloadable transcripts. Learn how to extract Shorts captions with CapFetch and turn them into SEO-optimized blog content.",
     date: "2026-07-26",
     tags: ["youtube-shorts", "transcript", "tutorial"],
-    contentHtml: `
-      <p>YouTube Shorts is exploding — billions of daily views, and every single video contains a script that could be your next blog post, Twitter thread, or newsletter. But YouTube doesn't offer a "download transcript" button for Shorts. The text lives inside the video, and unless you transcribe it manually, it's lost after you scroll past.</p>
-      <p>This creates a problem: the Shorts you watch for "research" are actually goldmines of structured scripts — hooks, storytelling arcs, CTAs — but capturing that structure takes too long if you're typing by hand. Here's the solution.</p>
+    contentHtml: `<p>YouTube Shorts does not give you a download transcript button on the page or in the app — but the words are there. Nearly every Short gets a speech-generated caption track on YouTube's side; the interface just never shows it. Extracting that track takes a tool, and this guide covers what to use, what to expect, and what to do with the text once you have it.</p>
+      <p>We run the extraction pipeline at CapFetch, and short-form transcripts behave differently from long-form ones. The good news: Shorts are the easiest of the three short-form platforms to extract cleanly.</p>
 
-      <h2>Why Transcribing Shorts Beats Watching Them</h2>
-      <p>Reading a transcript is fundamentally different from watching a video for analysis:</p>
+      <h2>Why Shorts Hides Its Transcripts</h2>
+      <p>Long-form YouTube videos render a "Show transcript" panel under the description. Shorts never render that panel — neither in the browser nor the mobile app. The caption track still exists server-side, which is why the words aren't lost, just buried. Extractors reach them through the same timedtext route that long-form videos use, after normalizing the Shorts URL.</p>
+      <p>That URL normalization matters more than it sounds. Shorts links arrive in at least four shapes: <strong>youtube.com/shorts/ID</strong>, <strong>youtube.com/watch?v=ID&feature=share</strong>, a short URL from the share sheet, and the embed form. A robust extractor normalizes all of them before requesting the caption track. Paste a bare share link and a good tool Just Works; a weak one fails on the second or third form.</p>
+
+      <h2>Manual Transcription Doesn't Scale</h2>
+      <p>Typing out a 60-second Short takes most people 10-15 minutes, and that's only the first pass. Analyzing 10 Shorts by hand is a 2-hour job. The extraction itself is the part that should cost zero attention — the analysis is where your time belongs.</p>
+
+      <h2>What You Get From a Transcript</h2>
       <ul>
-        <li><strong>Speed:</strong> You can read a 60-second script in 15 seconds. Analyzing 10 Shorts takes 2.5 minutes instead of 10+ minutes.</li>
-        <li><strong>Precision:</strong> Catch exact phrasing, word choice, and rhetorical devices that you miss when watching at 1x speed.</li>
-        <li><strong>Comparison:</strong> Place transcripts from 5 successful Shorts side by side. Patterns in structure and language jump out when you see them in text.</li>
-        <li><strong>Repurposing:</strong> A Shorts transcript is already 60% of a blog post. Add context, examples, and data to create long-form SEO content.</li>
+        <li><strong>Hook patterns at scale.</strong> Read five winning Shorts side by side and the common opening structure jumps out — one line of curiosity, one line of stakes. Watching them back to back blurs the pattern.</li>
+        <li><strong>Exact phrasing.</strong> Your paraphrase loses the rhythm that made the original work. Transcripts preserve word choice and pacing.</li>
+        <li><strong>A repurposing starting point.</strong> A Short script is a blog outline with the hard work already done. Expand it, add context, and you have an article.</li>
       </ul>
 
-      <h2>Using CapFetch for YouTube Shorts Transcripts</h2>
-      <h3>Step 1: Get the Shorts URL</h3>
-      <p>Open YouTube Shorts, tap Share on any video, and copy the link. Shorts URLs use the format <code>youtube.com/shorts/abc123</code>.</p>
-      <h3>Step 2: Select YouTube Shorts in CapFetch</h3>
-      <p>Open CapFetch and click the "Shorts" tab. The interface is identical across platforms — one input field, one Extract button.</p>
-      <h3>Step 3: Extract and Use</h3>
-      <p>Paste the URL, click Extract, and your transcript appears in seconds. Edit, copy, or download. You can also combine Shorts transcripts with <a href="/blog/how-to-repurpose-tiktok-content-for-blog">our repurposing workflow</a> to turn them into publishable articles.</p>
-
-      <h2>CapFetch vs YouTube's Built-in Captions</h2>
-      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
-        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">YouTube Captions</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CapFetch</th></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Available for Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Copy full transcript</td><td style="border:1px solid #d1d5db;padding:8px 12px">Partial (auto-captions only)</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ One click</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Download as .txt</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Multi-platform</td><td style="border:1px solid #d1d5db;padding:8px 12px">YouTube only</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok + Reels + Shorts</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Free tier</td><td style="border:1px solid #d1d5db;padding:8px 12px">Free</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ 20/day no registration</td></tr>
+      <h3>What a Shorts transcript actually looks like</h3>
+      <table style="border-collapse:collapse;width:100%;font-size:14px;">
+        <thead><tr style="background:#f3f4f6;">
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Source</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Caption form</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Extractor return</th>
+        </tr></thead>
+        <tbody>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;">Auto captions on</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Server-side text track</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Clean, timestamped text</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;">Captions burned in (CapCut etc.)</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Pixels over the video</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Speech recognition fallback, slightly rougher</td></tr>
+        </tbody>
       </table>
 
-      <h2>Start Extracting Shorts Transcripts</h2>
-      <p>CapFetch is free for up to 20 YouTube Shorts extracts per day. No registration, no credit card, no app download. <a href="/">Try it now</a> — paste your first Shorts URL and see how fast a 60-second video becomes editable text.</p>
-    `,
+      <h2>How to Extract a Shorts Transcript</h2>
+      <ol>
+        <li>Copy the Short's link (share sheet or address bar — any of the four forms).</li>
+        <li>Paste it into the <a href="/shorts-transcript-downloader">Shorts Transcript Downloader</a>.</li>
+        <li>Copy or download the text, then paste it into your notes, doc, or editor.</li>
+      </ol>
+      <p>That's the whole flow. No login, no app install — the extraction runs on the link you already have.</p>
+
+      <h2>Next Steps</h2>
+      <p>Once you have the text, the natural moves are to <a href="/blog/how-to-repurpose-tiktok-content-for-blog">repurpose it into a blog post</a> or study the hook structure of your niche's best Shorts. The transcript is the raw material — the analysis is where you win.</p>
+      <p>Try it now: paste any Shorts link into the <a href="/shorts-transcript-downloader">free Shorts transcript downloader</a> and see what the text track contains.</p>`,
   },
   {
     slug: "tiktok-vs-reels-vs-shorts-content-strategy",
@@ -144,42 +143,37 @@ export const posts: BlogPost[] = [
       "Creating for all three? Here's how TikTok, Instagram Reels, and YouTube Shorts differ in audience, algorithm, and strategy — plus a cross-platform workflow.",
     date: "2026-07-24",
     tags: ["content-strategy", "comparison", "social-media"],
-    contentHtml: `
-      <p>You're creating short-form video content. Should you focus on TikTok, Instagram Reels, or YouTube Shorts? The honest answer is all three — but each requires a different playbook. Posting the same video everywhere without adaptation is a recipe for mediocre results on every platform.</p>
-      <p>This guide breaks down what actually differs between the platforms and gives you a cross-platform workflow that works without tripling your workload.</p>
+    contentHtml: `<p>Post the same video to TikTok, Instagram Reels, and YouTube Shorts, and it will perform differently on every one of them — not because the content changed, but because each platform routes discovery, social proof, and expectations in completely different ways. The practical strategy is not "pick one platform." It's understanding what each one rewards so you can adapt one raw idea into three formats without tripling your workload.</p>
 
-      <h2>The Differences That Matter</h2>
-      <p>Three platforms, three different audiences, three different algorithms. Here's what changes:</p>
-      <h3>Audience Demographics</h3>
-      <ul>
-        <li><strong>TikTok:</strong> Predominantly Gen Z (16–24). Values authenticity, humor, and trend participation. Polished content underperforms compared to raw, relatable videos.</li>
-        <li><strong>Instagram Reels:</strong> Broader age range (18–45). Leverages existing Instagram followers. Users expect higher production quality and visually appealing content.</li>
-        <li><strong>YouTube Shorts:</strong> Skews toward 25–45 age group. Search-driven discovery means educational and how-to content performs best. Longer shelf life — a Short from last year can still drive traffic.</li>
-      </ul>
-      <h3>Content Format Preferences</h3>
-      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
-        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Element</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TikTok</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Reels</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Shorts</th></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Best length</td><td style="border:1px solid #d1d5db;padding:8px 12px">15–30s</td><td style="border:1px solid #d1d5db;padding:8px 12px">15–60s</td><td style="border:1px solid #d1d5db;padding:8px 12px">30–60s</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Top content type</td><td style="border:1px solid #d1d5db;padding:8px 12px">Trends, challenges</td><td style="border:1px solid #d1d5db;padding:8px 12px">Tutorials, lifestyle</td><td style="border:1px solid #d1d5db;padding:8px 12px">Educational, how-to</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Audio trend importance</td><td style="border:1px solid #d1d5db;padding:8px 12px">Critical</td><td style="border:1px solid #d1d5db;padding:8px 12px">Important</td><td style="border:1px solid #d1d5db;padding:8px 12px">Low</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Search discoverability</td><td style="border:1px solid #d1d5db;padding:8px 12px">Low</td><td style="border:1px solid #d1d5db;padding:8px 12px">Medium</td><td style="border:1px solid #d1d5db;padding:8px 12px">High</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Content shelf life</td><td style="border:1px solid #d1d5db;padding:8px 12px">Days</td><td style="border:1px solid #d1d5db;padding:8px 12px">Weeks</td><td style="border:1px solid #d1d5db;padding:8px 12px">Months+</td></tr>
+      <h2>How the Three Platforms Actually Differ</h2>
+      <p>The audience and algorithm differences are real, but they point to different workflow decisions, not different content philosophies.</p>
+      <table style="border-collapse:collapse;width:100%;font-size:14px;">
+        <thead><tr style="background:#f3f4f6;">
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Platform</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Discovery engine</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">What it rewards</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Weak spot</th>
+        </tr></thead>
+        <tbody>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;">TikTok</td><td style="border:1px solid #d1d5db;padding:8px 12px;">The For You feed, almost entirely interest-based</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Trend participation, raw authenticity, fast hooks</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Harder to build a searchable archive; discovery is transient</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;">Instagram Reels</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Mix of follower graph + Explore</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Polished visuals, existing audience leverage, saves and shares</td><td style="border:1px solid #d1d5db;padding:8px 12px;">New accounts face a steep cold-start without a follower base</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;">YouTube Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Search + suggested alongside long-form</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Searchable captions, evergreen long-tail, channel cross-pollination</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Slower initial velocity; short shelf life in the feed</td></tr>
+        </tbody>
       </table>
+      <p>Read the table as a division of labor. TikTok is your reach engine for new audiences. Reels is your retention layer for people who already follow you. Shorts is your only one with durable search value — it feeds YouTube's keyword system the way blog posts feed Google.</p>
 
-      <h2>A Cross-Platform Workflow That Scales</h2>
-      <p>Managing three platforms doesn't mean creating three separate videos. Here's a proven workflow:</p>
+      <h2>One Idea, Three Formats</h2>
+      <p>The efficient pattern is to write one core script, then adjust the package for each platform rather than rewriting the concept:</p>
       <ol>
-        <li><strong>Write one core script.</strong> Focus on a single topic with a strong hook, clear body, and compelling CTA.</li>
-        <li><strong>Record platform-specific versions.</strong> Keep the core message but adjust length, tone, and style for each platform.</li>
-        <li><strong>Extract the transcript.</strong> Use CapFetch to capture the script from your best-performing video. This becomes your blog post foundation.</li>
-        <li><strong>Publish and analyze.</strong> Track which platform drives the most engagement and double down accordingly.</li>
+        <li><strong>Start with the TikTok cut.</strong> Front-load the hook harder than feels natural — the first 2 seconds decide the For You fate. Keep it raw.</li>
+        <li><strong>Re-polish for Reels.</strong> Cleaner captions, better lighting, tighter edit. Reels viewers hold a higher production bar, and your existing followers compare you to your own feed.</li>
+        <li><strong>Extend the Shorts version.</strong> Add a keyword in the title and a spoken question in the script, because Shorts is where this video becomes searchable months from now.</li>
       </ol>
-      <p>CapFetch fits into step 3 — <a href="/">extract any video's transcript</a> in seconds and repurpose it into long-form content that ranks in search. For a full walkthrough, read <a href="/blog/how-to-repurpose-tiktok-content-for-blog">how to turn TikTok content into blog posts</a>.</p>
 
-      <h2>Stop Guessing, Start Strategizing</h2>
-      <p>The best platform strategy is the one that plays to each platform's strengths while keeping your workload manageable. Use CapFetch to extract transcripts from your best-performing videos, study what works, and build a content flywheel that runs across all three platforms.</p>
-      <p>Ready to start? <a href="/">Extract your first transcript free</a> — no registration required.</p>
-    `,
+      <h2>The Transcript Workflow That Makes This Sustainable</h2>
+      <p>Adapting one idea into three videos is easy. Adapting thirty ideas is where creators stall — every video needs notes, and notes need the source script. This is where transcript extraction pays for itself: pull the text of your own video or a competitor's, and you have the outline to remix.</p>
+      <p>Grab the script of any video on any of the three platforms — <a href="/tiktok-transcript-generator">TikTok transcript</a>, <a href="/reels-transcript-generator">Reels transcript</a>, or <a href="/shorts-transcript-downloader">Shorts transcript</a> — and keep a swipe file of hooks that worked. For the caption-level differences between platforms (which one exposes real text and which one is pixels), our <a href="/blog/reels-vs-tiktok-vs-shorts-captions">caption comparison guide</a> walks through each one.</p>
+      <p>Stop reposting — start reformatting. Pull a video's transcript and rebuild it for the next platform today.</p>`,
   },
   {
     slug: "best-free-tiktok-caption-extractor-tools",
@@ -188,39 +182,35 @@ export const posts: BlogPost[] = [
       "TokScript, CaptionGrab, or CapFetch? We tested the top free TikTok caption extractors head-to-head. Compare features, free quotas, and accuracy.",
     date: "2026-07-27",
     tags: ["tiktok", "caption-extractor", "comparison"],
-    contentHtml: `
-      <p>Search "free TikTok caption extractor" and you get dozens of results. Most claim to be free. Most hide a registration wall or a vanishingly small daily quota. After testing the top tools, the differences become clear — and most creators are using the wrong one for their workflow.</p>
-      <p>This guide compares the leading free TikTok caption extractors on the metrics that matter: cost, speed, accuracy, and platform support.</p>
+    contentHtml: `<p>Search "free TikTok caption extractor" and you get a long list of tools that mostly do the same thing differently enough to matter. After building our own extraction pipeline at CapFetch, we know exactly which differences count: registration walls, platform coverage, and whether the tool reads TikTok's caption track or transcribes the audio. This guide lays out the criteria and how the main options stack up against them.</p>
 
-      <h2>What to Look for in a Caption Extractor</h2>
-      <p>Before the comparison, here are the criteria that separate useful tools from time-wasters:</p>
-      <ul>
-        <li><strong>Free quota without registration:</strong> Can you test it before committing? Most creators need 5–10 extracts per day for research. A tool that requires sign-up before the first use is a barrier.</li>
-        <li><strong>Platform coverage:</strong> Does it handle TikTok only, or also Reels and Shorts? If you create across platforms, a single tool saves context-switching.</li>
-        <li><strong>Export options:</strong> Can you copy, edit, and download the transcript? Some tools lock editing behind a paywall.</li>
-        <li><strong>Extraction speed:</strong> If it takes longer than 10 seconds per video, you'll waste more time than you save.</li>
-      </ul>
-
-      <h2>Tool Comparison: Head to Head</h2>
-      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
-        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CapFetch</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TokScript</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CaptionGrab</th></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Free daily quota</td><td style="border:1px solid #d1d5db;padding:8px 12px">20/day (no sign-up)</td><td style="border:1px solid #d1d5db;padding:8px 12px">5/day (sign-up required)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Limited, unclear</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Platforms</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok + Reels + Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok only</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok only</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Transcript editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Inline editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Download as .txt</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Copy to clipboard</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">AI analysis</td><td style="border:1px solid #d1d5db;padding:8px 12px">Coming (Phase 2)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Limited</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Registration required</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No (20/day free)</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td></tr>
+      <h2>The Five Criteria That Actually Matter</h2>
+      <p>Ignore feature-count marketing. These five filters separate tools that fit your workflow from tools that interrupt it:</p>
+      <table style="border-collapse:collapse;width:100%;font-size:14px;">
+        <thead><tr style="background:#f3f4f6;">
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Criterion</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Why it decides the winner</th>
+        </tr></thead>
+        <tbody>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>Free tier without sign-up</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">If the tool demands an account before the first extraction, it's a conversion funnel, not a utility. Most creators need 5-10 extracts a day for research; a registration wall breaks the habit.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>Reads the real caption track</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">TikTok stores auto-captions as a JSON text track when enabled. Tools that read it return exact, timestamped text; tools that run speech recognition return a paraphrase with lower fidelity.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>Platform coverage</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">TikTok-only tools force context-switching if you also work with Reels or Shorts. A single tool with all three formats keeps the workflow in one place.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>Output format</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">Copy, download, or structured export. If the tool only shows text on screen, you're copy-pasting around the web instead of working from one file.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>Credits that reset</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">Free quotas are meaningless if they never replenish. Check whether the daily allowance resets and how many videos it covers.</td></tr>
+        </tbody>
       </table>
 
-      <h2>Which Tool Should You Pick?</h2>
-      <p><strong>Choose CapFetch if:</strong> You want a free tool with no registration, support for all three major platforms, and the ability to edit and download transcripts. The 20/day free quota covers most research workflows.</p>
-      <p><strong>Choose TokScript if:</strong> You only need TikTok transcripts and you're willing to register for a smaller daily quota. Their AI writing integration is useful if you need script generation alongside transcription.</p>
-      <p><strong>Choose CaptionGrab if:</strong> You need basic caption extraction and don't mind the registration. But with limited features and unclear pricing, it's hard to recommend over the alternatives.</p>
+      <h2>How the Main Options Compare</h2>
+      <p>CaptionGrab and TokScript are the names that come up most in this space. Their positioning: CaptionGrab focuses on grabbing displayed TikTok captions, TokScript on transcription-style tools for short-form scripts. Both are TikTok-first, which matters when your work spans platforms.</p>
+      <p>CapFetch is built on the track-reading approach: when TikTok's auto-caption JSON exists, we return it verbatim with timestamps; when captions are burned in with CapCut, we fall back to speech recognition. The tool covers TikTok, Reels, and Shorts in one place, works without an account, and lets you copy or download the result. That combination — track fidelity plus three-platform coverage — is what makes it the right default for daily research volume.</p>
 
-      <h2>The Verdict</h2>
-      <p>For most creators, CapFetch offers the best combination of free access, multi-platform support, and usable features. No registration means you can start extracting transcripts immediately. <a href="/">Try CapFetch free</a> and see if it fits your workflow — if you need a deeper dive into TikTok caption extraction, read our <a href="/blog/how-to-extract-tiktok-captions">complete TikTok caption extraction guide</a>.</p>
-    `,
+      <h2>Why Tracks Beat Transcripts for Analysis</h2>
+      <p>If you study viral scripts, the distinction between a caption track and a speech-recognition transcript is load-bearing. The track preserves the creator's exact wording and timing — the hook, the pause, the CTA, all as authored. A transcript is a close retelling that rounds off the details. For pattern analysis, exact wording is the whole point.</p>
+      <p>That's why we open with the track question rather than the price question. Accuracy isn't a premium tier feature here; it's the core of whether the output is usable.</p>
+
+      <h2>Start With a Real Extraction</h2>
+      <p>Run one of your own best-performing videos through the <a href="/tiktok-transcript-generator">TikTok transcript generator</a> and compare what you get to the on-screen captions. If they match word for word, the tool read the track. That single test tells you more than any feature matrix.</p>
+      <p>Working across platforms? The same pipeline handles <a href="/reels-transcript-generator">Reels</a> and <a href="/shorts-transcript-downloader">Shorts</a> — one tool, three formats, no account.</p>`,
   },
   {
     slug: "how-to-repurpose-tiktok-content-for-blog",
@@ -229,47 +219,38 @@ export const posts: BlogPost[] = [
       "Turn one TikTok video into a 1000-word SEO blog post in 30 minutes. A step-by-step workflow using CapFetch transcript extraction with proven content structure.",
     date: "2026-07-28",
     tags: ["tiktok", "content-strategy", "repurposing"],
-    contentHtml: `
-      <p>You posted a TikTok that got 50K views. The script was tight, the hook worked, and the engagement was solid. But 24 hours later, that video is buried. All that effort — the research, the scripting, the filming — gone into the feed abyss.</p>
-      <p>The solution isn't posting more. It's repurposing. One TikTok video contains a complete script structure that can become a blog post ranking in Google for months or years. Here's exactly how to do it.</p>
+    contentHtml: `<p>A TikTok that gets 50K views is dead in the feed 48 hours later. The same script turned into a blog post keeps working for months — it ranks, it links, it builds authority. The missing piece for most creators is speed: transcribing and expanding a video by hand takes hours. This is the 30-minute workflow we use: extract, structure, expand, publish.</p>
 
-      <h2>Why TikTok-to-Blog Repurposing Works</h2>
-      <p>The content you already created is your most underutilized asset:</p>
+      <h2>Why the Conversion Works</h2>
+      <p>The strategy isn't "copy your video into text." A TikTok script is a compressed argument — hook, stakes, proof, CTA — and that structure maps directly onto what a blog post needs. You're not re-creating content; you're unpacking it:</p>
       <ul>
-        <li><strong>SEO longevity:</strong> A TikTok video trends for days. A blog post ranks for months or years. Repurposing extends the ROI of every piece of content you create.</li>
-        <li><strong>Audience expansion:</strong> Some people prefer reading over watching. Blog content reaches the segment of your audience that never opens TikTok.</li>
-        <li><strong>Authority building:</strong> Long-form, structured content establishes expertise in a way that 60-second videos can't match.</li>
-        <li><strong>Knowledge compounding:</strong> Every repurposed post becomes a pillar that supports and links to your other content, building a network of SEO value.</li>
+        <li><strong>SEO longevity.</strong> The video trends for days; the post accumulates search traffic for months. One repurposed script keeps paying.</li>
+        <li><strong>Two audiences.</strong> Some people absorb video, some read. The post reaches the segment that never opens TikTok.</li>
+        <li><strong>Authority compounding.</strong> Each post is a sharable, linkable artifact. Videos aren't linked to; posts are.</li>
       </ul>
 
-      <h2>The 4-Step Repurposing Workflow</h2>
-      <h3>Step 1: Extract the Transcript (2 minutes)</h3>
-      <p>Use CapFetch to <a href="/blog/how-to-extract-tiktok-captions">extract the TikTok transcript</a> from your video. Copy the URL, paste it into CapFetch, and get the full script in seconds. This transcript is your blog post skeleton.</p>
-      <h3>Step 2: Expand Each Point (20 minutes)</h3>
-      <p>A 60-second TikTok contains roughly 150–200 words of spoken content. A good blog post needs 800–1500 words. Expand each point from the script:</p>
+      <h2>The 30-Minute Pipeline</h2>
+      <h3>1. Pull the transcript (2 minutes)</h3>
+      <p>Copy the video link and run it through the <a href="/tiktok-transcript-generator">TikTok transcript generator</a>. You get the exact script with timestamps — no typing, no rewatching.</p>
+      <h3>2. Extract the skeleton (5 minutes)</h3>
+      <p>Mark the four beats in the transcript: the hook (first 2 seconds), the problem the video sets up, the proof or story it uses, and the call-to-action. These become your intro, body headings, and conclusion.</p>
+      <h3>3. Expand each beat (15 minutes)</h3>
+      <p>The video compressed everything; the post has room to breathe. For each beat, add one thing the video couldn't fit: context, a concrete example, a number, or the "how" behind a claim. Resist the urge to pad — one real addition per beat is what makes the post worth reading.</p>
+      <h3>4. Optimize and publish (8 minutes)</h3>
+      <p>Write a searchable title based on the problem your video solved, one meta description, and an H2 structure with headers that state the answer. Add one internal link to a related page of yours and one external reference if you made a factual claim.</p>
+
+      <h2>What to Repurpose First</h2>
+      <p>Not every video deserves a post. Pick ones that:</p>
       <ul>
-        <li>Add personal experience and examples</li>
-        <li>Include relevant data and statistics</li>
-        <li>Embed screenshots or images from the video</li>
-        <li>Link to supporting research or tools</li>
+        <li><strong>Solve a recurring problem</strong> — "how to X" videos map to search intent directly.</li>
+        <li><strong>Have a defensible claim</strong> — a strong opinion or a niche insight supports a longer argument.</li>
+        <li><strong>Performed well organically</strong> — your own engagement data is a decent proxy for broader demand.</li>
       </ul>
-      <h3>Step 3: Structure for SEO (5 minutes)</h3>
-      <p>Follow the proven structure: pain-point hook → three subheadings → comparison section → summary → CTA. Include your target keyword in the title, first paragraph, and at least one subheading.</p>
-      <h3>Step 4: Publish and Cross-Promote (3 minutes)</h3>
-      <p>Publish the blog post and add a link to it in your TikTok video description. This creates a virtuous cycle: the video drives traffic to the blog, and the blog improves the SEO discoverability of your video's topic.</p>
 
-      <h2>Before vs After: What Repurposing Changes</h2>
-      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
-        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Metric</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TikTok only</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">TikTok + Blog</th></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Content lifespan</td><td style="border:1px solid #d1d5db;padding:8px 12px">24–72 hours</td><td style="border:1px solid #d1d5db;padding:8px 12px">6+ months</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Traffic sources</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok FYP</td><td style="border:1px solid #d1d5db;padding:8px 12px">Google + TikTok + referrals</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Content produced</td><td style="border:1px solid #d1d5db;padding:8px 12px">1 video</td><td style="border:1px solid #d1d5db;padding:8px 12px">1 video + 1 blog post</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Time investment</td><td style="border:1px solid #d1d5db;padding:8px 12px">30 min</td><td style="border:1px solid #d1d5db;padding:8px 12px">60 min (30 video + 30 post)</td></tr>
-      </table>
-
-      <h2>Start Repurposing Today</h2>
-      <p>You don't need a complicated content calendar or expensive tools. Extract your TikTok transcript with CapFetch, expand it into a blog post, and watch your content start working long after the video stops trending. <a href="/">Try CapFetch free</a> — paste your first TikTok URL and build your repurposing workflow in under 30 minutes.</p>
-    `,
+      <h2>What Not to Do</h2>
+      <p>Don't publish the transcript as-is. Raw dialogue reads poorly, repeats itself, and has no structure — that's the fast route to a page nobody finishes. Don't overload with keywords; the post wins on the argument, not the density. And don't skip the CTA — the video had one, the post should too.</p>
+      <p>If Reels or Shorts is your primary format, the same pipeline works: start from the <a href="/reels-transcript-generator">Reels transcript generator</a> or the <a href="/shorts-transcript-downloader">Shorts transcript downloader</a> and follow the same four beats.</p>
+      <p>Pull the transcript of your best video right now and write the skeleton in the next ten minutes. That's the full habit — everything after it is editing.</p>`,
   },
   {
     slug: "what-is-a-transcript-generator",
@@ -278,37 +259,42 @@ export const posts: BlogPost[] = [
       "Transcript generators convert video audio to text automatically. Learn how they work and how CapFetch handles TikTok, Reels, and Shorts in seconds.",
     date: "2026-07-29",
     tags: ["transcript", "guide", "tutorial"],
-    contentHtml: `
-      <p>You've probably seen the term "transcript generator" and assumed it's a niche tool for journalists or academics. But if you create short-form video content, a transcript generator is one of the most practical tools you can add to your workflow — and most creators don't know what they're missing.</p>
-      <p>Here's what a transcript generator actually does, how the technology works, and why it's becoming essential for content creators.</p>
+    contentHtml: `<p>A transcript generator takes the audio of a video and turns it into readable text. That sounds like a niche utility for journalists, but for anyone creating short-form content it's one of the most practical tools in the workflow — because the transcript is the version of your content you can actually edit, quote, and republish. Here's how the technology works under the hood and what it means in practice.</p>
 
-      <h2>How Transcript Generators Work</h2>
-      <p>Every transcript generator follows the same core pipeline. Understanding it helps you pick the right tool:</p>
-      <ol>
-        <li><strong>Audio extraction:</strong> The tool downloads or streams the audio track from your video URL. For short-form platforms like TikTok and Reels, this step happens in seconds.</li>
-        <li><strong>Speech recognition (ASR):</strong> An automatic speech recognition model processes the audio, identifying words, pauses, and speaker changes. Modern ASR handles multiple languages, accents, and background noise.</li>
-        <li><strong>Text formatting:</strong> The raw output is formatted with punctuation, capitalization, and paragraph breaks. Some generators add timestamps or speaker labels.</li>
-        <li><strong>Display and export:</strong> The final transcript is presented in an editable interface with options to copy, download, or share.</li>
-      </ol>
-      <p>The quality of a transcript generator depends on the ASR model and the audio processing pipeline. CapFetch uses advanced models optimized for short-form video — where audio quality varies widely and background music is common.</p>
-
-      <h2>What to Look for in a Transcript Generator</h2>
-      <p>Not all transcript generators are created equal. Here's what separates useful tools from frustrating ones:</p>
-      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
-        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Why It Matters</th></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">No registration for basic use</td><td style="border:1px solid #d1d5db;padding:8px 12px">You should be able to test the tool before committing. Registration walls slow you down.</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Multi-platform support</td><td style="border:1px solid #d1d5db;padding:8px 12px">If you create across TikTok, Reels, and Shorts, a tool that handles all three saves context-switching.</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Transcript editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">No ASR model is 100% accurate. The ability to fix mistakes inline is essential.</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Export flexibility</td><td style="border:1px solid #d1d5db;padding:8px 12px">Copy to clipboard, download as .txt, or save to your account. Different workflows need different outputs.</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Speed</td><td style="border:1px solid #d1d5db;padding:8px 12px">A 60-second video should produce a transcript in under 10 seconds. Longer wait times defeat the purpose.</td></tr>
+      <h2>The Pipeline Behind Every Transcript Generator</h2>
+      <p>Every product in this category runs the same three stages. Understanding them explains why output quality varies and what you can expect from each tool.</p>
+      <table style="border-collapse:collapse;width:100%;font-size:14px;">
+        <thead><tr style="background:#f3f4f6;">
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Stage</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">What happens</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Where quality is won or lost</th>
+        </tr></thead>
+        <tbody>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>1. Audio extraction</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">The tool fetches the video and isolates its audio track.</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Some platforms expose the track directly; others require the tool to pull it from the page data. Failure here returns nothing.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>2. Speech recognition</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">An ASR model converts speech to words, tracking pauses and speaker changes.</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Accuracy depends on audio clarity. Music layered under voice, strong accents, and fast speech all lower confidence.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>3. Post-processing</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">Punctuation, timestamps, and structure are added to the raw word sequence.</td><td style="border:1px solid #d1d5db;padding:8px 12px;">Good tools segment by sentence and timestamp each line, which makes the output usable instead of a text wall.</td></tr>
+        </tbody>
       </table>
 
-      <h2>CapFetch vs Other Generators</h2>
-      <p>CapFetch checks all the boxes above and adds platform-specific optimizations. TikTok videos, Reels, and Shorts each have different audio characteristics — CapFetch adjusts its processing for each platform. <a href="/">Try CapFetch free</a> — paste any short-form video URL and see your transcript in seconds. For a detailed comparison, check our <a href="/blog/best-free-tiktok-caption-extractor-tools">caption extractor comparison guide</a>.</p>
+      <h2>The Short-Form Twist: Tracks Aren't Always There</h2>
+      <p>For YouTube long-form, transcripts usually come from the platform's own caption track. Short-form platforms are inconsistent:</p>
+      <ul>
+        <li><strong>TikTok</strong> stores auto-captions as a JSON text track when the creator enables them — a generator that reads it returns the exact authored text.</li>
+        <li><strong>YouTube Shorts</strong> has a server-side speech track, but the interface never shows it, so tools reach it through the same timedtext route as long-form.</li>
+        <li><strong>Instagram Reels</strong> exposes no track at all — captions are pixels. Extraction means running speech recognition on the audio.</li>
+      </ul>
+      <p>This is why the same generator returns different fidelity on different platforms. It's not a broken tool; it's the platform's data reality. Our <a href="/blog/reels-vs-tiktok-vs-shorts-captions">caption comparison guide</a> maps which platforms give you real text and which one requires transcription.</p>
 
-      <h2>Why Every Creator Needs a Transcript Generator</h2>
-      <p>Whether you're analyzing competitors, repurposing your own content, or building a library of winning scripts, a transcript generator saves hours per week. The best part? The good ones are free to start. CapFetch offers 20 daily extracts with no registration — enough to build a consistent analysis workflow without spending a cent. <a href="/">Start extracting now</a>.</p>
-    `,
+      <h2>What a Transcript Is Good For</h2>
+      <ul>
+        <li><strong>Editing your own content.</strong> A blog post, newsletter, or Twitter thread that starts from your video script keeps your voice instead of being rewritten from scratch.</li>
+        <li><strong>Studying what works.</strong> Transcripts of competitors' best videos expose hook patterns and structure that watching blurs.</li>
+        <li><strong>Accessible republishing.</strong> Text versions reach readers, feed search engines, and give your video a second distribution channel.</li>
+      </ul>
+
+      <h2>How CapFetch Fits</h2>
+      <p>CapFetch reads TikTok's caption track when it exists, falls back to speech recognition when captions were burned in, and handles Reels and Shorts with the same pipeline — <a href="/tiktok-transcript-generator">TikTok</a>, <a href="/reels-transcript-generator">Reels</a>, <a href="/shorts-transcript-downloader">Shorts</a>. No account, no upload: paste a link, get text.</p>
+      <p>Generate a transcript for your latest video and read it once as a document. You'll notice gaps in your own structure that watching never revealed.</p>`,
   },
   {
     slug: "best-free-reels-caption-extractor-tools",
@@ -317,49 +303,33 @@ export const posts: BlogPost[] = [
       "Compare the best free Instagram Reels caption extractors in 2026. CapFetch vs CaptionGrab vs alternatives — accuracy, free limits, and export features.",
     date: "2026-07-31",
     tags: ["instagram-reels", "caption-extractor", "comparison"],
-    contentHtml: `
-      <p>You found an Instagram Reel with a script that perfectly explains your niche — but Instagram doesn't let you copy the captions. Every second you spend manually transcribing is time you could spend creating.</p>
-      <p>Reels caption extractors solve this problem, but not all tools are equal. Some hide their free quotas behind sign-up walls. Others only support TikTok and ignore Reels entirely. This guide compares the best free Reels caption extractors so you can pick the right one for your workflow.</p>
+    contentHtml: `<p>Reels caption extraction is a different problem from TikTok extraction, and most "transcript tools" treat it as an afterthought. Instagram exposes no caption track at all — the words are pixels on the frames — so every Reels tool is really doing speech recognition on the audio. That changes what you should look for in a tool. Here are the criteria, the Reels-specific pitfalls, and how the options compare.</p>
 
-      <h2>Why You Need a Dedicated Reels Caption Extractor</h2>
-      <p>Most short-form video tools focus on TikTok, leaving Instagram Reels as an afterthought. Here's why Reels deserve dedicated attention:</p>
-      <ul>
-        <li><strong>Different audio characteristics:</strong> Reels often layer music over voiceover, making standard ASR models less accurate. A Reels-optimized extractor handles this better.</li>
-        <li><strong>No native transcript feature:</strong> Unlike YouTube, Instagram doesn't offer auto-generated captions you can copy. The only way to get a Reels transcript is through a third-party tool.</li>
-        <li><strong>Competitive research at scale:</strong> If you're analyzing 10–20 competitor Reels per day, a fast extractor saves hours compared to manual transcription.</li>
-      </ul>
-      <p>Using a tool that's optimized for Reels means higher accuracy, faster extraction, and fewer failed attempts.</p>
+      <h2>The Reels Problem in One Paragraph</h2>
+      <p>TikTok gives you a JSON caption track when auto-captions are on. Shorts keeps a server-side speech track. Reels gives you nothing: no transcript endpoint, no caption data, no hidden file. Any tool claiming to "extract Reels captions" runs ASR on the audio — so tool quality is really audio-handling quality, not data-availability quality.</p>
 
-      <h2>What to Look for in a Reels Caption Extractor</h2>
-      <p>Before comparing tools, here are the criteria that matter:</p>
-      <ul>
-        <li><strong>Free quota without registration:</strong> You should be able to test the tool before committing. 10–20 free extracts per day covers most research workflows.</li>
-        <li><strong>Extraction speed:</strong> A 60-second Reel should produce a transcript in under 10 seconds. Anything slower defeats the purpose.</li>
-        <li><strong>Export options:</strong> Can you copy, edit, and download the transcript? Some tools lock editing behind a paywall.</li>
-        <li><strong>Platform support:</strong> If you also create for TikTok and Shorts, a multi-platform tool saves context-switching.</li>
-      </ul>
-
-      <h2>Reels Caption Extractor Comparison: Head to Head</h2>
-      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
-        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Feature</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CapFetch</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">CaptionGrab</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Manual</th></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Free daily quota</td><td style="border:1px solid #d1d5db;padding:8px 12px">20/day (no sign-up)</td><td style="border:1px solid #d1d5db;padding:8px 12px">Limited, unclear</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Reels support</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Optimized</td><td style="border:1px solid #d1d5db;padding:8px 12px">⚠️ Basic</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Extraction speed</td><td style="border:1px solid #d1d5db;padding:8px 12px">5–10 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">15–30 seconds</td><td style="border:1px solid #d1d5db;padding:8px 12px">10+ minutes</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Transcript editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Inline editing</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Download as .txt</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Multi-platform</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok + Reels + Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok only</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
-        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Registration required</td><td style="border:1px solid #d1d5db;padding:8px 12px">❌ No (20/day free)</td><td style="border:1px solid #d1d5db;padding:8px 12px">✅ Yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">N/A</td></tr>
+      <h2>What to Check Before You Trust a Reels Tool</h2>
+      <table style="border-collapse:collapse;width:100%;font-size:14px;">
+        <thead><tr style="background:#f3f4f6;">
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Check</th>
+          <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;">Why it matters for Reels</th>
+        </tr></thead>
+        <tbody>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>Music handling</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">Reels layer songs under voice by default. A tool that can't separate the two returns jumbled text on the most common Reels format.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>Timestamped output</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">When accuracy drops, timestamps let you jump to the passage and verify — the difference between usable and unusable output.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>No upload/download cycle</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">A tool that asks you to upload the video file adds friction per Reel. Link-based processing stays usable at volume.</td></tr>
+          <tr><td style="border:1px solid #d1d5db;padding:8px 12px;"><strong>Free access without sign-up</strong></td><td style="border:1px solid #d1d5db;padding:8px 12px;">Same rule as TikTok tools: an account wall before the first extraction means the tool is a funnel, not a utility.</td></tr>
+        </tbody>
       </table>
 
-      <h2>Which Reels Caption Extractor Should You Use?</h2>
-      <p><strong>CapFetch</strong> is the clear winner for most creators. It's the only tool with dedicated Reels optimization, a generous free tier (20/day with no registration), and full editing and export capabilities. If you're serious about analyzing Reels content at scale, it's the practical choice.</p>
-      <p><strong>CaptionGrab</strong> works in a pinch but lacks Reels-specific optimization, has unclear free limits, and requires registration. It's a fallback, not a primary tool.</p>
-      <p><strong>Manual transcription</strong> is the most flexible but costs 10+ minutes per Reel. For occasional use it's fine, but if you analyze more than 2–3 Reels per week, an automated tool pays for itself in time saved.</p>
+      <h2>How the Options Stack Up</h2>
+      <p>Most short-form tools in this space started TikTok-first, with Reels as a checkbox. CaptionGrab and TokScript sit in that category — their extraction was built around TikTok's caption flows, and Reels support is secondary. That shows up in exactly the areas above: music handling and timestamp fidelity on audio-only content.</p>
+      <p>CapFetch handles Reels natively rather than as an afterthought: link-based processing, timestamps on every line, and a free tier that runs without an account. The <a href="/reels-transcript-generator">Reels transcript generator</a> and the <a href="/reels-caption-downloader">Reels caption downloader</a> are the two entry points, depending on whether you want structured text or a quick copy.</p>
 
-      <h2>Start Extracting Reels Captions Free</h2>
-      <p>You don't need to spend money or register to start extracting Reels transcripts. CapFetch gives you 20 free extractions daily with no strings attached. For a full tutorial on using CapFetch with Instagram Reels, <a href="/blog/how-to-get-instagram-reels-transcript">read our complete Reels transcript guide</a>.</p>
-      <p>Ready to try it? <a href="/">Extract your first Reels caption now</a> — paste a Reels URL and see your transcript in seconds.</p>
-    `,
+      <h2>The Test That Settles It</h2>
+      <p>Don't compare marketing pages. Run one Reel with music under the voice through a candidate tool and check three things: does it separate the speech from the song, are the timestamps usable for spot-checking, and did you hit a sign-up wall before seeing output? That single test predicts the daily experience better than any feature list.</p>
+      <p>For the caption-format differences across platforms — why Reels is pixels while TikTok is data — see our <a href="/blog/reels-vs-tiktok-vs-shorts-captions">platform caption guide</a> and the <a href="/blog/how-to-get-instagram-reels-transcript">full Reels transcript walkthrough</a>.</p>
+      <p>Run your own Reel through the <a href="/reels-transcript-generator">free Reels transcript generator</a> now and read what the audio actually says.</p>`,
   },
   {
     slug: "tiktok-text-extractor-guide",

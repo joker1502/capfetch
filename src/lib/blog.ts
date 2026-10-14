@@ -1188,6 +1188,69 @@ export const posts: BlogPost[] = [
       <p>CapFetch runs all three extraction paths — TikTok's track reader, Shorts' timedtext route, and Reels' speech recognition — behind one input field. Paste a link, get the script, and download it as a .txt file. Twenty extractions a day are free with no registration; <a href="/sign-up">a free account</a> raises that to 50 and adds saved history.</p>
       <p>Try it with the same video on all three platforms and watch the differences appear in real time. Start with a <a href="/tiktok-transcript-generator">TikTok link</a>, then run the same script through the <a href="/shorts-transcript-downloader">Shorts downloader</a> and the <a href="/reels-caption-downloader">Reels downloader</a>.</p>
     `,
+  },
+  {
+    slug: "tiktok-transcript-exporter",
+    title: "TikTok Transcript Exporter: What You Get (TXT, SRT, VTT)",
+    description:
+      "A TikTok transcript exporter returns plain text, not a subtitle file. See what actually comes back, why SRT and VTT need timestamps, and how to build one.",
+    date: "2026-10-16",
+    tags: ["tiktok", "transcript-exporter", "file-formats"],
+    contentHtml: `
+      <p>An exporter hands you the words. Not a subtitle file, not a timed track — the words. That gap trips up almost everyone who searches for a "TikTok transcript exporter" and expects an .srt file to drop out of the other end.</p>
+      <p>The gap matters the moment you try to burn captions back onto a video, translate a script, or cut a clip into a longer edit. So here's what an export really contains, why renaming a file never works, and the shortest honest route from plain text to a timed subtitle file.</p>
+
+      <h2>What a TikTok Transcript Exporter Actually Returns</h2>
+      <p>The output object is smaller than most people expect. Ours holds two fields: the transcript as one plain string, and a word count. No segment array, no per-line timing, no cue list. The download button is labeled .txt because that is the only file it writes.</p>
+      <p>What that buys you is real: copyable text, the word count already done, an editable box where you can fix misheard names before saving, and 20 free exports a day with no account. What it can't buy you is anything a subtitle player understands. Subtitles need a start and end time for every line. A string of words carries none.</p>
+      <ul>
+        <li><strong>Included:</strong> the spoken script, word count, inline editing, a .txt file on your disk.</li>
+        <li><strong>Missing:</strong> timestamps, speech-matched line breaks, speaker labels, any .srt or .vtt output.</li>
+      </ul>
+      <p>One loss the export can't recover: on-screen text. Punch-in captions, hashtags, and styled overlays never appear, because extraction reads the audio or TikTok's auto-caption data — not the pixels. Our <a href="/blog/how-to-download-tiktok-captions">TikTok caption download guide</a> covers where that boundary sits and why a burned-in caption is invisible to every extractor on the market.</p>
+
+      <h2>Why "Export as SRT" Is Not a Rename</h2>
+      <p>This is the failure that eats an afternoon. You take your .txt transcript, rename it to .srt, drop it into a player, and get nothing. Or the file loads and every cue sits blank.</p>
+      <p>Renaming changes the extension and stops there. A WebVTT file must open with the literal line WEBVTT, and per the W3C's WebVTT specification a browser rejects the entire track when that header is missing or misspelled. SRT does the reverse: no header at all, but each cue needs a sequential number. The two formats even disagree on the punctuation inside every timestamp.</p>
+      <pre style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;padding:12px;overflow-x:auto;font-size:0.85em">SRT — comma separator, index required
+1
+00:00:01,000 --> 00:00:04,000
+Text goes here
+
+VTT — WEBVTT header required, dot separator, index optional
+WEBVTT
+
+00:00:01.000 --> 00:00:04.000
+Text goes here</pre>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Format</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Header line</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Milliseconds</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Cue numbers</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Opens in</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">.txt</td><td style="border:1px solid #d1d5db;padding:8px 12px">none</td><td style="border:1px solid #d1d5db;padding:8px 12px">no timing at all</td><td style="border:1px solid #d1d5db;padding:8px 12px">none</td><td style="border:1px solid #d1d5db;padding:8px 12px">Any editor. No player reads it as captions.</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">.srt</td><td style="border:1px solid #d1d5db;padding:8px 12px">none</td><td style="border:1px solid #d1d5db;padding:8px 12px">comma: 00:00:01,000</td><td style="border:1px solid #d1d5db;padding:8px 12px">required</td><td style="border:1px solid #d1d5db;padding:8px 12px">VLC, desktop editors, most upload forms</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">.vtt</td><td style="border:1px solid #d1d5db;padding:8px 12px">WEBVTT (required)</td><td style="border:1px solid #d1d5db;padding:8px 12px">dot: 00:00:01.000</td><td style="border:1px solid #d1d5db;padding:8px 12px">optional</td><td style="border:1px solid #d1d5db;padding:8px 12px">HTML5 video, web players, streaming platforms</td></tr>
+      </table>
+      <p>If you need VTT and only have SRT, the conversion is three edits: add the WEBVTT header, swap commas for dots in every timestamp, drop the index numbers. Going the other way adds the numbers back and reverses the punctuation. Both directions keep the cue text untouched — which is why a script that does only the rename keeps failing.</p>
+
+      <h2>Building a Timed Subtitle File From an Exported Transcript</h2>
+      <p>Since nothing hands you timings, you generate them. The method is arithmetic, and it takes about ten minutes for a one-minute video.</p>
+      <p>Start from the word count your export already gave you, and a speaking rate. TikTok delivery runs fast; we calibrate at roughly 2.5 words per second (150 words per minute) as a working assumption and then correct it against the real video length. Ten words per cue puts each line on screen for about four seconds, which sits inside the comfortable reading range and matches how short-form captions are normally chunked.</p>
+      <p>A 60-second TikTok returns about 150 words at that rate — fifteen cues of roughly four seconds each. The first two blocks of the SRT you'd write look like this:</p>
+      <pre style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;padding:12px;overflow-x:auto;font-size:0.85em">1
+00:00:00,000 --> 00:00:04,000
+first ten words of the script
+
+2
+00:00:04,000 --> 00:00:08,000
+next ten words of the script</pre>
+      <p>Real talk: constant-rate timing drifts, every time. Creators pause, hold a beat for a punchline, or let a b-roll stretch run with no speech — and your cue clock keeps marching. The fix is one correction pass, not a rewrite. Compare your last cue's end time to the actual video duration, then scale every timestamp by the ratio. A transcript whose final cue lands at 4:10 on a 4:00 video is 4% long, so multiply the value by 0.96 and the file snaps back into sync.</p>
+      <p>Run the drift check before you polish anything else. Fixing punctuation on a file with wrong timing wastes the pass.</p>
+
+      <h2>When Timestamps Are Worth the Extra Work</h2>
+      <p>Three situations justify building the timeline. Re-uploading a clip with burned-in subtitles, running a translation workflow where a translator needs cue boundaries, and cutting timecoded notes for a client review. Everything else — writing, research, repurposing a script into an article, analyzing hooks — is better served by plain text, because a subtitle file only adds obstacles for a writer.</p>
+      <p>Not sure which one you're in? If the file's destination is a person reading it, .txt wins. If the destination is software that renders text over video, you need timings, and there is no way around generating them.</p>
+
+      <h2>Export the Text First</h2>
+      <p>Every route to a subtitle file starts with clean text, so get that part out of the way in seconds. <a href="/tiktok-caption-downloader">CapFetch's TikTok transcript exporter</a> returns the full script, an editable box, and a .txt download with no sign-up — paste a link and the words are yours. For the surrounding workflow, the <a href="/blog/tiktok-transcript-generator-guide">TikTok transcript generator guide</a> covers transcript quality and failure modes, and <a href="/blog/reels-vs-tiktok-vs-shorts-captions">the three-platform caption comparison</a> shows what changes when the same script lives on Reels or Shorts instead.</p>
+    `,
   }
 ];
 

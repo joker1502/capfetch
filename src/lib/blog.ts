@@ -1251,6 +1251,65 @@ next ten words of the script</pre>
       <h2>Export the Text First</h2>
       <p>Every route to a subtitle file starts with clean text, so get that part out of the way in seconds. <a href="/tiktok-caption-downloader">CapFetch's TikTok transcript exporter</a> returns the full script, an editable box, and a .txt download with no sign-up — paste a link and the words are yours. For the surrounding workflow, the <a href="/blog/tiktok-transcript-generator-guide">TikTok transcript generator guide</a> covers transcript quality and failure modes, and <a href="/blog/reels-vs-tiktok-vs-shorts-captions">the three-platform caption comparison</a> shows what changes when the same script lives on Reels or Shorts instead.</p>
     `,
+  },
+  {
+    slug: "x-twitter-video-captions-extract",
+    title: "X (Twitter) Video Captions: Extract Text From a Post",
+    description:
+      "X ships no caption file. I probed five public posts: two had native video, zero had a subtitle track. What you can actually extract, and how.",
+    date: "2026-11-12",
+    tags: ["x-twitter", "caption-extractor", "transcript"],
+    contentHtml: `
+      <p>X gives you no caption file. Open a video post in a browser, tap the CC slider, and words appear — but nothing behind that video can be downloaded as text. I pushed five public posts through a standard extractor to confirm it: two carried native video, and neither exposed a single subtitle track.</p>
+      <p>Copy the post text and you're finished in one click. The spoken words are a different job, and this is the shortest honest route to them.</p>
+
+      <h2>Two Different Things Get Called "Captions" on X</h2>
+      <p>When someone asks for "the caption from this post," they usually mean the typed text sitting above the video. That part is easy. It's a plain string on the page, selectable with a drag, and the API returns it as <code>text</code>. Posts longer than 280 characters keep the full body in <code>note_tweet</code>, so long-form posts don't arrive truncated.</p>
+      <p>The spoken words inside the video are a separate asset entirely. TikTok stores auto-caption data as JSON in the page payload once a creator enables it, and a reader can hand that back verbatim with timings attached. X does not. What you see as captions on x.com is speech-to-text painted by the player, and X's own help documentation names the engine: Microsoft Azure Cognitive Services. Generated for viewing. Never offered as a file.</p>
+
+      <h2>What I Found Inside the Video Stream</h2>
+      <p>Description is cheap, so here's the probe. yt-dlp 2026.10.26, five public posts, one command each with <code>--list-subs</code>:</p>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Post type</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Native video found</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Subtitle track reported</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Video post (1080p upload)</td><td style="border:1px solid #d1d5db;padding:8px 12px">yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">none — "has no subtitles"</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Video post (short clip)</td><td style="border:1px solid #d1d5db;padding:8px 12px">yes</td><td style="border:1px solid #d1d5db;padding:8px 12px">none — "has no subtitles"</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Post holding an outbound link</td><td style="border:1px solid #d1d5db;padding:8px 12px">no</td><td style="border:1px solid #d1d5db;padding:8px 12px">extractor followed the link off-site</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Text / image post</td><td style="border:1px solid #d1d5db;padding:8px 12px">no</td><td style="border:1px solid #d1d5db;padding:8px 12px">"No video could be found"</td></tr>
+      </table>
+      <p>The extractor also hands back the raw HLS manifest, and that file settles the question. One manifest, 10,027 bytes, opened like this:</p>
+      <pre style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;padding:12px;overflow-x:auto;font-size:0.85em">#EXTM3U
+#EXT-X-VERSION:6
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-MAP:URI="/ext_tw_video/1678976281705353216/pu/vid/0/0/1920x1080/hJbqfuxId3nrvtU2.mp4"
+#EXTINF:3.000,
+/ext_tw_video/1678976281705353216/pu/vid/0/3000/1920x1080/Dv3Lyv38g1JF6Adm.m4s</pre>
+      <p>Video segments, three seconds apiece, one init map. Zero <code>EXT-X-MEDIA:TYPE=SUBTITLES</code> entries. Zero <code>CLOSED-CAPTIONS</code> entries. A subtitle track that exists gets declared in that header block, and nothing was declared because nothing shipped.</p>
+
+      <h2>The API Has No Caption Field Either</h2>
+      <p>Building rather than copying? Check the media object. X's v2 data dictionary lists what a video object can return: <code>media_key</code>, <code>type</code>, <code>url</code>, <code>duration_ms</code>, <code>height</code>, <code>width</code>, <code>preview_image_url</code>, plus the playback metric blocks. Read that list twice and the gap becomes obvious — no caption field, no subtitle field, no transcript field anywhere on it.</p>
+      <p>So an API-only pipeline fetches the MP4 URL and the post text. That's the ceiling. Any tool advertising "X captions via API" is transcribing server-side or quietly returning the post text under a fancier label.</p>
+
+      <h2>The Route That Actually Works</h2>
+      <ol>
+        <li><strong>Pull the MP4.</strong> X Premium subscribers get a Download video entry in the post's three-dot menu, though only for videos whose uploader left downloads enabled and only for posts made after July 25, 2023. Everyone else can point a command-line downloader at the post URL; it authenticates with a guest token and reads the same manifest the player uses.</li>
+        <li><strong>Transcribe the audio.</strong> Whisper on the extracted MP3, or any speech-recognition service. A 140-second clip costs pennies and finishes in seconds.</li>
+        <li><strong>Fix the names, then keep the text.</strong> Recognition mangles product names, handles, and acronyms every time. One editing pass fixes what a second transcription run never will.</li>
+      </ol>
+      <p>Two traps bit me during testing. Plenty of posts look like video in the timeline but are link cards — the extractor follows the outbound URL and lands on a completely different site, which is exactly what happened on one NASA post that resolved to a nasa.gov page. And multi-media posts stay unpredictable: the downloader reads one media item per post, so a post carrying a video plus images may hand you only the images.</p>
+
+      <h2>X vs the Short-Form Platforms</h2>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Platform</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Caption data in the stream</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Route to spoken text</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">X / Twitter</td><td style="border:1px solid #d1d5db;padding:8px 12px">none, in stream or in API</td><td style="border:1px solid #d1d5db;padding:8px 12px">download the MP4, then transcribe</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">TikTok</td><td style="border:1px solid #d1d5db;padding:8px 12px">auto-caption JSON when enabled</td><td style="border:1px solid #d1d5db;padding:8px 12px">read the track; transcribe when captions are burned in</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Instagram Reels</td><td style="border:1px solid #d1d5db;padding:8px 12px">none, captions are pixels</td><td style="border:1px solid #d1d5db;padding:8px 12px">transcribe the audio</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">YouTube Shorts</td><td style="border:1px solid #d1d5db;padding:8px 12px">timed caption track when present</td><td style="border:1px solid #d1d5db;padding:8px 12px">read the track directly</td></tr>
+      </table>
+      <p>Short version: X is the one platform of the four where getting a transcript means downloading the file first. Which platform hands you verbatim text and which hands you a transcription is covered in the <a href="/blog/reels-vs-tiktok-vs-shorts-captions">three-platform caption comparison</a>.</p>
+
+      <h2>Start With the Text You Already Have</h2>
+      <p>Video sitting on TikTok, Reels, or Shorts instead of X? <a href="/tiktok-transcript-generator">CapFetch's transcript generator</a> returns the script in seconds with no account — paste the link and the words are yours. Need a subtitle file rather than plain text? The <a href="/blog/tiktok-transcript-exporter">TXT, SRT and VTT exporter breakdown</a> walks through what each format requires before it plays. X posts fall outside that pipeline, so transcribe them locally and keep the text — that route works today and doesn't depend on X shipping a caption file it has never shipped.</p>
+    `,
   }
 ];
 

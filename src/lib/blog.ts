@@ -1310,6 +1310,62 @@ next ten words of the script</pre>
       <h2>Start With the Text You Already Have</h2>
       <p>Video sitting on TikTok, Reels, or Shorts instead of X? <a href="/tiktok-transcript-generator">CapFetch's transcript generator</a> returns the script in seconds with no account — paste the link and the words are yours. Need a subtitle file rather than plain text? The <a href="/blog/tiktok-transcript-exporter">TXT, SRT and VTT exporter breakdown</a> walks through what each format requires before it plays. X posts fall outside that pipeline, so transcribe them locally and keep the text — that route works today and doesn't depend on X shipping a caption file it has never shipped.</p>
     `,
+  },
+  {
+    slug: "facebook-reels-captions-extract",
+    title: "Facebook Reels Captions: Extract Text From Public Reels",
+    description:
+      "I ran eight public Facebook Reels through an extractor. Five had no caption track at all. The three that did held one misheard word each — here's the data.",
+    date: "2026-11-15",
+    tags: ["facebook", "reels", "caption-extractor"],
+    contentHtml: `
+      <p>Facebook Reels do carry a caption track sometimes — and when they do, it's usually worthless. I put eight public Reels and videos through an extractor on 13 November 2026: five reported no caption track whatsoever, and the three that had one returned a single misheard word apiece.</p>
+      <p>That finding changes the whole job. Copying the typed text above a Reel takes one click. Recovering what someone actually said means ignoring the CC track and transcribing the audio yourself.</p>
+
+      <h2>Two Different Assets Get Called "Captions" on Facebook</h2>
+      <p>The typed text is a plain string. It sits in the page payload, the Graph API returns it as <code>description</code> (with <code>name</code> holding the short title), and you can select it with a drag. Done in seconds.</p>
+      <p>The closed-captions toggle inside the player is a different object. Facebook's own help centre describes it plainly: "Some reels on Facebook have automatically generated captions available, translated into different languages." Note the word translated. Those tracks are speech recognition plus machine translation, generated so a viewer can watch a Hindi reel in Vietnamese — not a transcript a creator ever reviewed. The same help page carries a September 2025 update worth knowing: all videos on Facebook are now Reels, whatever their length or orientation.</p>
+
+      <h2>What Eight Public Videos Actually Returned</h2>
+      <p>Commands were one line each: <code>yt-dlp --list-subs</code>, version 2026.10.26, pointed at public URLs with no cookies or login.</p>
+      <table style="border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9em">
+        <tr><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Public video</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Length</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">Track reported</th><th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left;font-weight:600;background:#f3f4f6">What was inside</th></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Creator how-to video</td><td style="border:1px solid #d1d5db;padding:8px 12px">~1 min</td><td style="border:1px solid #d1d5db;padding:8px 12px">none</td><td style="border:1px solid #d1d5db;padding:8px 12px">"has no automatic captions"</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Government page reel</td><td style="border:1px solid #d1d5db;padding:8px 12px">short</td><td style="border:1px solid #d1d5db;padding:8px 12px">none</td><td style="border:1px solid #d1d5db;padding:8px 12px">no subtitles, no captions</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Brand promo reel</td><td style="border:1px solid #d1d5db;padding:8px 12px">5.03 s</td><td style="border:1px solid #d1d5db;padding:8px 12px">9 languages</td><td style="border:1px solid #d1d5db;padding:8px 12px">1 cue per language, one word</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Brand clip A</td><td style="border:1px solid #d1d5db;padding:8px 12px">6 s</td><td style="border:1px solid #d1d5db;padding:8px 12px">none</td><td style="border:1px solid #d1d5db;padding:8px 12px">no track at all</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Brand clip B</td><td style="border:1px solid #d1d5db;padding:8px 12px">6 s</td><td style="border:1px solid #d1d5db;padding:8px 12px">none</td><td style="border:1px solid #d1d5db;padding:8px 12px">no track at all</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Music reel</td><td style="border:1px solid #d1d5db;padding:8px 12px">20.8 s</td><td style="border:1px solid #d1d5db;padding:8px 12px">hi_FB</td><td style="border:1px solid #d1d5db;padding:8px 12px">2 cues, 118 bytes total</td></tr>
+        <tr><td style="border:1px solid #d1d5db;padding:8px 12px">Music reel</td><td style="border:1px solid #d1d5db;padding:8px 12px">short</td><td style="border:1px solid #d1d5db;padding:8px 12px">hi_FB</td><td style="border:1px solid #d1d5db;padding:8px 12px">track listed, not expanded</td></tr>
+      </table>
+      <p>Not one of the eight had creator-uploaded subtitles. Every track the extractor found was labelled <code>und</code> — undefined language — and offered as SRT only, with no VTT variant to choose from.</p>
+
+      <h2>The Tracks That Exist Are Playback Translations, Not Transcripts</h2>
+      <p>Here's the part that settles how much you should trust them. That 5.03-second brand reel shipped nine caption tracks: <code>es_LA</code>, <code>hi_IN</code>, <code>id_ID</code>, <code>pt_PT</code>, <code>ta_IN</code>, <code>te_IN</code>, <code>th_TH</code>, <code>ur_PK</code>, <code>vi_VN</code>. I downloaded all nine. Every file was three lines long.</p>
+      <pre style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;padding:12px;overflow-x:auto;font-size:0.85em">1
+00:00:03,161 --&gt; 00:00:06,461
+Tú.</pre>
+      <p>The other eight tracks read <code>आप।</code>, <code>Kamu.</code>, <code>Você.</code>, <code>நீ.</code>, <code>మీరు.</code>, <code>เธอ</code>, <code>تم.</code>, <code>Là anh.</code> — the word "you" rendered into nine languages. The reel has music and crowd noise, no speech at all, so the recogniser invented a pronoun and the translator dutifully localised it. The cue also ends at 6.461 seconds inside a video that runs 5.03 seconds, which tells you nobody checked the output before shipping it.</p>
+      <p>The 20.8-second music reel behaved the same way: two cues, 118 bytes, a fragment of a sung lyric in Devanagari. Real words, wrong job — a song isn't a transcript.</p>
+      <p>The exposed language set also disagrees with the documentation. Facebook's help centre lists eleven supported languages including English, Arabic and Tagalog. My sample exposed Thai (<code>th_TH</code>) and European Portuguese (<code>pt_PT</code>), neither of which appears on that list, and returned no English track on any video, including the English-language how-to. Treat the advertised list as marketing copy, not a contract.</p>
+
+      <h2>Why the Page Source Gives You Nothing to Download</h2>
+      <p>If you plan to scrape the caption URL straight out of the HTML, plan again. A plain request to <code>https://www.facebook.com/reel/&lt;id&gt;</code> returns HTTP 400 and about 1.5 KB of nothing. The mobile watch URL works instead: <code>https://m.facebook.com/watch/?v=&lt;id&gt;&amp;_rdr</code> came back 200 with 483 KB of payload. The extractor does that rewrite internally — its own log line shows the reel URL being swapped for the <code>m.facebook.com/watch</code> form before anything else happens.</p>
+      <p>Grepping that 483 KB for <code>captions_url</code>, <code>"captions"</code> or a <code>.vtt</code> path returns zero real hits. The only caption-related string in the whole document is a feature flag: <code>oz_www_comet_video_player_live_vtt_captions: false</code>. Captions are rendered by the player, gated behind config, and never published as a fetchable asset.</p>
+      <p>The Graph API has a captions edge, and reading it is a dead end for this purpose. <code>GET /{video-id}/captions</code> returns VideoCaption nodes — files the owner uploaded. Writing needs to be the video's owner or hold manage access on the owning Page, the payload must be SRT named <code>filename.locale.srt</code>, and there's a 200 KB ceiling plus error 386 for a badly named file. Nothing on that edge exposes the auto-generated track you see in the player.</p>
+
+      <h2>The Route That Holds Up</h2>
+      <ol>
+        <li><strong>Take the post text first.</strong> It's free, exact, and for most jobs — repurposing a caption, quoting a brand's wording, building a content calendar — it's the only text that exists. Read <code>description</code> and you're done.</li>
+        <li><strong>Check whether a track exists, then read it as a hint.</strong> One command lists what's there. If the cue count is far below one per three seconds of runtime, you're looking at a stub or a hallucination, not speech. Use it to guess the topic, never to quote.</li>
+        <li><strong>Download the audio and transcribe it yourself.</strong> This is the only route that returns the spoken words. The extractor hands back a separate DASH audio stream (m4a, 44 kHz) alongside the video renditions, so you pull audio without touching the video file.</li>
+      </ol>
+      <p>Real talk: the third step is where every "Facebook transcript tool" either does the work or quietly returns the post description with a transcript label on it. If a tool hands you text in under a second for a 20-second music reel, compare it against the reel — you'll find the caption text, not the audio.</p>
+
+      <h2>Where CapFetch Fits</h2>
+      <p>CapFetch reads TikTok, Instagram Reels and YouTube Shorts, because those three platforms publish caption or transcript data a reader can retrieve verbatim. Facebook doesn't, and pretending otherwise would hand you a worse result than the manual route. The <a href="/blog/reels-vs-tiktok-vs-shorts-captions">three-platform caption comparison</a> shows exactly which of them returns creator text and which returns machine transcription.</p>
+      <p>Working on Instagram instead? <a href="/blog/how-to-download-instagram-reels-captions">The Reels caption download walkthrough</a> covers the path that works, and <a href="/reels-transcript-generator">the Reels transcript generator</a> returns the text from a pasted link with no account. Same problem, one platform over — and on that one, the captions actually come back. The <a href="/blog/x-twitter-video-captions-extract">X caption breakdown</a> covers the other platform that ships nothing at all.</p>
+    `,
   }
 ];
 

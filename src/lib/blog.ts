@@ -1366,7 +1366,109 @@ Tú.</pre>
       <p>CapFetch reads TikTok, Instagram Reels and YouTube Shorts, because those three platforms publish caption or transcript data a reader can retrieve verbatim. Facebook doesn't, and pretending otherwise would hand you a worse result than the manual route. The <a href="/blog/reels-vs-tiktok-vs-shorts-captions">three-platform caption comparison</a> shows exactly which of them returns creator text and which returns machine transcription.</p>
       <p>Working on Instagram instead? <a href="/blog/how-to-download-instagram-reels-captions">The Reels caption download walkthrough</a> covers the path that works, and <a href="/reels-transcript-generator">the Reels transcript generator</a> returns the text from a pasted link with no account. Same problem, one platform over — and on that one, the captions actually come back. The <a href="/blog/x-twitter-video-captions-extract">X caption breakdown</a> covers the other platform that ships nothing at all.</p>
     `,
-  }
+  },
+  {
+    slug: "linkedin-video-captions-extract",
+    title: "LinkedIn Video Captions: 3 of 8 Posts Have a Caption File",
+    description:
+      "16 public LinkedIn video posts, no login: only 3 of the 8 videos shipped a caption file. Where it hides, why the URL 403s, and what to do when it's absent.",
+    date: "2026-11-16",
+    tags: ["linkedin", "caption-extractor", "video-transcript"],
+    contentHtml: `<p>LinkedIn does hand over the captions for some public videos — a signed SRT or VTT file sitting in the page markup, no login and no extension required. We pulled 16 public post URLs to measure how often that happens: 8 turned out to be videos, and 3 of those 8 shipped a caption file. The other five had nothing to extract, so the honest answer starts with "sometimes" and ends with a plan for the rest.</p>
+
+      <h2>Where the caption file is hiding</h2>
+      <p>Every video post carries a JSON-LD <code>VideoObject</code> block in the HTML. When captions exist, two extra keys appear inside it: <code>caption</code>, a MediaObject pointing at a signed file URL, and <code>transcript</code>, the same words flattened into one paragraph. Posts without captions have neither key — no placeholder, no empty string.</p>
+      <pre style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;padding:12px;overflow-x:auto;font-size:0.85em">"caption": {
+  "@type": "MediaObject",
+  "contentUrl": "https://dms.licdn.com/playlist/vid/v2/&lt;asset&gt;/
+     video-auto-caption-srt-acs-singleton/&lt;hash&gt;/&lt;ts&gt;
+     ?e=2147483647&amp;v=beta&amp;t=&lt;token&gt;",
+  "description": "Video Captions for &lt;post headline&gt;"
+}</pre>
+      <p>That <code>video-auto-caption-...</code> path segment is the tell: these are machine captions LinkedIn generated after upload, not a file a creator typed out. On all three posts we pulled, the <code>transcript</code> string matched the caption file word for word — 194 words against 194, 1,177 against 1,177 — so grab whichever is easier and you get identical text.</p>
+
+      <h2>The 19 KB page that beats the 145 KB page</h2>
+      <p>The post page is heavy: 95 KB to 146 KB across our sample, most of it comment threads and tracking config. The embed view does the same job in 18.6 KB to 23.2 KB, and it puts the caption URL in a plain HTML attribute instead of a JSON blob.</p>
+      <ol>
+        <li>Pull the activity ID out of the post URL — <code>...-activity-7527415162497073153-2x4f</code> becomes <code>7527415162497073153</code>.</li>
+        <li>Load <code>linkedin.com/embed/feed/update/urn:li:activity:&lt;id&gt;?compact=true</code>.</li>
+        <li>Grep for <code>data-captions-url=</code> on the video element, fetch that URL, done.</li>
+      </ol>
+      <p>We checked whether the token survives the trip: the URL lifted from the embed page returned HTTP 200, 1,596 bytes, byte-identical to the file pulled from the full post page.</p>
+
+      <h2>The token is load-bearing</h2>
+      <p>Strip the query string and the same URL answers HTTP 403 with a 22-byte body. Strip only the <code>t=</code> token while keeping <code>e=</code> and <code>v=beta</code> — still 403. The expiry parameter reads <code>e=2147483647</code>, the largest 32-bit integer, so the link doesn't age out in any practical sense; the token is what gates it. Two consequences worth internalizing: never cache a caption URL between runs, and don't try swapping the asset hash to fetch a different video's captions.</p>
+
+      <h2>Two formats behind one filename</h2>
+      <p>All three caption URLs carried the identical <code>video-auto-caption-srt-acs-singleton</code> path. Two served SRT and one served real WebVTT — different Content-Type, different decimal separator, different cue numbering.</p>
+      <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:0.95em">
+        <thead>
+          <tr style="background:#f9fafb">
+            <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left">Property</th>
+            <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left">Business Insider post</th>
+            <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left">n8n workflow post</th>
+            <th style="border:1px solid #d1d5db;padding:8px 12px;text-align:left">Video Intel post</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">Content-Type</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">text/plain</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">text/plain</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">text/vtt</td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">Actual format</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">SRT, numbered cues</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">SRT, numbered cues</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">WEBVTT header</td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">Timestamp separator</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">comma</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">comma</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">dot</td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">Cues</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">18</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">152</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">29</td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">Video duration</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">67 s</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">574 s</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">90 s</td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">Words / bytes</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">194 / 1,596</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">1,177 / 11,444</td>
+            <td style="border:1px solid #d1d5db;padding:8px 12px">274 / 2,362</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Geometry stays consistent across all three: every cue sits at or under 60 characters, none wraps onto a second line, and the first cue never starts at zero (2.080 s, 1.100 s, 0.150 s). A parser that assumes "line one is the index, line two is the timestamp" breaks on the WebVTT one. Check for a WEBVTT header before trusting the extension or the path name.</p>
+
+      <h2>Where the auto captions are wrong</h2>
+      <p>Machine captions mangle numbers far more than words, and LinkedIn's output follows the rule. One transcript reads "gas I have $13, 000" and "9600 car insurance 3200" while a speaker quotes monthly costs; another opens with "Hello pello Human Digital and." for what was obviously a greeting to a brand. Punctuation lands wherever the model paused, so sentences split mid-clause — "When you add that up, I'm basically. Paying $3000 a month to drive a car."</p>
+      <p>Timing drifts as well. On the 9 minute 34 second video, the final cue ends at 00:09:36,200 — 2.2 seconds past the end of the video — and 18 of its 152 cues leave gaps behind them, the widest 4.49 seconds. Nothing fatal, but enough that cue boundaries aren't ground truth for chapter markers or clip cutting.</p>
+
+      <h2>yt-dlp gets you there, then trips on filenames</h2>
+      <p>yt-dlp 2026.10.26 recognizes post URLs directly and listed <code>en vtt</code> for all three captioned posts. Two caveats came out of the same run:</p>
+      <ul>
+        <li><strong>The extension lies.</strong> For the two posts serving SRT, yt-dlp wrote a file named <code>.en.vtt</code> whose contents were byte-identical to the raw SRT — md5 match, no WEBVTT header, comma decimal separators. Hand that to a strict VTT parser and it rejects the file.</li>
+        <li><strong>Long headlines kill the download.</strong> yt-dlp derives the filename from the post headline; on a 200-character headline it aborted with <code>[Errno 36] File name too long</code> before writing a single byte. <code>-o "%(id)s.%(ext)s"</code> sidesteps it.</li>
+      </ul>
+      <p>The other five video posts answered <code>has no subtitles</code>. Text and image posts aren't videos at all — yt-dlp drops to the generic extractor and returns <code>Unsupported URL</code>. LinkedIn Learning is a separate door: <code>linkedin:learning:course</code> stops with "only available for registered users," so courses need cookies rather than this trick.</p>
+
+      <h2>When there is no caption file</h2>
+      <p>Five of eight video posts had nothing at all. LinkedIn's own help covers both creator paths — attach an <a href="https://www.linkedin.com/help/linkedin/answer/a552177/add-closed-captions-to-videos-on-linkedin?lang=en" rel="nofollow noopener" target="_blank">SRT file at upload</a> (desktop only, personal accounts and Pages) or flip the <a href="https://www.linkedin.com/help/linkedin/answer/a1327025?lang=en" rel="nofollow noopener" target="_blank">auto captions</a> toggle — but both are the creator's choice, and plenty of people leave them off. For those videos the only route left is transcribing the audio yourself.</p>
+      <p>Sanity-check any transcript you end up with against three numbers: words per second (our three ran 2.05, 2.9 and 3.04 — normal speech, so anything under 1 means most of the audio got skipped), the last cue against the stated duration, and cue density (a 60-second clip should land 15-20 cues, not two).</p>
+      <p>CapFetch covers the audio-to-text side for TikTok, Reels and Shorts — <a href="/reels-transcript-generator">Reels transcripts</a> and <a href="/shorts-transcript-extractor">Shorts transcripts</a> come back as clean copyable text. It does not process LinkedIn links, and saying so beats letting you paste a post URL into a tool that fails quietly.</p>
+      <p>Next, if you need timestamps rather than plain text, the format traps in <a href="/blog/tiktok-transcript-exporter">what an exporter actually returns</a> apply here too. Same story on <a href="/blog/x-twitter-video-captions-extract">X</a> and <a href="/blog/facebook-reels-captions-extract">Facebook Reels</a> — three platforms, three different answers about where captions live and whether the file you get is trustworthy.</p>`,
+  },
 ];
 
 export function getAllTags(): string[] {
